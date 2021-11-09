@@ -1,12 +1,13 @@
 # from pyspark.context import SparkContext
 # from pyspark.sql.session import SparkSession
 from pyspark.sql import *
-from pyspark.sql.types import StructField, StructType, StringType, IntegerType, FloatType, DateType, ArrayType
+from pyspark.sql.types import *
 from pm4py.objects.log.importer.xes.variants import iterparse as xes_importer
 from pm4py import conformance as conf
 from pm4py.objects.petri_net.importer.variants import pnml as pnml_importer
 from pm4py.algo.discovery.dfg import algorithm as dfg_discovery
 import pm4py.algo.discovery.causal.variants.heuristic as cr_discovery
+import pyspark.sql.functions as F
 
 # sc = SparkContext.getOrCreate()
 # spark = SparkSession(sc)
@@ -22,6 +23,18 @@ new_df = []
 i = 0
 # CONFORMANCE CHECKING
 check = conf.conformance_diagnostics_token_based_replay(log, net, im, fm)
+# DIRECT FOLLOW GRAPH FROM LOG
+dfg = dfg_discovery.apply(log)
+
+# extract a dictionary with all causal relation as key and a value (-1,1) indicating how strong is the relation
+CR = cr_discovery.apply(dfg)
+cr = []
+
+# add in cr array all the relation with value grater than 0.8 (filter)
+for key, val in CR.items():
+    if val > 0.8:
+        # to_write = '->'.join([key[0], key[1]])
+        cr.append(key)
 
 # popolare array per costruzione rdd -> dataframe
 for trace in log:
@@ -30,48 +43,53 @@ for trace in log:
         activities = []
         for event in trace:
             activities.append(event['concept:name'])
-        new_df.append((id_traccia, activities))
+        new_df.append((id_traccia, activities, cr))
     i += 1
 
 schema = StructType([
     StructField('Trace_ID', StringType(), True),
     StructField('Trace', ArrayType(StringType()), True),
+    StructField('Causal_relations', ArrayType(
+        StructType(
+            [
+                StructField('cr_strart', StringType()),
+                StructField('cr_end', StringType()),
+            ]
+        )
+    ), True),
 ])
 
 rdd = spark.sparkContext.parallelize(new_df)
 dataframe_fit = spark.createDataFrame(rdd, schema)
 
-# DIRECT FOLLOW GRAPH FROM LOG
-dfg = dfg_discovery.apply(log)
-# extract a dictionary with all causal relation as key and a value (-1,1) indicating how strong is the relation
-CR = cr_discovery.apply(dfg)
-cr = []
-# add in cr array all the relation with value grater than 0.8 (filter)
-for key, val in CR.items():
-    if val > 0.8:
-        cr.append(key)
 
-schema = StructType([
-    StructField('Relation_Head', StringType(), True),
-    StructField('Relation_Tail', StringType(), True),
-])
-
-rdd = spark.sparkContext.parallelize(cr)
-dataframe_causal_relations = spark.createDataFrame(rdd, schema)
-
-
-########################################################################################################
-
-# TODO adattare le funzioni per usare dataframe
-# this function get as parameters a trace of the event log and the causal relation extracted before to extract the instance graph relative to that trace, V: nodes, W: edges
-def ExtractInstanceGraph(trace, cr):
+# funzione per estrazione nodi da traccia
+def create_V(trace):
+    event_id = 1
     V = []
-    W = []
-    id = 1
     for event in trace:
-        V.append((id, event.get("concept:name")))
-        id += 1
-    # print("IG")
+        V.append((event_id, event))
+        event_id += 1
+    return V
+
+
+# schema della colonna di output (V)
+schema = ArrayType(
+    StructType(
+        [
+            StructField('node_number', IntegerType()),
+            StructField('event', StringType()),
+        ]
+    )
+)
+
+# udf per creazione colonna V (nodi)
+udf_create_V = F.udf(lambda trace: create_V(trace), schema)
+
+
+# funzione per estrazione archi da traccia
+def create_W(cr, V):
+    W = []
     for i in range(len(V)):
         for k in range(i, len(V)):
             e1 = V[i]
@@ -87,12 +105,57 @@ def ExtractInstanceGraph(trace, cr):
                     e3 = V[s]
                     if (e3[1], e2[1]) in cr:
                         flag_e2 = False
-
                 if flag_e1 or flag_e2:
                     W.append((e1, e2))
-    return V, W
-    # print(V)
-    # print(W)
+    return W
+
+
+# schema della colonna di output (W)
+schema = ArrayType(
+    StructType(
+        [
+            StructField('start', StructType(
+                [
+                    StructField('start_arch_number', IntegerType()),
+                    StructField('start_arch', StringType()),
+                ]
+            )),
+            StructField('end', StructType(
+                [
+                    StructField('end_arch_number', IntegerType()),
+                    StructField('end_arch', StringType()),
+                ]
+            )),
+        ]
+    )
+)
+
+# udf per creazione colonna W (archi)
+udf_create_W = F.udf(lambda cr, V: create_W(cr, V), schema)
+
+########################################################################################################
+
+# TODO adattare le funzioni per usare dataframe
+
+from IPython import display
+from graphviz import Digraph
+
+
+def viewInstanceGraph(V, W, title="Instance Graph"):
+    # Conversion to string indexes
+    V2 = []
+    W2 = []
+    for node in V:
+        V2.append((str(node[0]), node[1]))
+    for edge in W:
+        W2.append(((str(edge[0][0]), edge[0][1]), (str(edge[1][0]), edge[1][1])))
+
+    dot = Digraph(comment=title, node_attr={'shape': 'circle'})
+    for e in V2:
+        dot.node(e[0], e[1])
+    for w in W2:
+        dot.edge(w[0][0], w[1][0])
+    display.display(dot)
 
 
 def isTraceMatching(V, trace):
@@ -150,27 +213,6 @@ def checkTraceConformance2(trace, net, initial_marking, final_marking):
     if len(temp_d) > 0:
         D.append(temp_d)
     return D, I
-
-
-from IPython import display
-from graphviz import Digraph
-
-
-def viewInstanceGraph(V, W, title="Instance Graph"):
-    # Conversion to string indexes
-    V2 = []
-    W2 = []
-    for node in V:
-        V2.append((str(node[0]), node[1]))
-    for edge in W:
-        W2.append(((str(edge[0][0]), edge[0][1]), (str(edge[1][0]), edge[1][1])))
-
-    dot = Digraph(comment=title, node_attr={'shape': 'circle'})
-    for e in V2:
-        dot.node(e[0], e[1])
-    for w in W2:
-        dot.edge(w[0][0], w[1][0])
-    display.display(dot)
 
 
 def isReachable(V, W, s, d):
@@ -321,16 +363,13 @@ def irregularGraphReparing(V, W, D, I, cr):
         viewInstanceGraph(V, Wi)
     return Wi
 
-dataframe_fit.for
 
-for trace in streaming_ev_object:
-    V, W = ExtractInstanceGraph(trace, cr)
-    print("\n\n------------------------------------\nUnrepaired Instance Graph")
-    viewInstanceGraph(V, W)
-    D, I = checkTraceConformance2(trace, net, initial_marking, final_marking)
-    print(D)
-    print(I)
-    if len(D) + len(I) > 0:
-        Wi = irregularGraphReparing(V, W, D, I, cr)
-    num = trace.attributes.get('concept:name')
+# TODO adattare le funzioni fino a qui!!!
+
+# TODO man mano che vengono adattate le funzioni replica main in file tmp.py
+################################################################################
+df_V_W = dataframe_fit.withColumn('V', udf_create_V('Trace')) \
+    .drop('Trace') \
+    .withColumn('W', udf_create_W('Causal_relations', 'V')) \
+    .drop('Causal_relations')
 ################################################################################

@@ -8,6 +8,7 @@ from pm4py.objects.petri_net.importer.variants import pnml as pnml_importer
 from pm4py.algo.discovery.dfg import algorithm as dfg_discovery
 import pm4py.algo.discovery.causal.variants.heuristic as cr_discovery
 import pyspark.sql.functions as F
+from pm4py.algo.conformance.alignments.petri_net import algorithm as alignments
 
 # sc = SparkContext.getOrCreate()
 # spark = SparkSession(sc)
@@ -38,12 +39,13 @@ for key, val in CR.items():
 
 # popolare array per costruzione rdd -> dataframe
 for trace in log:
-    if (check[i]['trace_is_fit']):
-        id_traccia = trace.attributes['concept:name']
-        activities = []
-        for event in trace:
-            activities.append(event['concept:name'])
-        new_df.append((id_traccia, activities, cr))
+    # if (check[i]['trace_is_fit']):
+    aligned_traces = alignments.apply(trace, net, im, fm)['alignment']
+    id_traccia = trace.attributes['concept:name']
+    activities = []
+    for event in trace:
+        activities.append(event['concept:name'])
+    new_df.append((id_traccia, activities, cr, aligned_traces))
     i += 1
 
 schema = StructType([
@@ -54,6 +56,14 @@ schema = StructType([
             [
                 StructField('cr_strart', StringType()),
                 StructField('cr_end', StringType()),
+            ]
+        )
+    ), True),
+    StructField('Alignments', ArrayType(
+        StructType(
+            [
+                StructField('on_log', StringType()),
+                StructField('on_model', StringType()),
             ]
         )
     ), True),
@@ -133,6 +143,94 @@ schema = ArrayType(
 # udf per creazione colonna W (archi)
 udf_create_W = F.udf(lambda cr, V: create_W(cr, V), schema)
 
+
+# funzione per confCheck Deletion
+def create_D(alignments):
+    D = []
+    id = 0
+    temp_d = []
+    prev = False
+    curr = False
+    deletion = False
+    for edge in alignments:
+        if edge[1] is None:
+            continue
+        if edge[0] == '>>':
+            if prev:
+                id -= 1
+            deletion = True
+            temp_d.append((id + 1, edge[1]))
+            curr = True
+        if edge[1] == '>>':
+            if deletion:
+                id -= 1
+                deletion = False
+            curr = True
+        id += 1
+        if (prev and not curr):
+            if len(temp_d) > 0:
+                D.append(temp_d)
+            temp_d = []
+        prev = curr
+        curr = False
+    if len(temp_d) > 0:
+        D.append(temp_d)
+    return D
+
+
+# schema della colonne di output (D e I)
+schema = ArrayType(
+    ArrayType(
+        StructType(
+            [
+                StructField('repair_num', IntegerType()),
+                StructField('repair_event', StringType()),
+            ]
+        )
+    )
+)
+
+# udf per creazione colonne I
+udf_create_D = F.udf(lambda alignments: create_D(alignments), schema)
+
+
+# funzione per confCheck Insertion
+def create_I(alignments):
+    I = []
+    id = 0
+    temp_i = []
+    prev = False
+    curr = False
+    deletion = False
+    for edge in alignments:
+        if edge[1] is None:
+            continue
+        if edge[0] == '>>':
+            if prev:
+                id -= 1
+            deletion = True
+            curr = True
+        if edge[1] == '>>':
+            if deletion:
+                id -= 1
+                deletion = False
+            temp_i.append((id + 1, edge[0]))
+            curr = True
+        id += 1
+        if (prev and not curr):
+            if len(temp_i) > 0:
+                I.append(temp_i)
+            temp_i = []
+        prev = curr
+        curr = False
+    if len(temp_i) > 0:
+        I.append(temp_i)
+    return I
+
+
+# udf per creazione colonne I
+udf_create_I = F.udf(lambda alignments: create_I(alignments), schema)
+
 ########################################################################################################
 
 # TODO adattare le funzioni per usare dataframe
@@ -166,53 +264,6 @@ def isTraceMatching(V, trace):
             flag = False
             break
     return flag
-
-
-from pm4py.algo.conformance.alignments.petri_net import algorithm as alignments
-
-
-def checkTraceConformance2(trace, net, initial_marking, final_marking):
-    aligned_traces = alignments.apply(trace, net, initial_marking, final_marking)
-    print(aligned_traces)
-    D = []
-    I = []
-    id = 0
-    temp_d = []
-    temp_i = []
-    prev = False
-    curr = False
-    deletion = False
-    for edge in aligned_traces['alignment']:
-        if edge[1] is None:
-            continue
-        if edge[0] == '>>':
-            if prev:
-                id -= 1
-            deletion = True
-            temp_d.append((id + 1, edge[1]))
-            curr = True
-        if edge[1] == '>>':
-            if deletion:
-                id -= 1
-                deletion = False
-            temp_i.append((id + 1, edge[0]))
-            curr = True
-
-        id += 1
-        if (prev and not curr):
-            if len(temp_i) > 0:
-                I.append(temp_i)
-            temp_i = []
-            if len(temp_d) > 0:
-                D.append(temp_d)
-            temp_d = []
-        prev = curr
-        curr = False
-    if len(temp_i) > 0:
-        I.append(temp_i)
-    if len(temp_d) > 0:
-        D.append(temp_d)
-    return D, I
 
 
 def isReachable(V, W, s, d):
@@ -368,8 +419,11 @@ def irregularGraphReparing(V, W, D, I, cr):
 
 # TODO man mano che vengono adattate le funzioni replica main in file tmp.py
 ################################################################################
-df_V_W = dataframe_fit.withColumn('V', udf_create_V('Trace')) \
-    .drop('Trace') \
+df = dataframe_fit.withColumn('V', udf_create_V('Trace')) \
     .withColumn('W', udf_create_W('Causal_relations', 'V')) \
-    .drop('Causal_relations')
+    .withColumn("D", udf_create_D('Alignments')) \
+    .withColumn("I", udf_create_I('Alignments')) \
+    .select('Trace_ID', 'V', 'W', 'D', 'I')
+
+df.show(5)
 ################################################################################

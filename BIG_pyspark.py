@@ -3,7 +3,6 @@
 from pyspark.sql import *
 from pyspark.sql.types import *
 from pm4py.objects.log.importer.xes.variants import iterparse as xes_importer
-from pm4py import conformance as conf
 from pm4py.objects.petri_net.importer.variants import pnml as pnml_importer
 from pm4py.algo.discovery.dfg import algorithm as dfg_discovery
 import pm4py.algo.discovery.causal.variants.heuristic as cr_discovery
@@ -12,43 +11,16 @@ from pm4py.algo.conformance.alignments.petri_net import algorithm as alignments
 
 # sc = SparkContext.getOrCreate()
 # spark = SparkSession(sc)
-path_pnml = "/media/sf_cartella_condivisa/progetto/Big_pyspark/toyex_petriNet.pnml"
-path_xes = "/media/sf_cartella_condivisa/progetto/Big_pyspark/toyex.xes"
 
-# IMPORT PETRI NET
-net, im, fm = pnml_importer.import_net(path_pnml)
-# IMPORTA EVENTLOG DA FILE.XES
-log = xes_importer.import_log(path_xes)
+# PATHS AND VARIABLES INITIALIZATION
+path_pnml = "/media/sf_cartella_condivisa/progetto/Big_pyspark/toyex_petriNet.pnml"  # PNML FILE PATH
+path_xes = "/media/sf_cartella_condivisa/progetto/Big_pyspark/toyex.xes"  # XES FILE PATH
+i = 0  # COUNTER FOR Trace_ID
+initial_df_array = []  # ARRAY TO CONVERT IN initial_df
+# --------------------------------------------------------------------------------------------------- #
 
-new_df = []
-i = 0
-# CONFORMANCE CHECKING
-check = conf.conformance_diagnostics_token_based_replay(log, net, im, fm)
-# DIRECT FOLLOW GRAPH FROM LOG
-dfg = dfg_discovery.apply(log)
-
-# extract a dictionary with all causal relation as key and a value (-1,1) indicating how strong is the relation
-CR = cr_discovery.apply(dfg)
-cr = []
-
-# add in cr array all the relation with value grater than 0.8 (filter)
-for key, val in CR.items():
-    if val > 0.8:
-        # to_write = '->'.join([key[0], key[1]])
-        cr.append(key)
-
-# popolare array per costruzione rdd -> dataframe
-for trace in log:
-    # if (check[i]['trace_is_fit']):
-    aligned_traces = alignments.apply(trace, net, im, fm)['alignment']
-    id_traccia = trace.attributes['concept:name']
-    activities = []
-    for event in trace:
-        activities.append(event['concept:name'])
-    new_df.append((id_traccia, activities, cr, aligned_traces))
-    i += 1
-
-schema = StructType([
+# DATAFRAMES SCHEMA
+initial_df_schema = StructType([
     StructField('Trace_ID', StringType(), True),
     StructField('Trace', ArrayType(StringType()), True),
     StructField('Causal_relations', ArrayType(
@@ -67,13 +39,70 @@ schema = StructType([
             ]
         )
     ), True),
-])
+])  # SCHEMA FOR INITIAL DATAFRAME [ Trace_ID | Trace | Causal_relation | Alignments ]
+V_schema = ArrayType(
+    StructType(
+        [
+            StructField('node_number', IntegerType()),
+            StructField('event', StringType()),
+        ]
+    )
+)  # SCHEMA FOR NODE COLUMN [ V ]
+W_schema = ArrayType(
+    StructType(
+        [
+            StructField('start', StructType(
+                [
+                    StructField('start_arch_number', IntegerType()),
+                    StructField('start_arch', StringType()),
+                ]
+            )),
+            StructField('end', StructType(
+                [
+                    StructField('end_arch_number', IntegerType()),
+                    StructField('end_arch', StringType()),
+                ]
+            )),
+        ]
+    )
+)  # SCHEMA FOR EDGE COLUMN [ W ]
+D_I_schema = ArrayType(
+    ArrayType(
+        StructType(
+            [
+                StructField('repair_num', IntegerType()),
+                StructField('repair_event', StringType()),
+            ]
+        )
+    )
+)  # SCHEMA FOR DELETION AND INSERTION NODES [ D ] [ I ]
+# ---------------------------------------------------------------------- #
 
-rdd = spark.sparkContext.parallelize(new_df)
-dataframe_fit = spark.createDataFrame(rdd, schema)
+# PETRI_NET, LOG, DFG, CR
+net, im, fm = pnml_importer.import_net(path_pnml)  # IMPORT PETRI NET
+log = xes_importer.import_log(path_xes)  # IMPORT EVENT_LOG FROM FILE.XES
+dfg = dfg_discovery.apply(log)  # DIRECT FOLLOW GRAPH FROM LOG
+CR = cr_discovery.apply(dfg)  # CAUSAL RELATIONS AS KEY AND THEIR WEIGHT AS VALUE
+cr = [key for key, val in CR.items() if val > 0.8]  # FILTER CAUSAL RELATIONS
+# ---------------------------------------------------------------------------- #
+
+# POPULATE initial_df_array AND CONVERSION IN DATAFRAME
+for trace in log:
+    aligned_traces = alignments.apply(trace, net, im, fm)['alignment']
+    id_traccia = trace.attributes['concept:name']
+    activities = []
+    for event in trace:
+        activities.append(event['concept:name'])
+    initial_df_array.append((id_traccia, activities, cr, aligned_traces))
+    i += 1
+
+initial_rdd = spark.sparkContext.parallelize(initial_df_array)
+initial_df = spark.createDataFrame(initial_rdd, initial_df_schema)
 
 
-# funzione per estrazione nodi da traccia
+# --------------------------------------------------------------- #
+
+# FUNCTIONS TO CONVERT IN UDF
 def create_V(trace):
     event_id = 1
     V = []
@@ -83,21 +112,6 @@ def create_V(trace):
     return V
 
 
-# schema della colonna di output (V)
-schema = ArrayType(
-    StructType(
-        [
-            StructField('node_number', IntegerType()),
-            StructField('event', StringType()),
-        ]
-    )
-)
-
-# udf per creazione colonna V (nodi)
-udf_create_V = F.udf(lambda trace: create_V(trace), schema)
-
-
-# funzione per estrazione archi da traccia
 def create_W(cr, V):
     W = []
     for i in range(len(V)):
@@ -120,31 +134,6 @@ def create_W(cr, V):
     return W
 
 
-# schema della colonna di output (W)
-schema = ArrayType(
-    StructType(
-        [
-            StructField('start', StructType(
-                [
-                    StructField('start_arch_number', IntegerType()),
-                    StructField('start_arch', StringType()),
-                ]
-            )),
-            StructField('end', StructType(
-                [
-                    StructField('end_arch_number', IntegerType()),
-                    StructField('end_arch', StringType()),
-                ]
-            )),
-        ]
-    )
-)
-
-# udf per creazione colonna W (archi)
-udf_create_W = F.udf(lambda cr, V: create_W(cr, V), schema)
-
-
-# funzione per confCheck Deletion
 def create_D(alignments):
     D = []
     id = 0
@@ -178,23 +167,6 @@ def create_D(alignments):
     return D
 
 
-# schema della colonne di output (D e I)
-schema = ArrayType(
-    ArrayType(
-        StructType(
-            [
-                StructField('repair_num', IntegerType()),
-                StructField('repair_event', StringType()),
-            ]
-        )
-    )
-)
-
-# udf per creazione colonne I
-udf_create_D = F.udf(lambda alignments: create_D(alignments), schema)
-
-
-# funzione per confCheck Insertion
 def create_I(alignments):
     I = []
     id = 0
@@ -228,12 +200,33 @@ def create_I(alignments):
     return I
 
 
-# udf per creazione colonne I
-udf_create_I = F.udf(lambda alignments: create_I(alignments), schema)
+# --------------------------- #
+
+# UDF
+udf_create_V = F.udf(lambda trace: create_V(trace), V_schema)
+udf_create_W = F.udf(lambda cr, V: create_W(cr, V), W_schema)
+udf_create_D = F.udf(lambda alignments: create_D(alignments), D_I_schema)
+udf_create_I = F.udf(lambda alignments: create_I(alignments), D_I_schema)
+
+
+# ------------------------------------------------------------------------ #
 
 ########################################################################################################
 
 # TODO adattare le funzioni per usare dataframe
+
+def irregularGraphReparing(V, W, D, I, cr):
+    Wi = W
+    for d_element in D:
+        Wi = DeletionRepair(Wi, V, d_element, cr)
+        print("Deletion repaired Instance Graph")
+        viewInstanceGraph(V, Wi)
+    for i_element in I:
+        Wi = InsertionRepair(Wi, V, i_element, cr)
+        print("Insertion repaired Instance Graph")
+        viewInstanceGraph(V, Wi)
+    return Wi
+
 
 from IPython import display
 from graphviz import Digraph
@@ -402,28 +395,14 @@ def InsertionRepair(Wi, V, i_elements, cr):
     return Wi
 
 
-def irregularGraphReparing(V, W, D, I, cr):
-    Wi = W
-    for d_element in D:
-        Wi = DeletionRepair(Wi, V, d_element, cr)
-        print("Deletion repaired Instance Graph")
-        viewInstanceGraph(V, Wi)
-    for i_element in I:
-        Wi = InsertionRepair(Wi, V, i_element, cr)
-        print("Insertion repaired Instance Graph")
-        viewInstanceGraph(V, Wi)
-    return Wi
-
-
 # TODO adattare le funzioni fino a qui!!!
 
 # TODO man mano che vengono adattate le funzioni replica main in file tmp.py
 ################################################################################
-df = dataframe_fit.withColumn('V', udf_create_V('Trace')) \
+df = initial_df.withColumn('V', udf_create_V('Trace')) \
     .withColumn('W', udf_create_W('Causal_relations', 'V')) \
     .withColumn("D", udf_create_D('Alignments')) \
     .withColumn("I", udf_create_I('Alignments')) \
-    .select('Trace_ID', 'V', 'W', 'D', 'I')
-
-df.show(5)
+    .select('Trace_ID', 'V', 'W', 'D', 'I') \
+    .show(5)
 ################################################################################

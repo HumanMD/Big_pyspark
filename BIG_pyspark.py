@@ -8,18 +8,31 @@ from pm4py.algo.discovery.dfg import algorithm as dfg_discovery
 import pm4py.algo.discovery.causal.variants.heuristic as cr_discovery
 import pyspark.sql.functions as F
 from pm4py.algo.conformance.alignments.petri_net import algorithm as alignments
+import time
+
+start = time.time()
 
 # sc = SparkContext.getOrCreate()
 # spark = SparkSession(sc)
 
-# PATHS AND VARIABLES INITIALIZATION
-path_pnml = "/media/sf_cartella_condivisa/progetto/Big_pyspark/toyex_petriNet.pnml"  # PNML FILE PATH
-path_xes = "/media/sf_cartella_condivisa/progetto/Big_pyspark/toyex.xes"  # XES FILE PATH
+# ----- PATHS AND VARIABLES INITIALIZATION ----- #
+path_pnml = "/media/sf_cartella_condivisa/progetto/Big_pyspark/toyex_petriNet.pnml"
+path_xes = "/media/sf_cartella_condivisa/progetto/Big_pyspark/toyex.xes"
+
+# path_pnml = "/media/sf_cartella_condivisa/progetto/Big_pyspark/testBank2000NoRandomNoise_petriNet.pnml"
+# path_xes = "/media/sf_cartella_condivisa/progetto/Big_pyspark/testBank2000NoRandomNoise.xes"
+
+# path_pnml = "/media/sf_cartella_condivisa/progetto/Big_pyspark/andreaHelpdesk_petriNet.pnml"
+# path_xes = "/media/sf_cartella_condivisa/progetto/Big_pyspark/andreaHelpdesk.xes"
+
+# path_pnml = "/media/sf_cartella_condivisa/progetto/Big_pyspark/andrea_bpi12full_petriNet.pnml"
+# path_xes = "/media/sf_cartella_condivisa/progetto/Big_pyspark/andrea_bpi12full.xes"
+
 i = 0  # COUNTER FOR Trace_ID
 initial_df_array = []  # ARRAY TO CONVERT IN initial_df
 # --------------------------------------------------------------------------------------------------- #
 
-# DATAFRAMES SCHEMA
+# ----- DATAFRAMES SCHEMA  ----- #
 initial_df_schema = StructType([
     StructField('Trace_ID', StringType(), True),
     StructField('Trace', ArrayType(StringType()), True),
@@ -78,7 +91,7 @@ D_I_schema = ArrayType(
 )  # SCHEMA FOR DELETION AND INSERTION NODES [ D ] [ I ]
 # ---------------------------------------------------------------------- #
 
-# PETRI_NET, LOG, DFG, CR
+# ----- PETRI_NET, LOG, DFG, CR  ----- #
 net, im, fm = pnml_importer.import_net(path_pnml)  # IMPORT PETRI NET
 log = xes_importer.import_log(path_xes)  # IMPORT EVENT_LOG FROM FILE.XES
 dfg = dfg_discovery.apply(log)  # DIRECT FOLLOW GRAPH FROM LOG
@@ -86,7 +99,7 @@ CR = cr_discovery.apply(dfg)  # CAUSAL RELATIONS AS KEY AND THEIR WEIGHT AS VALU
 cr = [key for key, val in CR.items() if val > 0.8]  # FILTER CAUSAL RELATIONS
 # ---------------------------------------------------------------------------- #
 
-# POPULATE initial_df_array AND CONVERSION IN DATAFRAME
+# ----- POPULATE initial_df_array AND CONVERSION IN DATAFRAME  ----- #
 for trace in log:
     aligned_traces = alignments.apply(trace, net, im, fm)['alignment']
     id_traccia = trace.attributes['concept:name']
@@ -102,7 +115,7 @@ initial_df = spark.createDataFrame(initial_rdd, initial_df_schema)
 
 # --------------------------------------------------------------- #
 
-# FUNCTION USED IN irregularGraphRepairing
+# ----- FUNCTION USED IN irregularGraphRepairing  ----- #
 
 
 def DeletionRepair(Wi, V, d_elements, cr):
@@ -227,7 +240,7 @@ def isReachable(V, W, s, d):
 
 # ------------------------------------------- #
 
-# FUNCTIONS TO CONVERT IN UDF
+# ----- FUNCTIONS TO CONVERT IN UDF ----- #
 def create_V(trace):
     event_id = 1
     V = []
@@ -352,6 +365,10 @@ df = initial_df.withColumn('V', udf_create_V('Trace')) \
     .withColumn("D", udf_create_D('Alignments')) \
     .withColumn("I", udf_create_I('Alignments')) \
     .withColumn('Wi', udf_irregularGraphRepairing('V', 'W', 'D', 'I', 'Causal_relations')) \
-    .select('Trace_ID', 'V', 'W', 'D', 'I', 'Wi') \
-    .show(5)
-################################################################################
+    .select('Trace_ID', 'V', 'W', 'D', 'I', 'Wi')
+
+df.show(5)
+dataCollect = df.collect()
+end = time.time()
+print("TEMPO IMPIEGATO: " + str((end - start)) + " secondi")
+#

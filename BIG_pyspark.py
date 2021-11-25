@@ -1,42 +1,52 @@
 # from pyspark.context import SparkContext
 # from pyspark.sql.session import SparkSession
+
 from pyspark.sql import *
 from pyspark.sql.types import *
 from pm4py.objects.log.importer.xes.variants import iterparse as xes_importer
 from pm4py.objects.petri_net.importer.variants import pnml as pnml_importer
 from pm4py.algo.discovery.dfg import algorithm as dfg_discovery
-import pm4py.algo.discovery.causal.variants.heuristic as cr_discovery
-import pyspark.sql.functions as F
 from pm4py.algo.conformance.alignments.petri_net import algorithm as alignments
-import time
 
-start = time.time()
+import pyspark.sql.functions as F
+import pm4py.algo.discovery.causal.variants.heuristic as cr_discovery
+import time
 
 # sc = SparkContext.getOrCreate()
 # spark = SparkSession(sc)
+start = time.time()
 
-# ----- PATHS AND VARIABLES INITIALIZATION ----- #
-path_pnml = "/media/sf_cartella_condivisa/progetto/Big_pyspark/toyex_petriNet.pnml"
-path_xes = "/media/sf_cartella_condivisa/progetto/Big_pyspark/toyex.xes"
+rootHdfsPath = 'hdfs://localhost:9000/'
+rootLocalPath = '/media/sf_cartella_condivisa/progetto/Big_pyspark/'
+xes = ['toyex.xes',
+       'testBank2000NoRandomNoise.xes',
+       'andreaHelpdesk.xes',
+       'andrea_bpi12full.xes'
+       ]
+pnml = ['toyex_petriNet.pnml',
+        'testBank2000NoRandomNoise_petriNet.pnml',
+        'andreaHelpdesk_petriNet.pnml',
+        'andrea_bpi12full_petriNet.pnml'
+        ]
 
-# path_pnml = "/media/sf_cartella_condivisa/progetto/Big_pyspark/testBank2000NoRandomNoise_petriNet.pnml"
-# path_xes = "/media/sf_cartella_condivisa/progetto/Big_pyspark/testBank2000NoRandomNoise.xes"
+test = 1
 
-# path_pnml = "/media/sf_cartella_condivisa/progetto/Big_pyspark/andreaHelpdesk_petriNet.pnml"
-# path_xes = "/media/sf_cartella_condivisa/progetto/Big_pyspark/andreaHelpdesk.xes"
+net, im, fm = pnml_importer.import_net(rootLocalPath + pnml[test])  # IMPORT PETRI NET
+log = xes_importer.import_log(rootLocalPath + xes[test])  # IMPORT EVENT_LOG FROM FILE.XES
+dfg = dfg_discovery.apply(log)  # DIRECT FOLLOW GRAPH FROM LOG
+CR = cr_discovery.apply(dfg)  # CAUSAL RELATIONS AS KEY AND THEIR WEIGHT AS VALUE
 
-# path_pnml = "/media/sf_cartella_condivisa/progetto/Big_pyspark/andrea_bpi12full_petriNet.pnml"
-# path_xes = "/media/sf_cartella_condivisa/progetto/Big_pyspark/andrea_bpi12full.xes"
+cr = [key for key, val in CR.items() if val > 0.8]  # FILTER CAUSAL RELATIONS
+alignments_cr = []
 
-i = 0  # COUNTER FOR Trace_ID
-initial_df_array = []  # ARRAY TO CONVERT IN initial_df
-# --------------------------------------------------------------------------------------------------- #
+for trace in log:
+    trace_alignments = alignments.apply(trace, net, im, fm)['alignment']
+    id_trace = trace.attributes['concept:name']
+    alignments_cr.append((id_trace, cr, trace_alignments))
 
-# ----- DATAFRAMES SCHEMA  ----- #
-initial_df_schema = StructType([
-    StructField('Trace_ID', StringType(), True),
-    StructField('Trace', ArrayType(StringType()), True),
-    StructField('Causal_relations', ArrayType(
+df_alignments_cr_schema = StructType([
+    StructField('alignments_cr_trace_id', StringType(), True),
+    StructField('causal_relations', ArrayType(
         StructType(
             [
                 StructField('cr_strart', StringType()),
@@ -44,7 +54,7 @@ initial_df_schema = StructType([
             ]
         )
     ), True),
-    StructField('Alignments', ArrayType(
+    StructField('alignments', ArrayType(
         StructType(
             [
                 StructField('on_log', StringType()),
@@ -52,68 +62,29 @@ initial_df_schema = StructType([
             ]
         )
     ), True),
-])  # SCHEMA FOR INITIAL DATAFRAME [ Trace_ID | Trace | Causal_relation | Alignments ]
-V_schema = ArrayType(
-    StructType(
-        [
-            StructField('node_number', IntegerType()),
-            StructField('event', StringType()),
-        ]
-    )
-)  # SCHEMA FOR NODE COLUMN [ V ]
-W_schema = ArrayType(
-    StructType(
-        [
-            StructField('start', StructType(
-                [
-                    StructField('start_arch_number', IntegerType()),
-                    StructField('start_arch', StringType()),
-                ]
-            )),
-            StructField('end', StructType(
-                [
-                    StructField('end_arch_number', IntegerType()),
-                    StructField('end_arch', StringType()),
-                ]
-            )),
-        ]
-    )
-)  # SCHEMA FOR EDGE COLUMN [ W ] and [ Wi ]
-D_I_schema = ArrayType(
-    ArrayType(
-        StructType(
-            [
-                StructField('repair_num', IntegerType()),
-                StructField('repair_event', StringType()),
-            ]
-        )
-    )
-)  # SCHEMA FOR DELETION AND INSERTION NODES [ D ] [ I ]
-# ---------------------------------------------------------------------- #
+])  # SCHEMA FOR INITIAL DATAFRAME [ Trace_ID | Causal_relation | Alignments ]
 
-# ----- PETRI_NET, LOG, DFG, CR  ----- #
-net, im, fm = pnml_importer.import_net(path_pnml)  # IMPORT PETRI NET
-log = xes_importer.import_log(path_xes)  # IMPORT EVENT_LOG FROM FILE.XES
-dfg = dfg_discovery.apply(log)  # DIRECT FOLLOW GRAPH FROM LOG
-CR = cr_discovery.apply(dfg)  # CAUSAL RELATIONS AS KEY AND THEIR WEIGHT AS VALUE
-cr = [key for key, val in CR.items() if val > 0.8]  # FILTER CAUSAL RELATIONS
-# ---------------------------------------------------------------------------- #
+rdd_alignments_cr = spark.sparkContext.parallelize(alignments_cr)
+df_alignments_cr = spark.createDataFrame(rdd_alignments_cr, df_alignments_cr_schema)
 
-# ----- POPULATE initial_df_array AND CONVERSION IN DATAFRAME  ----- #
-for trace in log:
-    aligned_traces = alignments.apply(trace, net, im, fm)['alignment']
-    id_traccia = trace.attributes['concept:name']
-    activities = []
-    for event in trace:
-        activities.append(event['concept:name'])
-    initial_df_array.append((id_traccia, activities, cr, aligned_traces))
-    i += 1
+#todo ci sono problemi con i tipi di dato ..... controllare xes importato confrontandoli
 
-initial_rdd = spark.sparkContext.parallelize(initial_df_array)
-initial_df = spark.createDataFrame(initial_rdd, initial_df_schema)
+df = spark.read.format('xml') \
+    .option('rowTag', 'trace') \
+    .option('valueTag', 'anyName') \
+    .load(rootHdfsPath + xes[test]) \
+    .withColumn('trace_id', F.col('string')._value) \
+    .withColumn('trace', F.explode(F.col('event').string).alias('trace')) \
+    .withColumn('trace', F.col('trace')[1]._value) \
+    .groupBy('trace_id') \
+    .agg(F.collect_list('trace').alias('trace'))
 
+df.printSchema()
 
-# --------------------------------------------------------------- #
+df = df.join(df_alignments_cr, df.trace_id == df_alignments_cr.alignments_cr_trace_id, 'inner') \
+    .select('trace_id', 'trace', 'causal_relations', 'alignments') \
+    .orderBy('trace_id')
+
 
 # ----- FUNCTION USED IN irregularGraphRepairing  ----- #
 
@@ -238,9 +209,8 @@ def isReachable(V, W, s, d):
     return False
 
 
-# ------------------------------------------- #
-
 # ----- FUNCTIONS TO CONVERT IN UDF ----- #
+
 def create_V(trace):
     event_id = 1
     V = []
@@ -348,27 +318,65 @@ def irregularGraphRepairing(V, W, D, I, cr):
         return Wi
 
 
-# --------------------------- #
+# --- SCHEMA FOR NODE COLUMN [ V ] --- #
+V_schema = ArrayType(
+    StructType(
+        [
+            StructField('node_number', IntegerType()),
+            StructField('event', StringType()),
+        ]
+    )
+)
+# --- SCHEMA FOR EDGE COLUMN [ W ] and [ Wi ] --- #
+W_schema = ArrayType(
+    StructType(
+        [
+            StructField('start', StructType(
+                [
+                    StructField('start_arch_number', IntegerType()),
+                    StructField('start_arch', StringType()),
+                ]
+            )),
+            StructField('end', StructType(
+                [
+                    StructField('end_arch_number', IntegerType()),
+                    StructField('end_arch', StringType()),
+                ]
+            )),
+        ]
+    )
+)
 
-# UDF
+# --- SCHEMA FOR DELETION AND INSERTION NODES [ D ] [ I ] --- #
+D_I_schema = ArrayType(
+    ArrayType(
+        StructType(
+            [
+                StructField('repair_num', IntegerType()),
+                StructField('repair_event', StringType()),
+            ]
+        )
+    )
+)
+
+# --- UDF --- #
 udf_create_V = F.udf(lambda trace: create_V(trace), V_schema)
 udf_create_W = F.udf(lambda cr, V: create_W(cr, V), W_schema)
 udf_create_D = F.udf(lambda alignments: create_D(alignments), D_I_schema)
 udf_create_I = F.udf(lambda alignments: create_I(alignments), D_I_schema)
 udf_irregularGraphRepairing = F.udf(lambda V, W, D, I, cr: irregularGraphRepairing(V, W, D, I, cr), W_schema)
 
-# ------------------------------------------------------------------------ #
+################################################################################################################
+final_df = df.withColumn('V', udf_create_V('trace')) \
+    .withColumn('W', udf_create_W('causal_relations', 'V')) \
+    .withColumn("D", udf_create_D('alignments')) \
+    .withColumn("I", udf_create_I('alignments')) \
+    .withColumn('Wi', udf_irregularGraphRepairing('V', 'W', 'D', 'I', 'causal_relations')) \
+    .select('trace_id', 'V', 'W', 'D', 'I', 'Wi')
 
-################################################################################
-df = initial_df.withColumn('V', udf_create_V('Trace')) \
-    .withColumn('W', udf_create_W('Causal_relations', 'V')) \
-    .withColumn("D", udf_create_D('Alignments')) \
-    .withColumn("I", udf_create_I('Alignments')) \
-    .withColumn('Wi', udf_irregularGraphRepairing('V', 'W', 'D', 'I', 'Causal_relations')) \
-    .select('Trace_ID', 'V', 'W', 'D', 'I', 'Wi')
-
-df.show(5)
-dataCollect = df.collect()
+final_df.show()
+dataCollect = final_df.collect()
 end = time.time()
 print("TEMPO IMPIEGATO: " + str((end - start)) + " secondi")
+
 #

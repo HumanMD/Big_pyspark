@@ -29,51 +29,134 @@ pnml = ['toyex_petriNet.pnml',
         'andrea_bpi12full_petriNet.pnml'
         ]
 
-test = 1
+test = 3
 
-net, im, fm = pnml_importer.import_net(rootLocalPath + pnml[test])  # IMPORT PETRI NET
-log = xes_importer.import_log(rootLocalPath + xes[test])  # IMPORT EVENT_LOG FROM FILE.XES
-dfg = dfg_discovery.apply(log)  # DIRECT FOLLOW GRAPH FROM LOG
-CR = cr_discovery.apply(dfg)  # CAUSAL RELATIONS AS KEY AND THEIR WEIGHT AS VALUE
 
-cr = [key for key, val in CR.items() if val > 0.8]  # FILTER CAUSAL RELATIONS
-alignments_cr = []
+# net, im, fm = pnml_importer.import_net(rootLocalPath + pnml[test])  # IMPORT PETRI NET
+# log = xes_importer.import_log(rootLocalPath + xes[test])  # IMPORT EVENT_LOG FROM FILE.XES
+# dfg = dfg_discovery.apply(log)  # DIRECT FOLLOW GRAPH FROM LOG
+# CR = cr_discovery.apply(dfg)  # CAUSAL RELATIONS AS KEY AND THEIR WEIGHT AS VALUE
 
-for trace in log:
-    trace_alignments = alignments.apply(trace, net, im, fm)['alignment']
-    id_trace = trace.attributes['concept:name']
-    alignments_cr.append((id_trace, cr, trace_alignments))
+# todo prova a passare cr come vettore alle funzioni senza inserirlo nel dataframe
+# cr = [key for key, val in CR.items() if val > 0.8]  # FILTER CAUSAL RELATIONS
+# alignments_cr = []
+#
+# for trace in log:
+#     trace_alignments = alignments.apply(trace, net, im, fm)['alignment']
+#     id_trace = trace.attributes['concept:name']
+#     alignments_cr.append((id_trace, cr, trace_alignments))
+#
+# df_alignments_cr_schema = StructType([
+#     StructField('alignments_cr_trace_id', StringType(), True),
+#     StructField('causal_relations', ArrayType(
+#         StructType(
+#             [
+#                 StructField('cr_strart', StringType()),
+#                 StructField('cr_end', StringType()),
+#             ]
+#         )
+#     ), True),
+#     StructField('alignments', ArrayType(
+#         StructType(
+#             [
+#                 StructField('on_log', StringType()),
+#                 StructField('on_model', StringType()),
+#             ]
+#         )
+#     ), True),
+# ])  # SCHEMA FOR INITIAL DATAFRAME [ Trace_ID | Causal_relation | Alignments ]
+#
+# rdd_alignments_cr = spark.sparkContext.parallelize(alignments_cr)
+# df_alignments_cr = spark.createDataFrame(rdd_alignments_cr, df_alignments_cr_schema)
 
-df_alignments_cr_schema = StructType([
-    StructField('alignments_cr_trace_id', StringType(), True),
-    StructField('causal_relations', ArrayType(
-        StructType(
-            [
-                StructField('cr_strart', StringType()),
-                StructField('cr_end', StringType()),
-            ]
-        )
-    ), True),
-    StructField('alignments', ArrayType(
-        StructType(
-            [
-                StructField('on_log', StringType()),
-                StructField('on_model', StringType()),
-            ]
-        )
-    ), True),
-])  # SCHEMA FOR INITIAL DATAFRAME [ Trace_ID | Causal_relation | Alignments ]
 
-rdd_alignments_cr = spark.sparkContext.parallelize(alignments_cr)
-df_alignments_cr = spark.createDataFrame(rdd_alignments_cr, df_alignments_cr_schema)
+# ---- FUNCTIONS ----- #
 
-#todo ci sono problemi con i tipi di dato ..... controllare xes importato confrontandoli
+def checkAttribute(df, col_name):
+    listColumns = df.columns
+    return col_name in listColumns
+
+
+def isArray(df, col_name):
+    try:
+        df.select(F.explode(F.col(col_name)))
+        return True
+    except:
+        return False
+
+
+# ---- CREATION OF INITIAL DF ---- #
 
 df = spark.read.format('xml') \
     .option('rowTag', 'trace') \
     .option('valueTag', 'anyName') \
-    .load(rootHdfsPath + xes[test]) \
-    .withColumn('trace_id', F.col('string')._value) \
+    .load(rootHdfsPath + xes[test])
+
+intero = checkAttribute(df, 'int')
+stringa = checkAttribute(df, 'string')
+floatt = checkAttribute(df, 'float')
+data = checkAttribute(df, 'date')
+boleano = checkAttribute(df, 'boolean')
+contenitore = checkAttribute(df, 'container')
+lista = checkAttribute(df, 'list')
+
+# In questa parte del codice cerco di semplificare la struttura del dataset per permette una facile estrazione dei valori
+# che mi interessano. Per ogni attributo controllo che sia presente all'interno dello schema.
+# Una volta che ho la certezza che sia presente, controllo se sia un array.
+# Se lo è, lo scoppio e lo inserisco all'interno del datasetpulito.
+# Sennò carico direttamente la colonna così come è presente all'interno del dataset di origine.
+
+if stringa:
+    if isArray(df, 'string'):
+        df = df.withColumn('String', F.explode(F.col('string').alias('string')))
+    else:
+        df = df.withColumn('String', F.col('string'))
+    df = df.withColumn('traceString_key', F.col('String._key')) \
+        .withColumn('traceString_value', F.col('String._value')) \
+        .drop('String')
+
+if intero:
+    if isArray(df, 'int'):
+        df = df.withColumn('Int', F.explode(F.col('int')).alias('int'))
+    else:
+        df = df.withColumn('Int', F.col('int'))
+    df = df.withColumn('traceInt_key', F.col('Int._key')) \
+        .withColumn('traceInt_value', F.col('Int._value')) \
+        .drop('Int')
+
+if floatt:
+    if isArray(df, 'float'):
+        df = df.withColumn('Float', F.explode(F.col('float')).alias('float'))
+    else:
+        df = df.withColumn('Float', F.col('float'))
+    df = df.withColumn('traceFloat_key', F.col('Float._key')) \
+        .withColumn('traceFloat_value', F.col('Float._value')) \
+        .drop('Float')
+
+if data:
+    if isArray(df, 'date'):
+        df = df.withColumn('Date', F.explode(F.col('date')).alias('date'))
+    else:
+        df = df.withColumn('Date', F.col('date'))
+    df = df.withColumn('traceDate_key', F.col('Date._key')) \
+        .withColumn('traceDate_value', F.col('Date._value')) \
+        .drop('Date')
+
+if boleano:
+    if isArray(df, 'boolean'):
+        df = df.withColumn('Boolean', F.explode(F.col('boolean')).alias('boolean'))
+    else:
+        df = df.withColumn('Boolean', F.col('boolean'))
+    df = df.withColumn('traceBoolean_key', F.col('Boolean._key')) \
+        .withColumn('traceBoolean_value', F.col('Boolean._value')) \
+        .drop('Boolean')
+
+df.show()
+
+# todo il codice successivo presenta problemi, riprendere integrazione di parserXesUniversale.java da riga 247
+# https://github.com/JozieZipaco/ParserXes/blob/e3c7a0d5dad05bdc3f3c2f95ba4e6dd8e92ca2a5/src/main/java/ParserXml/ParserXml/ParserXesUniversale.java#L148
+
+df = df.withColumn('trace_id', F.col('string')._value) \
     .withColumn('trace', F.explode(F.col('event').string).alias('trace')) \
     .withColumn('trace', F.col('trace')[1]._value) \
     .groupBy('trace_id') \

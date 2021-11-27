@@ -1,6 +1,9 @@
 # from pyspark.context import SparkContext
 # from pyspark.sql.session import SparkSession
 
+# Avviare spark shell con il seguente comando :
+# ./pyspark --packages com.databricks:spark-xml_2.12:0.14.0
+
 from pyspark.sql import *
 from pyspark.sql.types import *
 from pm4py.objects.log.importer.xes.variants import iterparse as xes_importer
@@ -29,7 +32,7 @@ pnml = ['toyex_petriNet.pnml',
         'andrea_bpi12full_petriNet.pnml'
         ]
 
-test = 3
+test = 1
 
 
 # net, im, fm = pnml_importer.import_net(rootLocalPath + pnml[test])  # IMPORT PETRI NET
@@ -106,54 +109,89 @@ lista = checkAttribute(df, 'list')
 # Se lo è, lo scoppio e lo inserisco all'interno del datasetpulito.
 # Sennò carico direttamente la colonna così come è presente all'interno del dataset di origine.
 
+initial_df = df
+print('DATAFRAME INIZIALE (initial_df):\n')
+initial_df.show()
+
 if stringa:
     if isArray(df, 'string'):
         df = df.withColumn('String', F.explode(F.col('string').alias('string')))
     else:
         df = df.withColumn('String', F.col('string'))
-    df = df.withColumn('traceString_key', F.col('String._key')) \
-        .withColumn('traceString_value', F.col('String._value')) \
-        .drop('String')
 
 if intero:
     if isArray(df, 'int'):
         df = df.withColumn('Int', F.explode(F.col('int')).alias('int'))
     else:
         df = df.withColumn('Int', F.col('int'))
-    df = df.withColumn('traceInt_key', F.col('Int._key')) \
-        .withColumn('traceInt_value', F.col('Int._value')) \
-        .drop('Int')
 
 if floatt:
     if isArray(df, 'float'):
         df = df.withColumn('Float', F.explode(F.col('float')).alias('float'))
     else:
         df = df.withColumn('Float', F.col('float'))
-    df = df.withColumn('traceFloat_key', F.col('Float._key')) \
-        .withColumn('traceFloat_value', F.col('Float._value')) \
-        .drop('Float')
 
 if data:
     if isArray(df, 'date'):
         df = df.withColumn('Date', F.explode(F.col('date')).alias('date'))
     else:
         df = df.withColumn('Date', F.col('date'))
-    df = df.withColumn('traceDate_key', F.col('Date._key')) \
-        .withColumn('traceDate_value', F.col('Date._value')) \
-        .drop('Date')
 
 if boleano:
     if isArray(df, 'boolean'):
         df = df.withColumn('Boolean', F.explode(F.col('boolean')).alias('boolean'))
     else:
         df = df.withColumn('Boolean', F.col('boolean'))
+
+cleaned_df = df
+print('DATAFRAME PULITO (cleaned_df):\n')
+cleaned_df.show()
+
+if stringa:
+    df = df.withColumn('traceString_key', F.col('String._key')) \
+        .withColumn('traceString_value', F.col('String._value')) \
+        .drop('String')
+
+if intero:
+    df = df.withColumn('traceInt_key', F.col('Int._key')) \
+        .withColumn('traceInt_value', F.col('Int._value')) \
+        .drop('Int')
+
+if floatt:
+    df = df.withColumn('traceFloat_key', F.col('Float._key')) \
+        .withColumn('traceFloat_value', F.col('Float._value')) \
+        .drop('Float')
+
+if data:
+    df = df.withColumn('traceDate_key', F.col('Date._key')) \
+        .withColumn('traceDate_value', F.col('Date._value')) \
+        .drop('Date')
+
+if boleano:
     df = df.withColumn('traceBoolean_key', F.col('Boolean._key')) \
         .withColumn('traceBoolean_value', F.col('Boolean._value')) \
         .drop('Boolean')
 
-df.show()
+trace_log = df.drop('event')
 
-# todo il codice successivo presenta problemi, riprendere integrazione di parserXesUniversale.java da riga 247
+print('INFO SU TRACCE DEL LOG (trace_log):\n')
+trace_log.show()
+
+print('trace_log SCHEMA:\n')
+trace_log.printSchema()
+
+trace_count = trace_log.filter(trace_log.traceString_key == 'concept:name').count()
+print('NUMERO DI TRACCE:\n' + str(trace_count))
+
+# In questa fase, ripeto lo stesso procedimento fatto per la tag "trace".
+# Controllo tutte le tipologie di attributo e semplifico la struttura.
+# Non sappiamo quanti tipologie di attributi abbiamo. Quindi devo analizzarli tutti quanti.
+# Ho creato un dataset che contiene tutte le stringhe della traccia che contiene tutti gli eventi.
+
+event_list = cleaned_df.withColumn('event', F.explode(F.col('event')).alias('event')).select('String._value', 'event')
+event_list.printSchema()
+
+# todo il codice successivo presenta problemi, riprendere integrazione di parserXesUniversale.java da riga 281
 # https://github.com/JozieZipaco/ParserXes/blob/e3c7a0d5dad05bdc3f3c2f95ba4e6dd8e92ca2a5/src/main/java/ParserXml/ParserXml/ParserXesUniversale.java#L148
 
 df = df.withColumn('trace_id', F.col('string')._value) \

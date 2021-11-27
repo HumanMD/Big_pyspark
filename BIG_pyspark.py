@@ -76,8 +76,11 @@ test = 1
 # ---- FUNCTIONS ----- #
 
 def checkAttribute(df, col_name):
-    listColumns = df.columns
-    return col_name in listColumns
+    try:
+        df.select(col_name)
+        return True
+    except:
+        return False
 
 
 def isArray(df, col_name):
@@ -190,6 +193,17 @@ print('NUMERO DI TRACCE:\n' + str(trace_count))
 
 event_list = cleaned_df.withColumn('event', F.explode(F.col('event')).alias('event')).select('String._value', 'event')
 event_list.printSchema()
+
+intero_event = checkAttribute(event_list, 'event.int')
+stringa_event = checkAttribute(event_list, 'event.string')
+floatt_event = checkAttribute(event_list, 'event.float')
+data_event = checkAttribute(event_list, 'event.date')
+boleano_event = checkAttribute(event_list, 'event.boolean')
+contenitore_event = checkAttribute(event_list, 'event.container')
+lista_event = checkAttribute(event_list, 'event.list')
+
+# In questa parte controllo se gli attributi sono degli array.
+
 
 # todo il codice successivo presenta problemi, riprendere integrazione di parserXesUniversale.java da riga 281
 # https://github.com/JozieZipaco/ParserXes/blob/e3c7a0d5dad05bdc3f3c2f95ba4e6dd8e92ca2a5/src/main/java/ParserXml/ParserXml/ParserXesUniversale.java#L148

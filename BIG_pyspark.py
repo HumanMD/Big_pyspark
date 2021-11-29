@@ -32,7 +32,7 @@ pnml = ['toyex_petriNet.pnml',
         'andrea_bpi12full_petriNet.pnml'
         ]
 
-test = 1
+test = 3
 
 
 # net, im, fm = pnml_importer.import_net(rootLocalPath + pnml[test])  # IMPORT PETRI NET
@@ -114,40 +114,42 @@ lista = checkAttribute(df, 'list')
 
 initial_df = df
 print('DATAFRAME INIZIALE (initial_df):\n')
+initial_df.printSchema()
 initial_df.show()
 
 if stringa:
     if isArray(df, 'string'):
-        df = df.withColumn('String', F.explode(F.col('string').alias('string')))
+        df = df.withColumn('String', F.explode(F.col('string')))
     else:
         df = df.withColumn('String', F.col('string'))
 
 if intero:
     if isArray(df, 'int'):
-        df = df.withColumn('Int', F.explode(F.col('int')).alias('int'))
+        df = df.withColumn('Int', F.explode(F.col('int')))
     else:
         df = df.withColumn('Int', F.col('int'))
 
 if floatt:
     if isArray(df, 'float'):
-        df = df.withColumn('Float', F.explode(F.col('float')).alias('float'))
+        df = df.withColumn('Float', F.explode(F.col('float')))
     else:
         df = df.withColumn('Float', F.col('float'))
 
 if data:
     if isArray(df, 'date'):
-        df = df.withColumn('Date', F.explode(F.col('date')).alias('date'))
+        df = df.withColumn('Date', F.explode(F.col('date')))
     else:
         df = df.withColumn('Date', F.col('date'))
 
 if boleano:
     if isArray(df, 'boolean'):
-        df = df.withColumn('Boolean', F.explode(F.col('boolean')).alias('boolean'))
+        df = df.withColumn('Boolean', F.explode(F.col('boolean')))
     else:
         df = df.withColumn('Boolean', F.col('boolean'))
 
 cleaned_df = df
 print('DATAFRAME PULITO (cleaned_df):\n')
+cleaned_df.printSchema()
 cleaned_df.show()
 
 if stringa:
@@ -178,12 +180,12 @@ if boleano:
 trace_log = df.drop('event')
 
 print('INFO SU TRACCE DEL LOG (trace_log):\n')
+trace_log.printSchema()
 trace_log.show()
 
-print('trace_log SCHEMA:\n')
-trace_log.printSchema()
+ids = trace_log.filter(trace_log.traceString_key == 'concept:name').select('traceString_value')
 
-trace_count = trace_log.filter(trace_log.traceString_key == 'concept:name').count()
+trace_count = ids.count()
 print('NUMERO DI TRACCE:\n' + str(trace_count))
 
 # In questa fase, ripeto lo stesso procedimento fatto per la tag "trace".
@@ -191,8 +193,13 @@ print('NUMERO DI TRACCE:\n' + str(trace_count))
 # Non sappiamo quanti tipologie di attributi abbiamo. Quindi devo analizzarli tutti quanti.
 # Ho creato un dataset che contiene tutte le stringhe della traccia che contiene tutti gli eventi.
 
-event_list = cleaned_df.withColumn('event', F.explode(F.col('event')).alias('event')).select('String._value', 'event')
+event_list = cleaned_df.withColumn('event', F.explode(F.col('event')).alias('event'))\
+    .select('String._value', 'event')
+event_list = event_list.join(ids, event_list._value == ids.traceString_value).select('_value', 'event')
+
+print('INITIAL EVENT LIST:\n')
 event_list.printSchema()
+event_list.show()
 
 intero_event = checkAttribute(event_list, 'event.int')
 stringa_event = checkAttribute(event_list, 'event.string')
@@ -204,9 +211,80 @@ lista_event = checkAttribute(event_list, 'event.list')
 
 # In questa parte controllo se gli attributi sono degli array.
 
+if stringa_event:
+    if isArray(event_list, 'event.string'):
+        event_list = event_list.withColumn('EventString', F.explode(F.col('event.string')))
+    else:
+        event_list = event_list.withColumn('EventString', F.col('event.string'))
 
-# todo il codice successivo presenta problemi, riprendere integrazione di parserXesUniversale.java da riga 281
-# https://github.com/JozieZipaco/ParserXes/blob/e3c7a0d5dad05bdc3f3c2f95ba4e6dd8e92ca2a5/src/main/java/ParserXml/ParserXml/ParserXesUniversale.java#L148
+if data_event:
+    if isArray(event_list, 'event.date'):
+        event_list = event_list.withColumn('EventDate', F.explode(F.col('event.date')))
+    else:
+        event_list = event_list.withColumn('EventDate', F.col('event.date'))
+
+if floatt_event:
+    if isArray(event_list, 'event.float'):
+        event_list = event_list.withColumn('EventFloat', F.explode(F.col('event.float')))
+    else:
+        event_list = event_list.withColumn('EventFloat', F.col('event.float'))
+
+if boleano_event:
+    if isArray(event_list, 'event.boolean'):
+        event_list = event_list.withColumn('EventBoolean', F.explode(F.col('event.boolean')))
+    else:
+        event_list = event_list.withColumn('EventBoolean', F.col('event.boolean'))
+
+if intero_event:
+    if isArray(event_list, 'event.int'):
+        event_list = event_list.withColumn('EventInt', F.explode(F.col('event.int')))
+    else:
+        event_list = event_list.withColumn('EventInt', F.col('event.int'))
+
+event_list = event_list.drop('event')
+
+print('FINAL EVENT LIST:\n')
+event_list.printSchema()
+event_list.show()
+
+# In questa parte vado a prendere la coppia chiave valore  degli attributi.
+
+if stringa_event:
+    event_list = event_list.withColumn('EventString_key', F.col('EventString._key')) \
+        .withColumn('EventString_value', F.col('EventString._value')) \
+        .drop('EventString')
+
+if data_event:
+    event_list = event_list.withColumn('EventDate_key', F.col('EventDate._key')) \
+        .withColumn('EventDate_value', F.col('EventDate._value')) \
+        .drop('EventDate')
+
+if floatt_event:
+    event_list = event_list.withColumn('EventFloat_key', F.col('EventFloat._key')) \
+        .withColumn('EventFloat_value', F.col('EventFloat._value')) \
+        .drop('EventFloat')
+
+if intero_event:
+    event_list = event_list.withColumn('EventInt_key', F.col('EventInt._key')) \
+        .withColumn('EventInt_value', F.col('EventInt._value')) \
+        .drop('EventInt')
+
+if boleano_event:
+    event_list = event_list.withColumn('EventBoolean_key', F.col('EventBoolean._key')) \
+        .withColumn('EventBoolean_value', F.col('EventBoolean._value')) \
+        .drop('EventBoolean')
+
+traceEventLog = event_list.filter(event_list.EventString_key == 'concept:name')\
+    .withColumn('trace_id', F.col('_value'))\
+    .select('trace_id', 'EventString_value')\
+    .groupBy('trace_id')\
+    .agg(F.collect_list('EventString_value').alias('trace'))\
+
+print('SCHEMA PULITO')
+traceEventLog.printSchema()
+traceEventLog.show()
+
+# todo con traceEventLog posso procedere ad applicare l algoritmo BIG
 
 df = df.withColumn('trace_id', F.col('string')._value) \
     .withColumn('trace', F.explode(F.col('event').string).alias('trace')) \

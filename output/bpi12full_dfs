@@ -26,3 +26,38 @@
 +--------+--------------------+--------------------+
 only showing top 20 rows
 
+Traceback (most recent call last):
+  File "/media/sf_cartella_condivisa/progetto/Big_pyspark/main.py", line 89, in <module>
+    final_df.show()
+  File "/home/human/hadoop/spark-3.2.1/spark-3.1.2-bin-without-hadoop/python/lib/pyspark.zip/pyspark/sql/dataframe.py", line 484, in show
+  File "/home/human/hadoop/spark-3.2.1/spark-3.1.2-bin-without-hadoop/python/lib/py4j-0.10.9-src.zip/py4j/java_gateway.py", line 1305, in __call__
+  File "/home/human/hadoop/spark-3.2.1/spark-3.1.2-bin-without-hadoop/python/lib/pyspark.zip/pyspark/sql/utils.py", line 117, in deco
+pyspark.sql.utils.PythonException: 
+  An exception was thrown from the Python worker. Please see the stack trace below.
+Traceback (most recent call last):
+  File "/home/human/hadoop/spark-3.2.1/spark-3.1.2-bin-without-hadoop/python/lib/pyspark.zip/pyspark/worker.py", line 604, in main
+    process()
+  File "/home/human/hadoop/spark-3.2.1/spark-3.1.2-bin-without-hadoop/python/lib/pyspark.zip/pyspark/worker.py", line 596, in process
+    serializer.dump_stream(out_iter, outfile)
+  File "/home/human/hadoop/spark-3.2.1/spark-3.1.2-bin-without-hadoop/python/lib/pyspark.zip/pyspark/serializers.py", line 211, in dump_stream
+    self.serializer.dump_stream(self._batched(iterator), stream)
+  File "/home/human/hadoop/spark-3.2.1/spark-3.1.2-bin-without-hadoop/python/lib/pyspark.zip/pyspark/serializers.py", line 132, in dump_stream
+    for obj in iterator:
+  File "/home/human/hadoop/spark-3.2.1/spark-3.1.2-bin-without-hadoop/python/lib/pyspark.zip/pyspark/serializers.py", line 200, in _batched
+    for item in iterator:
+  File "/home/human/hadoop/spark-3.2.1/spark-3.1.2-bin-without-hadoop/python/lib/pyspark.zip/pyspark/worker.py", line 450, in mapper
+    result = tuple(f(*[a[o] for o in arg_offsets]) for (arg_offsets, f) in udfs)
+  File "/home/human/hadoop/spark-3.2.1/spark-3.1.2-bin-without-hadoop/python/lib/pyspark.zip/pyspark/worker.py", line 450, in <genexpr>
+    result = tuple(f(*[a[o] for o in arg_offsets]) for (arg_offsets, f) in udfs)
+  File "/home/human/hadoop/spark-3.2.1/spark-3.1.2-bin-without-hadoop/python/lib/pyspark.zip/pyspark/worker.py", line 83, in <lambda>
+    return lambda *a: toInternal(f(*a))
+  File "/home/human/hadoop/spark-3.2.1/spark-3.1.2-bin-without-hadoop/python/lib/pyspark.zip/pyspark/util.py", line 73, in wrapper
+    return f(*args, **kwargs)
+  File "/media/sf_cartella_condivisa/progetto/Big_pyspark/main.py", line 75, in <lambda>
+    udf_irregularGraphRepairing = F.udf(lambda V, W, D, I: irregularGraphRepairing(V, W, D, I, cr), W_schema)
+  File "/tmp/spark-674b9acf-d898-41db-9bd6-5979e45c4fb4/userFiles-efbbc67b-167f-465d-a4d5-3288d0f502d3/utils.zip/utils/genericFunctions.py", line 228, in irregularGraphRepairing
+    Wi = DeletionRepair(Wi, V, d_element, cr)
+  File "/tmp/spark-674b9acf-d898-41db-9bd6-5979e45c4fb4/userFiles-efbbc67b-167f-465d-a4d5-3288d0f502d3/utils.zip/utils/genericFunctions.py", line 9, in DeletionRepair
+    if (d_elements[-1][1], V[i - 1][1]) in cr:
+IndexError: list index out of range
+

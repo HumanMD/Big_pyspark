@@ -1,0 +1,35 @@
+-------------- TRACES AND ALIGNMENTS ---------------
+
++--------+--------------------+--------------------+
+|trace_id|               trace|           alignment|
++--------+--------------------+--------------------+
+|       2|[START, 1, 8, 6, ...|[{START, START}, ...|
+|       3|[START, 1, 8, 6, ...|[{START, START}, ...|
+|       4|[START, 1, 8, 6, ...|[{START, START}, ...|
+|       5|[START, 1, 8, 6, ...|[{START, START}, ...|
+|       6|[START, 1, 8, 6, ...|[{START, START}, ...|
+|       8|[START, 1, 8, 6, ...|[{START, START}, ...|
+|       9|[START, 3, 1, 8, ...|[{START, START}, ...|
+|      10|[START, 1, 8, 6, ...|[{START, START}, ...|
+|      11|[START, 1, 8, 6, ...|[{START, START}, ...|
+|      14|[START, 1, 8, 6, ...|[{START, START}, ...|
+|      16|[START, 1, 8, 8, ...|[{START, START}, ...|
+|      17|[START, 1, 8, 6, ...|[{START, START}, ...|
+|      19|[START, 1, 8, 6, ...|[{START, START}, ...|
+|      21|[START, 1, 8, 6, ...|[{START, START}, ...|
+|      22|[START, 1, 8, 9, ...|[{START, START}, ...|
+|      24|[START, 1, 8, 6, ...|[{START, START}, ...|
+|      25|[START, 1, 8, 6, ...|[{START, START}, ...|
+|      26|[START, 1, 8, 9, ...|[{START, START}, ...|
+|      27|[START, 1, 8, 6, ...|[{START, START}, ...|
+|      29|[START, 1, 8, 6, ...|[{START, START}, ...|
++--------+--------------------+--------------------+
+only showing top 20 rows
+
+-------------- TRACE_COUNT ---------------
+
+3804
+-------------- EXEC_TIME ---------------
+
+33.67696952819824 secondi
+

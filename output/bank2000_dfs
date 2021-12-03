@@ -1,0 +1,39 @@
+-------------- TRACES AND ALIGNMENTS ---------------
+
++--------+--------------------+--------------------+
+|trace_id|               trace|           alignment|
++--------+--------------------+--------------------+
+| trace_0|[SRP, SRPP, RBPC,...|[{SRP, SRP}, {SRP...|
+| trace_1|[SRP, FRPP, REPC,...|[{SRP, SRP}, {FRP...|
+| trace_2|[SRP, SRPP, RBPC,...|[{SRP, SRP}, {SRP...|
+| trace_5|[SRP, FRPP, REPC,...|[{SRP, SRP}, {FRP...|
+| trace_7|[SRP, FRPP, REPC,...|[{SRP, SRP}, {>>,...|
+| trace_8|[SRP, FRPP, RIBPC...|[{SRP, SRP}, {FRP...|
+| trace_9|[SRP, FRPP, REPC,...|[{SRP, SRP}, {FRP...|
+|trace_10|[SRP, FRPP, RIBPC...|[{SRP, SRP}, {FRP...|
+|trace_11|[SRP, SRPP, RIBPC...|[{SRP, SRP}, {SRP...|
+|trace_12|[SRP, FRPP, RIBPC...|[{SRP, SRP}, {>>,...|
+|trace_13|[SRP, FRPP, RIBPC...|[{SRP, SRP}, {>>,...|
+|trace_16|[SRP, SRPP, RBPC,...|[{SRP, SRP}, {SRP...|
+|trace_17|[SRP, FRPP, RBPC,...|[{SRP, SRP}, {>>,...|
+|trace_18|[SRP, SRPP, RBPC,...|[{SRP, SRP}, {SRP...|
+|trace_19|[SRP, FRPP, RBPC,...|[{SRP, SRP}, {>>,...|
+|trace_20|[SRP, SRPP, RIBPC...|[{SRP, SRP}, {SRP...|
+|trace_21|[SRP, FRPP, RIBPC...|[{SRP, SRP}, {FRP...|
+|trace_23|[SRP, SRPP, RIBPC...|[{SRP, SRP}, {SRP...|
+|trace_25|[SRP, SRPP, RBPC,...|[{SRP, SRP}, {SRP...|
+|trace_27|[SRP, SRPP, RIBPC...|[{SRP, SRP}, {SRP...|
++--------+--------------------+--------------------+
+only showing top 20 rows
+
+-------------- TRACE_COUNT ---------------
+
+1500
+-------------- EXEC_TIME ---------------
+
+90.05891156196594 secondi
+
+
+
+
+

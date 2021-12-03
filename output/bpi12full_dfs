@@ -1,0 +1,28 @@
+-------------- TRACES AND ALIGNMENTS ---------------
+
++--------+--------------------+--------------------+
+|trace_id|               trace|           alignment|
++--------+--------------------+--------------------+
+|  173688|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173691|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173694|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173697|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173700|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173703|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173706|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173709|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173712|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173715|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173718|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173721|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173724|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173727|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173730|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173733|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173736|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173739|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173742|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
+|  173745|[ASUBMITTED, APAR...|[{>>, START}, {AS...|
++--------+--------------------+--------------------+
+only showing top 20 rows
+

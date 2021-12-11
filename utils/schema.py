@@ -4,7 +4,7 @@ from pyspark.sql.types import *
 V_schema = ArrayType(
     StructType(
         [
-            StructField('node_number', IntegerType()),
+            StructField('node_number', LongType()),
             StructField('event', StringType()),
         ]
     )

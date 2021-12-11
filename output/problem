@@ -1,0 +1,26 @@
+[Row(repair_num=2, repair_event='B')] | d_elements[0][0] = 2 | d_elements[-1][1]: B | V[i - 1][1]: C
+[Row(repair_num=2, repair_event='I')]
+[Row(repair_num=3, repair_event='L')]
+[Row(repair_num=3, repair_event='L')]
+[Row(repair_num=3, repair_event='C')]
+[Row(repair_num=4, repair_event='R')]
+[Row(repair_num=5, repair_event='B')]
+[Row(repair_num=6, repair_event='F')]
+[Row(repair_num=3, repair_event='C')]
+[Row(repair_num=5, repair_event='B')]
+[Row(repair_num=3, repair_event='C')]
+
+
+
+
+
+
+
+[Row(repair_num=1, repair_event='START')]
+i: 1
+d_elements[-1][1]: START
+V[i - 1][1]: ASUBMITTED
+[Row(repair_num=19, repair_event='END')]
+i: 19
+d_elements[-1][1]: END
+

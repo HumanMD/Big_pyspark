@@ -6,6 +6,7 @@ def DeletionRepair(Wi, V, d_elements, cr):
     Wr1 = []
     Wr2 = []
     i = d_elements[0][0]
+    # todo index out of range when run andrea_bpi12full.xes
     if (d_elements[-1][1], V[i - 1][1]) in cr:
         for edge in Wi:
             if edge[1][0] == i and edge[0][0] < i:
@@ -155,10 +156,12 @@ def create_W(cr, V):
     return W
 
 
-def create_D(alignments):
+def create_D_or_I(alignments, toReturn):
     D = []
+    I = []
     id = 0
     temp_d = []
+    temp_i = []
     prev = False
     curr = False
     deletion = False
@@ -175,38 +178,6 @@ def create_D(alignments):
             if deletion:
                 id -= 1
                 deletion = False
-            curr = True
-        id += 1
-        if prev and not curr:
-            if len(temp_d) > 0:
-                D.append(temp_d)
-            temp_d = []
-        prev = curr
-        curr = False
-    if len(temp_d) > 0:
-        D.append(temp_d)
-    return D
-
-
-def create_I(alignments):
-    I = []
-    id = 0
-    temp_i = []
-    prev = False
-    curr = False
-    deletion = False
-    for edge in alignments:
-        if edge[1] is None:
-            continue
-        if edge[0] == '>>':
-            if prev:
-                id -= 1
-            deletion = True
-            curr = True
-        if edge[1] == '>>':
-            if deletion:
-                id -= 1
-                deletion = False
             temp_i.append((id + 1, edge[0]))
             curr = True
         id += 1
@@ -214,11 +185,19 @@ def create_I(alignments):
             if len(temp_i) > 0:
                 I.append(temp_i)
             temp_i = []
+            if len(temp_d) > 0:
+                D.append(temp_d)
+            temp_d = []
         prev = curr
         curr = False
     if len(temp_i) > 0:
         I.append(temp_i)
-    return I
+    if len(temp_d) > 0:
+        D.append(temp_d)
+    if toReturn == 'D':
+        return D
+    else:
+        return I
 
 
 def irregularGraphRepairing(V, W, D, I, cr):
@@ -229,3 +208,26 @@ def irregularGraphRepairing(V, W, D, I, cr):
         for i_element in I:
             Wi = InsertionRepair(Wi, V, i_element, cr)
         return Wi
+
+
+def onFileFinalIG(filePath, fileName, final_df):
+    # filePath with / on the end
+    # file name without extension
+
+    lines = []
+    result = final_df.collect()
+
+    for o in result:
+        if o.Wi is not None:
+            lines.append('trace_id: ' + str(o.trace_id))
+            for v_n, v_e in o.V:
+                lines.append('v ' + str(v_n) + ' ' + v_e)
+            o.Wi.sort(key=lambda tup: tup[0][0], reverse=True)
+            for start, end in o.Wi:
+                lines.append('e ' + str(start[0]) + ' ' + str(end[0]) + ' ' + str(start[1]) + '__' + str(end[1]))
+            lines.append('')
+
+    with open(filePath + fileName + '.txt', "x") as f:
+        f.write('\n'.join(lines))
+
+    print('instance graphs are available on ' + filePath + fileName + '.txt')

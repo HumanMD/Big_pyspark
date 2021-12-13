@@ -1,3 +1,29 @@
+from IPython import display
+from graphviz import Digraph
+
+rootHdfsPath = 'hdfs://localhost:9000/'
+rootPath = '/media/sf_cartella_condivisa/progetto/Big_pyspark/'
+rootLocalPathPnml = rootPath + 'pnml/'
+rootLocalPathXes = rootPath + 'xes/'
+xes = ['toyex.xes',
+       'testBank2000NoRandomNoise.xes',
+       'andreaHelpdesk.xes',
+       'andrea_bpi12full.xes'
+       ]
+pnml = ['toyex_petriNet.pnml',
+        'testBank2000NoRandomNoise_petriNet.pnml',
+        'andreaHelpdesk_petriNet.pnml',
+        'andrea_bpi12full_petriNet.pnml'
+        ]
+outputFileNames = [
+    'toyex_IG',
+    'testBank2000NoRandomNoise_IG',
+    'andreaHelpdesk_IG',
+    'andrea_bpi12full_IG'
+]
+test = 1
+
+
 def getEvents(trace):
     return [trace[i]['concept:name'] for i in range(len(trace))]
 
@@ -201,33 +227,33 @@ def create_D_or_I(alignments, toReturn):
 
 
 def irregularGraphRepairing(V, W, D, I, cr):
+    viewInstanceGraph(V, W, title='Unrepaired Instance Graph')
     if len(D) + len(I) > 0:
         Wi = W
         for d_element in D:
             Wi = DeletionRepair(Wi, V, d_element, cr)
+            viewInstanceGraph(V, Wi, title='Deletion repaired Instance Graph')
         for i_element in I:
             Wi = InsertionRepair(Wi, V, i_element, cr)
+            viewInstanceGraph(V, Wi, title='Insertion repaired Instance Graph')
         return Wi
 
 
-def onFileFinalIG(filePath, fileName, final_df):
-    # filePath with / on the end
-    # file name without extension
+def viewInstanceGraph(V, W, title="Instance Graph"):
+    # Conversion to string indexes
+    V2 = []
+    W2 = []
+    for node in V:
+        V2.append((str(node[0]), node[1]))
+    for edge in W:
+        W2.append(((str(edge[0][0]), edge[0][1]), (str(edge[1][0]), edge[1][1])))
 
-    lines = []
-    result = final_df.collect()
+    dot = Digraph(comment=title, node_attr={'shape': 'circle'})
+    for e in V2:
+        dot.node(e[0], e[1])
+    for w in W2:
+        dot.edge(w[0][0], w[1][0])
+    # display.display(dot)
 
-    for o in result:
-        if o.Wi is not None:
-            lines.append('trace_id: ' + str(o.trace_id))
-            for v_n, v_e in o.V:
-                lines.append('v ' + str(v_n) + ' ' + v_e)
-            o.Wi.sort(key=lambda tup: tup[0][0], reverse=True)
-            for start, end in o.Wi:
-                lines.append('e ' + str(start[0]) + ' ' + str(end[0]) + ' ' + str(start[1]) + '__' + str(end[1]))
-            lines.append('')
-
-    with open(filePath + fileName + '.txt', "x") as f:
-        f.write('\n'.join(lines))
-
-    print('instance graphs are available on ' + filePath + fileName + '.txt')
+    with open(rootPath + 'output/' + outputFileNames[test], "a") as f:
+        f.write(str(dot) + '\n\n')

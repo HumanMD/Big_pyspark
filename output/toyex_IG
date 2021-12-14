@@ -1,3 +1,7 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTA:   BIG.PY IMPIEGA 1.76 SECONDI A GENERARE GLI INSTANCE GRAPH, BIG_PYSPARK.PY IMPIEGA
+        12.09 SECONDI, GLI INSTANCE GRAPH GENERATI DAI DUE COMBACIANO
+------------------------------------------------------------------------------------------------------------------------------------------------------
 // Unrepaired Instance Graph
 digraph {
 	node [shape=circle]

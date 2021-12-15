@@ -21,7 +21,7 @@ outputFileNames = [
     'andreaHelpdesk_IG',
     'andrea_bpi12full_IG'
 ]
-test = 3
+test = 0
 
 
 def getEvents(trace):

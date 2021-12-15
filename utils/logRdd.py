@@ -6,10 +6,14 @@ from pyspark import Row
 
 def create_rdd_from_xes(spark_session, path):
     """
+    Extract the log from xes file as a dataframe,
+    convert the dataframe in rdd,
+    apply parse_xml_row() function for each row and return the final rdd
+
     Requires config("spark.jars.packages", "com.databricks:spark-xml_2.12:0.14.0") in spark config
-    :param spark_session:
-    :param path:
-    :return: rdd:
+    :param spark_session
+    :param path: xes file path
+    :return: rdd
     """
     df = spark_session.read \
         .format("com.databricks.spark.xml") \
@@ -23,8 +27,15 @@ def create_rdd_from_xes(spark_session, path):
 
 
 def parse_xml_row(row: Row):
-    # it must contain at least one field called event, containing a list of elements under the parent tag
-    # <event></event>
+    """
+        The row passed as input must be a trace row of the log.
+        This function would parse the row and extract the events
+        of the trace and the trace info as a dict
+
+        :param row: Row
+        :return: trace: Trace with events and trace info
+        """
+
     events = [xml_row_to_dict(r) for r in row["event"]]
     # the rest of the row represent the information on the trace
     r_dict = row.asDict()
@@ -35,11 +46,8 @@ def parse_xml_row(row: Row):
 
 def xml_row_to_dict(row):
     d = {}
-    # first level groups attributes by tag name. For example, if there is one attribute in a <date> tag,
-    # and two attributes in two <string> tags, then there will be one element inside the "date" row attribute,
-    # and a list with two elements inside the "string" row attribute
     for element in row:
-        # if there is more than one element witht his type of tag
+        # if there is more than one element within his type of tag
         if type(element) == list:
             for att in element:
                 d.update(extract_key_and_value_from_xml(att.asDict()))

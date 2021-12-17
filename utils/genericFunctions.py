@@ -1,27 +1,4 @@
-from IPython import display
 from graphviz import Digraph
-
-rootHdfsPath = 'hdfs://localhost:9000/'
-rootPath = '/media/sf_cartella_condivisa/progetto/Big_pyspark/'
-rootLocalPathPnml = rootPath + 'pnml/'
-rootLocalPathXes = rootPath + 'xes/'
-xes = ['toyex.xes',
-       'testBank2000NoRandomNoise.xes',
-       'andreaHelpdesk.xes',
-       'andrea_bpi12full.xes'
-       ]
-pnml = ['toyex_petriNet.pnml',
-        'testBank2000NoRandomNoise_petriNet.pnml',
-        'andreaHelpdesk_petriNet.pnml',
-        'andrea_bpi12full_petriNet.pnml'
-        ]
-outputFileNames = [
-    'toyex_IG',
-    'testBank2000NoRandomNoise_IG',
-    'andreaHelpdesk_IG',
-    'andrea_bpi12full_IG'
-]
-test = 0
 
 
 def getEvents(trace):
@@ -149,6 +126,36 @@ def isReachable(V, W, s, d):
     return False
 
 
+def writeInstanceGraph(V, W, path, title="Instance Graph"):
+    # Conversion to string indexes
+    V2 = []
+    W2 = []
+    for node in V:
+        V2.append((str(node[0]), node[1]))
+    for edge in W:
+        W2.append(((str(edge[0][0]), edge[0][1]), (str(edge[1][0]), edge[1][1])))
+
+    dot = Digraph(comment=title, node_attr={'shape': 'circle'})
+    for e in V2:
+        dot.node(e[0], e[1])
+    for w in W2:
+        dot.edge(w[0][0], w[1][0])
+
+    writeOnFile(path, dot)
+
+
+def writeOnFile(path, toWrite):
+    with open(path, "a") as f:
+        f.write(str(toWrite) + '\n\n')
+
+
+def getShowString(df, n=20, truncate=True, vertical=False):
+    if isinstance(truncate, bool) and truncate:
+        return df._jdf.showString(n, 20, vertical)
+    else:
+        return df._jdf.showString(n, int(truncate), vertical)
+
+
 # ----- FUNCTIONS TO CONVERT IN UDF ----- #
 
 def create_V(trace):
@@ -226,34 +233,14 @@ def create_D_or_I(alignments, toReturn):
         return I
 
 
-def irregularGraphRepairing(V, W, D, I, cr):
-    viewInstanceGraph(V, W, title='Unrepaired Instance Graph')
+def irregularGraphRepairing(V, W, D, I, cr, path):
+    writeInstanceGraph(V, W, path, title='Unrepaired Instance Graph')
     if len(D) + len(I) > 0:
         Wi = W
         for d_element in D:
             Wi = DeletionRepair(Wi, V, d_element, cr)
-            viewInstanceGraph(V, Wi, title='Deletion repaired Instance Graph')
+            writeInstanceGraph(V, Wi, path, title='Deletion repaired Instance Graph')
         for i_element in I:
             Wi = InsertionRepair(Wi, V, i_element, cr)
-            viewInstanceGraph(V, Wi, title='Insertion repaired Instance Graph')
+            writeInstanceGraph(V, Wi, path, title='Insertion repaired Instance Graph')
         return Wi
-
-
-def viewInstanceGraph(V, W, title="Instance Graph"):
-    # Conversion to string indexes
-    V2 = []
-    W2 = []
-    for node in V:
-        V2.append((str(node[0]), node[1]))
-    for edge in W:
-        W2.append(((str(edge[0][0]), edge[0][1]), (str(edge[1][0]), edge[1][1])))
-
-    dot = Digraph(comment=title, node_attr={'shape': 'circle'})
-    for e in V2:
-        dot.node(e[0], e[1])
-    for w in W2:
-        dot.edge(w[0][0], w[1][0])
-    # display.display(dot)
-
-    with open(rootPath + 'output/' + outputFileNames[test], "a") as f:
-        f.write(str(dot) + '\n\n')

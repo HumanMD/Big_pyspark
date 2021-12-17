@@ -1,9 +1,9 @@
 """
 RUN WITH SPARK SHELL:
-./pyspark --executor-cores 3 --packages com.databricks:spark-xml_2.12:0.14.0 --py-files /media/sf_cartella_condivisa/progetto/Big_pyspark/utils.zip
+./pyspark --executor-cores 3 --executor-memory 4g --driver-memory 4g --packages com.databricks:spark-xml_2.12:0.14.0 --py-files /media/sf_cartella_condivisa/progetto/Big_pyspark/utils.zip
 
 RUN WITH SPARK SUBMIT:
-spark-submit --executor-cores 3 --packages com.databricks:spark-xml_2.12:0.14.0 --py-files /media/sf_cartella_condivisa/progetto/Big_pyspark/utils.zip /media/sf_cartella_condivisa/progetto/Big_pyspark/main.py
+spark-submit --packages com.databricks:spark-xml_2.12:0.14.0 --py-files /media/sf_cartella_condivisa/progetto/Big_pyspark/utils.zip /media/sf_cartella_condivisa/progetto/Big_pyspark/main.py
 """
 
 from pm4py.objects.log.importer.xes import importer as xes_importer
@@ -16,11 +16,12 @@ from pyspark.sql.session import SparkSession
 from pyspark import Row
 import pyspark.sql.functions as F
 
-from utils import logRdd as lr
-from utils import genericFunctions as gf
-from utils.schema import V_schema, W_schema, D_I_schema
-
 import time
+
+from utils.genericFunctions import getEvents, create_V, create_W, create_D_or_I, irregularGraphRepairing, writeOnFile, \
+    getShowString
+from utils.logRdd import create_rdd_from_xes
+from utils.schema import V_schema, W_schema, D_I_schema
 
 spark = SparkSession.builder \
     .appName("BIG_Pyspark") \
@@ -28,18 +29,35 @@ spark = SparkSession.builder \
 
 spark.sparkContext.setLogLevel("ERROR")
 
+hdfsPath = 'hdfs://localhost:9000/'
+localPath = '/media/sf_cartella_condivisa/progetto/Big_pyspark/'
+xesFileName = ['toyex.xes',
+               'testBank2000NoRandomNoise.xes',
+               'andreaHelpdesk.xes',
+               'andrea_bpi12full.xes'
+               ]
+pnmlFileName = ['toyex_petriNet.pnml',
+                'testBank2000NoRandomNoise_petriNet.pnml',
+                'andreaHelpdesk_petriNet.pnml',
+                'andrea_bpi12full_petriNet.pnml'
+                ]
+outputFileNames = [
+    'toyex_IG',
+    'testBank2000NoRandomNoise_IG',
+    'andreaHelpdesk_IG',
+    'andrea_bpi12full_IG'
+]
+test = 2
+outputPath = localPath + 'output/' + outputFileNames[test]
 start = time.time()
-logPath = gf.rootHdfsPath + gf.xes[gf.test]
-pnmlPath = gf.rootLocalPathPnml + gf.pnml[gf.test]
-xesPath = gf.rootLocalPathXes + gf.xes[gf.test]
 
 # ---- TRACES AND ALIGNMENTS (df) ---- #
 # - extract parsed log from the xes file as rdd
 # - for each row extract trace_id, trace_events and alignment
 # - convert to dataframe and rename the columns
-net, im, fm = pnml_importer.apply(pnmlPath)
-df = lr.create_rdd_from_xes(spark, logPath) \
-    .map(lambda t: Row(t.attributes['concept:name'], gf.getEvents(t), alig.apply(t, net, im, fm)['alignment'])) \
+net, im, fm = pnml_importer.apply(localPath + 'pnml/' + pnmlFileName[test])
+df = create_rdd_from_xes(spark, hdfsPath + xesFileName[test]) \
+    .map(lambda t: Row(t.attributes['concept:name'], getEvents(t), alig.apply(t, net, im, fm)['alignment'])) \
     .toDF() \
     .withColumnRenamed('_1', 'trace_id') \
     .withColumnRenamed('_2', 'trace') \
@@ -50,26 +68,35 @@ df = lr.create_rdd_from_xes(spark, logPath) \
 # - extract direct follow graph from the log
 # - extract the causal relations from the direct follow graph
 # - filter the causal relations with value grater than 0.8
-log = xes_importer.apply(xesPath)
+log = xes_importer.apply(localPath + 'xes/' + xesFileName[test])
 dfg = dfg_discovery.apply(log)
 CR = cr_discovery.apply(dfg)
 cr = [key for key, val in CR.items() if val > 0.8]
 
 # ---- UDF FUNCTIONS ---- #
-udf_create_V = F.udf(lambda trace: gf.create_V(trace), V_schema)
-udf_create_W = F.udf(lambda V: gf.create_W(cr, V), W_schema)
-udf_create_D = F.udf(lambda alignments: gf.create_D_or_I(alignments, 'D'), D_I_schema)
-udf_create_I = F.udf(lambda alignments: gf.create_D_or_I(alignments, 'I'), D_I_schema)
-udf_irregularGraphRepairing = F.udf(lambda V, W, D, I: gf.irregularGraphRepairing(V, W, D, I, cr), W_schema)
+# definition of udf for:
+# - nodes from trace (V)
+# - arches from nodes and causal relations filtered (W)
+# - deletion to apply from alignments for each trace (D)
+# - insertion to apply from alignments for each trace (I)
+# - creation of unrepaired instance graph and, deletion and insertion repair, creation of repaired instance graph
+udf_create_V = F.udf(lambda trace: create_V(trace), V_schema)
+udf_create_W = F.udf(lambda V: create_W(cr, V), W_schema)
+udf_create_D = F.udf(lambda alignments: create_D_or_I(alignments, 'D'), D_I_schema)
+udf_create_I = F.udf(lambda alignments: create_D_or_I(alignments, 'I'), D_I_schema)
+udf_irregularGraphRepairing = F.udf(lambda V, W, D, I: irregularGraphRepairing(V, W, D, I, cr, outputPath), W_schema)
 
-# FINAL DATAFRAME
+# ---- FINAL DATAFRAME ---- #
 final_df = df.withColumn('V', udf_create_V('trace')) \
     .withColumn('W', udf_create_W('V')) \
     .withColumn("D", udf_create_D('alignment')) \
     .withColumn("I", udf_create_I('alignment')) \
-    .withColumn('Wi', udf_irregularGraphRepairing('V', 'W', 'D', 'I')) \
-    .select('trace_id', 'V', 'W', 'Wi').show()
+    .withColumn('Wi', udf_irregularGraphRepairing('V', 'W', 'D', 'I'))
 
-# EXEC_TIME
-end = time.time()
-print("-------------- EXEC_TIME ---------------\n\n" + str((end - start)) + " secondi")
+showFinalDf = getShowString(final_df, n=5, truncate=False, vertical=False)
+writeOnFile(outputPath, showFinalDf)
+
+# ---- EXEC_TIME ---- #
+endString = "-------------- EXEC_TIME ---------------\n\n" + str((time.time() - start)) + " secondi"
+writeOnFile(outputPath, endString)
+print('INSTANCE GRAPHS, FINAL DATAFRAME AND EXEC TIME AVAILABLE ON ' + outputPath)

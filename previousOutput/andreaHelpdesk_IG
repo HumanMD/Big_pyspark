@@ -1,3 +1,8 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------
+NOTA:   BIG.PY IMPIEGA 44.97 SECONDI A GENERARE GLI INSTANCE GRAPH, BIG_PYSPARK.PY IMPIEGA
+        27.73 SECONDI, GLI INSTANCE GRAPH GENERATI DAI DUE SEMBRANO COMBACIARE (VALUTAZIONE FATTA A CAMPIONE
+        IN QUANTO IL FILE DI OUTPUT È TROPPO GRANDE E PYCHARM NON RIESCE A VALUTARE LE DIFFERENZE DELL'INTERO FILE)
+------------------------------------------------------------------------------------------------------------------------------------------------------
 // Unrepaired Instance Graph
 digraph {
 	node [shape=circle]
@@ -458,16 +463,40 @@ digraph {
 	8 [label=8]
 	9 [label=6]
 	10 [label=END]
-	3 -> 4
+	2 -> 7
 	2 -> 8
 	7 -> 9
+	2 -> 4
 	2 -> 3
 	1 -> 2
 	9 -> 10
 	5 -> 6
 	8 -> 9
 	4 -> 5
-	6 -> 7
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=6]
+	5 [label=6]
+	6 [label=8]
+	7 [label=9]
+	8 [label=8]
+	9 [label=6]
+	10 [label=END]
+	2 -> 7
+	2 -> 4
+	2 -> 3
+	1 -> 2
+	9 -> 10
+	7 -> 8
+	5 -> 6
+	8 -> 9
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -713,15 +742,14 @@ digraph {
 	6 [label=8]
 	7 [label=6]
 	8 [label=END]
-	2 -> 6
-	4 -> 7
-	5 -> 7
-	2 -> 5
+	3 -> 7
+	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
 	7 -> 8
 	6 -> 7
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -1216,14 +1244,36 @@ digraph {
 	6 [label=8]
 	7 [label=6]
 	8 [label=END]
-	3 -> 7
-	5 -> 6
+	2 -> 6
+	4 -> 7
+	3 -> 5
+	5 -> 7
 	2 -> 3
 	1 -> 2
+	3 -> 4
+	7 -> 8
+	6 -> 7
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=9]
+	5 [label=9]
+	6 [label=8]
+	7 [label=6]
+	8 [label=END]
+	2 -> 6
+	5 -> 7
+	2 -> 3
+	1 -> 2
+	3 -> 4
 	7 -> 8
 	6 -> 7
 	4 -> 5
-	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -1308,62 +1358,13 @@ digraph {
 	7 [label=9]
 	8 [label=6]
 	9 [label=END]
-	2 -> 6
-	5 -> 9
-	8 -> 9
-	3 -> 7
-	6 -> 8
-	2 -> 3
-	1 -> 2
 	4 -> 5
-	3 -> 4
-	7 -> 8
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=9]
-	5 [label=6]
-	6 [label=8]
-	7 [label=9]
-	8 [label=6]
-	9 [label=END]
-	2 -> 6
 	8 -> 9
-	3 -> 7
-	6 -> 8
-	2 -> 3
-	1 -> 2
-	4 -> 5
-	3 -> 4
-	7 -> 8
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=9]
-	5 [label=6]
-	6 [label=8]
-	7 [label=9]
-	8 [label=6]
-	9 [label=END]
-	2 -> 6
-	8 -> 9
-	3 -> 7
-	2 -> 3
-	1 -> 2
-	4 -> 5
-	3 -> 4
-	7 -> 8
+	5 -> 6
 	6 -> 7
+	2 -> 4
+	2 -> 3
+	1 -> 2
 }
 
 // Unrepaired Instance Graph
@@ -1398,12 +1399,11 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 5
-	1 -> 3
-	2 -> 5
+	3 -> 4
+	2 -> 4
+	4 -> 6
 	5 -> 6
 	1 -> 2
-	3 -> 4
-	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -1517,8 +1517,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
-	3 -> 5
 	5 -> 6
+	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -1716,12 +1716,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -1948,12 +1948,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -2047,8 +2047,8 @@ digraph {
 	3 [label=1]
 	4 [label=6]
 	5 [label=END]
-	1 -> 3
 	3 -> 4
+	2 -> 4
 	4 -> 5
 	1 -> 2
 }
@@ -2254,7 +2254,6 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
-	2 -> 7
 	8 -> 9
 	2 -> 5
 	5 -> 6
@@ -2262,7 +2261,8 @@ digraph {
 	1 -> 2
 	3 -> 4
 	7 -> 8
-	3 -> 8
+	4 -> 6
+	6 -> 7
 }
 
 // Unrepaired Instance Graph
@@ -2362,16 +2362,40 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
-	2 -> 6
 	2 -> 7
 	5 -> 8
 	8 -> 9
+	3 -> 6
+	4 -> 8
+	2 -> 5
 	6 -> 8
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
-	4 -> 5
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=9]
+	5 [label=8]
+	6 [label=9]
+	7 [label=8]
+	8 [label=6]
+	9 [label=END]
+	8 -> 9
+	4 -> 8
+	2 -> 5
+	6 -> 7
+	2 -> 3
+	1 -> 2
+	3 -> 4
+	7 -> 8
+	5 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -2565,12 +2589,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -2681,8 +2705,8 @@ digraph {
 	3 [label=1]
 	4 [label=6]
 	5 [label=END]
-	1 -> 3
 	3 -> 4
+	2 -> 4
 	4 -> 5
 	1 -> 2
 }
@@ -2899,8 +2923,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -2947,8 +2971,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -3220,8 +3244,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -3306,6 +3330,30 @@ digraph {
 	4 -> 5
 }
 
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=9]
+	5 [label=8]
+	6 [label=9]
+	7 [label=8]
+	8 [label=6]
+	9 [label=END]
+	2 -> 6
+	5 -> 8
+	8 -> 9
+	4 -> 7
+	4 -> 5
+	2 -> 3
+	1 -> 2
+	3 -> 4
+	7 -> 8
+	6 -> 7
+}
+
 // Unrepaired Instance Graph
 digraph {
 	node [shape=circle]
@@ -3703,8 +3751,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -3763,14 +3811,38 @@ digraph {
 	8 [label=6]
 	9 [label=END]
 	2 -> 7
-	3 -> 4
+	5 -> 8
 	8 -> 9
+	3 -> 4
+	2 -> 5
 	6 -> 8
 	2 -> 3
 	1 -> 2
-	4 -> 5
 	7 -> 8
-	5 -> 6
+	4 -> 6
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=6]
+	5 [label=8]
+	6 [label=9]
+	7 [label=8]
+	8 [label=6]
+	9 [label=END]
+	3 -> 4
+	5 -> 8
+	8 -> 9
+	2 -> 5
+	2 -> 3
+	1 -> 2
+	7 -> 8
+	4 -> 6
+	6 -> 7
 }
 
 // Unrepaired Instance Graph
@@ -3933,8 +4005,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
-	3 -> 5
 	5 -> 6
+	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -4072,8 +4144,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -4266,8 +4338,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -4419,9 +4491,10 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
-	1 -> 2
+	2 -> 5
+	5 -> 6
 	2 -> 3
-	4 -> 5
+	1 -> 2
 }
 
 // Unrepaired Instance Graph
@@ -4545,8 +4618,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -4801,11 +4874,10 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	3 -> 5
-	5 -> 6
 	1 -> 2
-	1 -> 4
 	4 -> 5
+	5 -> 6
+	2 -> 4
 	2 -> 3
 }
 
@@ -5029,7 +5101,6 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
-	2 -> 7
 	8 -> 9
 	2 -> 5
 	5 -> 6
@@ -5037,7 +5108,8 @@ digraph {
 	1 -> 2
 	3 -> 4
 	7 -> 8
-	3 -> 8
+	4 -> 6
+	6 -> 7
 }
 
 // Unrepaired Instance Graph
@@ -5397,14 +5469,38 @@ digraph {
 	8 [label=6]
 	9 [label=END]
 	2 -> 7
-	3 -> 4
+	5 -> 8
 	8 -> 9
+	3 -> 4
+	2 -> 5
 	6 -> 8
 	2 -> 3
 	1 -> 2
-	4 -> 5
 	7 -> 8
-	5 -> 6
+	4 -> 6
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=6]
+	5 [label=8]
+	6 [label=9]
+	7 [label=8]
+	8 [label=6]
+	9 [label=END]
+	3 -> 4
+	5 -> 8
+	8 -> 9
+	2 -> 5
+	2 -> 3
+	1 -> 2
+	7 -> 8
+	4 -> 6
+	6 -> 7
 }
 
 // Unrepaired Instance Graph
@@ -5780,12 +5876,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -5905,9 +6001,10 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
-	1 -> 2
+	2 -> 5
+	5 -> 6
 	2 -> 3
-	4 -> 5
+	1 -> 2
 }
 
 // Unrepaired Instance Graph
@@ -6345,8 +6442,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -6407,8 +6504,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -6587,41 +6684,12 @@ digraph {
 	9 [label=END]
 	5 -> 8
 	8 -> 9
-	3 -> 5
-	4 -> 8
-	3 -> 6
-	1 -> 3
-	3 -> 7
-	6 -> 8
-	1 -> 2
-	3 -> 4
-	7 -> 8
-	2 -> 4
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=1]
-	4 [label=8]
-	5 [label=9]
-	6 [label=9]
-	7 [label=8]
-	8 [label=6]
-	9 [label=END]
-	5 -> 8
-	8 -> 9
-	3 -> 6
-	1 -> 3
-	3 -> 7
+	4 -> 6
 	6 -> 8
 	1 -> 2
 	3 -> 4
 	7 -> 8
 	4 -> 5
-	2 -> 4
 }
 
 // Insertion repaired Instance Graph
@@ -6637,15 +6705,12 @@ digraph {
 	8 [label=6]
 	9 [label=END]
 	8 -> 9
-	3 -> 6
-	5 -> 7
-	1 -> 3
-	6 -> 7
+	5 -> 6
+	6 -> 8
 	1 -> 2
 	3 -> 4
 	7 -> 8
 	4 -> 5
-	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -6864,12 +6929,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -6899,8 +6964,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
-	3 -> 5
 	5 -> 6
+	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -7222,9 +7287,10 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
-	1 -> 2
+	2 -> 5
+	5 -> 6
 	2 -> 3
-	4 -> 5
+	1 -> 2
 }
 
 // Unrepaired Instance Graph
@@ -7253,8 +7319,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -7449,12 +7515,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -7587,34 +7653,13 @@ digraph {
 	8 [label=END]
 	2 -> 6
 	4 -> 7
-	3 -> 5
 	5 -> 7
+	2 -> 5
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=9]
-	5 [label=9]
-	6 [label=8]
-	7 [label=6]
-	8 [label=END]
-	2 -> 6
-	5 -> 7
-	2 -> 3
-	1 -> 2
-	3 -> 4
-	7 -> 8
-	6 -> 7
-	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -7671,8 +7716,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -7937,12 +7982,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -7985,8 +8030,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -8225,8 +8270,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
+	3 -> 5
 	5 -> 6
-	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -8258,8 +8303,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
-	3 -> 5
 	5 -> 6
+	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -8290,8 +8335,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
+	5 -> 6
 	1 -> 3
-	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -8382,12 +8427,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -8502,12 +8547,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -8686,8 +8731,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -8924,8 +8969,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -9049,34 +9094,13 @@ digraph {
 	8 [label=END]
 	2 -> 6
 	4 -> 7
-	3 -> 5
 	5 -> 7
+	2 -> 5
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=9]
-	5 [label=9]
-	6 [label=8]
-	7 [label=6]
-	8 [label=END]
-	2 -> 6
-	5 -> 7
-	2 -> 3
-	1 -> 2
-	3 -> 4
-	7 -> 8
-	6 -> 7
-	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -9168,8 +9192,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
+	3 -> 5
 	5 -> 6
-	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -9240,35 +9264,13 @@ digraph {
 	7 [label=6]
 	8 [label=END]
 	2 -> 6
-	4 -> 7
 	5 -> 7
-	2 -> 5
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=8]
-	5 [label=9]
-	6 [label=8]
-	7 [label=6]
-	8 [label=END]
-	4 -> 7
-	2 -> 5
-	2 -> 3
-	1 -> 2
-	3 -> 4
-	7 -> 8
-	6 -> 7
-	5 -> 6
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -9302,10 +9304,10 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -9349,8 +9351,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
-	3 -> 5
 	5 -> 6
+	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -10056,6 +10058,7 @@ digraph {
 	8 [label=8]
 	9 [label=6]
 	10 [label=END]
+	2 -> 6
 	2 -> 7
 	2 -> 8
 	7 -> 9
@@ -10064,8 +10067,34 @@ digraph {
 	9 -> 10
 	4 -> 5
 	3 -> 4
-	5 -> 6
 	8 -> 9
+	6 -> 9
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=9]
+	4 [label=8]
+	5 [label=6]
+	6 [label=8]
+	7 [label=9]
+	8 [label=8]
+	9 [label=6]
+	10 [label=END]
+	2 -> 6
+	2 -> 7
+	2 -> 3
+	1 -> 2
+	9 -> 10
+	4 -> 5
+	3 -> 4
+	7 -> 8
+	8 -> 9
+	3 -> 8
+	6 -> 9
 }
 
 // Unrepaired Instance Graph
@@ -10283,14 +10312,38 @@ digraph {
 	8 [label=6]
 	9 [label=END]
 	2 -> 7
-	3 -> 4
+	5 -> 8
 	8 -> 9
+	3 -> 4
+	2 -> 5
 	6 -> 8
 	2 -> 3
 	1 -> 2
-	4 -> 5
 	7 -> 8
-	5 -> 6
+	4 -> 6
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=6]
+	5 [label=8]
+	6 [label=9]
+	7 [label=8]
+	8 [label=6]
+	9 [label=END]
+	3 -> 4
+	5 -> 8
+	8 -> 9
+	2 -> 5
+	2 -> 3
+	1 -> 2
+	7 -> 8
+	4 -> 6
+	6 -> 7
 }
 
 // Unrepaired Instance Graph
@@ -10345,15 +10398,41 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
+	2 -> 6
+	2 -> 7
+	5 -> 8
 	8 -> 9
-	5 -> 6
-	6 -> 7
+	4 -> 8
+	2 -> 5
+	6 -> 8
 	2 -> 3
 	1 -> 2
+	3 -> 4
 	7 -> 8
-	3 -> 8
-	4 -> 5
-	2 -> 4
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=9]
+	5 [label=8]
+	6 [label=9]
+	7 [label=8]
+	8 [label=6]
+	9 [label=END]
+	2 -> 6
+	5 -> 8
+	8 -> 9
+	4 -> 7
+	2 -> 5
+	2 -> 3
+	1 -> 2
+	3 -> 4
+	7 -> 8
+	6 -> 7
 }
 
 // Unrepaired Instance Graph
@@ -10415,12 +10494,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -10697,12 +10776,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -10770,8 +10849,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -10951,12 +11030,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -11247,13 +11326,34 @@ digraph {
 	8 [label=END]
 	2 -> 6
 	4 -> 7
+	3 -> 5
 	5 -> 7
-	2 -> 5
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=9]
+	5 [label=9]
+	6 [label=8]
+	7 [label=6]
+	8 [label=END]
+	2 -> 6
+	5 -> 7
+	2 -> 3
+	1 -> 2
+	3 -> 4
+	7 -> 8
+	6 -> 7
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -11334,8 +11434,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -11729,8 +11829,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -11859,8 +11959,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -11926,14 +12026,14 @@ digraph {
 	7 [label=6]
 	8 [label=END]
 	2 -> 6
-	3 -> 6
-	5 -> 7
+	4 -> 7
+	3 -> 5
 	1 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
-	4 -> 5
+	5 -> 6
 	2 -> 4
 }
 
@@ -12257,8 +12357,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -12338,12 +12438,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -12387,8 +12487,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
+	3 -> 5
 	5 -> 6
-	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -12548,12 +12648,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -12787,12 +12887,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -12971,11 +13071,10 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	3 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	1 -> 4
+	3 -> 4
 	4 -> 5
 }
 
@@ -13086,12 +13185,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -13224,8 +13323,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -13518,10 +13617,11 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	1 -> 2
-	4 -> 5
+	3 -> 5
 	5 -> 6
-	2 -> 4
+	1 -> 2
+	1 -> 4
+	4 -> 5
 	2 -> 3
 }
 
@@ -13663,8 +13763,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -13923,8 +14023,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -13983,8 +14083,8 @@ digraph {
 	3 [label=1]
 	4 [label=6]
 	5 [label=END]
-	1 -> 3
 	3 -> 4
+	2 -> 4
 	4 -> 5
 	1 -> 2
 }
@@ -14034,12 +14134,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -14076,13 +14176,11 @@ digraph {
 	7 [label=6]
 	8 [label=END]
 	3 -> 4
-	5 -> 7
-	2 -> 5
 	6 -> 8
-	5 -> 6
+	4 -> 5
+	7 -> 8
 	2 -> 3
 	1 -> 2
-	7 -> 8
 }
 
 // Insertion repaired Instance Graph
@@ -14097,13 +14195,11 @@ digraph {
 	7 [label=6]
 	8 [label=END]
 	3 -> 4
-	5 -> 7
-	2 -> 5
-	5 -> 6
-	2 -> 3
 	1 -> 2
-	3 -> 6
+	6 -> 8
 	7 -> 8
+	2 -> 3
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -14198,35 +14294,11 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	3 -> 5
-	2 -> 5
 	1 -> 3
 	5 -> 6
 	1 -> 2
 	3 -> 4
 	4 -> 6
-	2 -> 4
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=1]
-	4 [label=8]
-	5 [label=8]
-	6 [label=6]
-	7 [label=END]
-	6 -> 7
-	3 -> 5
-	2 -> 5
-	1 -> 3
-	5 -> 6
-	1 -> 2
-	3 -> 4
-	4 -> 6
-	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -14441,40 +14513,6 @@ digraph {
 	8 -> 10
 	9 -> 10
 	10 -> 11
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=1]
-	4 [label=1]
-	5 [label=8]
-	6 [label=9]
-	7 [label=8]
-	8 [label=9]
-	9 [label=8]
-	10 [label=6]
-	11 [label=END]
-	2 -> 7
-	4 -> 7
-	8 -> 10
-	5 -> 10
-	9 -> 10
-	1 -> 2
-	7 -> 10
-	4 -> 9
-	4 -> 5
-	3 -> 5
-	1 -> 3
-	4 -> 8
-	2 -> 5
-	4 -> 6
-	2 -> 9
-	10 -> 11
-	6 -> 10
-	1 -> 4
 }
 
 // Insertion repaired Instance Graph
@@ -14492,17 +14530,16 @@ digraph {
 	10 [label=6]
 	11 [label=END]
 	5 -> 8
-	2 -> 7
 	8 -> 10
-	4 -> 5
-	1 -> 3
-	2 -> 9
+	5 -> 6
 	9 -> 10
+	2 -> 3
 	1 -> 2
 	7 -> 10
+	3 -> 4
 	10 -> 11
 	6 -> 10
-	5 -> 6
+	4 -> 5
 }
 
 // Insertion repaired Instance Graph
@@ -14519,16 +14556,16 @@ digraph {
 	9 [label=8]
 	10 [label=6]
 	11 [label=END]
-	2 -> 7
-	5 -> 6
-	1 -> 3
-	8 -> 9
+	8 -> 10
+	4 -> 5
+	6 -> 7
 	9 -> 10
+	2 -> 3
 	1 -> 2
+	3 -> 4
 	7 -> 8
 	10 -> 11
-	6 -> 10
-	4 -> 5
+	5 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -14658,10 +14695,34 @@ digraph {
 	6 [label=8]
 	7 [label=6]
 	8 [label=END]
+	3 -> 6
+	6 -> 7
+	4 -> 6
+	1 -> 5
+	1 -> 2
+	2 -> 3
+	7 -> 8
+	1 -> 4
+	5 -> 6
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=1]
+	4 [label=1]
+	5 [label=1]
+	6 [label=8]
+	7 [label=6]
+	8 [label=END]
+	3 -> 6
+	4 -> 6
+	1 -> 4
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 5
+	1 -> 5
 	7 -> 8
 	6 -> 7
 	5 -> 6
@@ -14865,14 +14926,15 @@ digraph {
 	6 [label=9]
 	7 [label=6]
 	8 [label=END]
-	5 -> 6
-	3 -> 7
+	2 -> 6
+	4 -> 7
+	5 -> 7
+	2 -> 5
 	2 -> 3
 	1 -> 2
+	3 -> 4
 	7 -> 8
 	6 -> 7
-	4 -> 5
-	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -14996,10 +15058,10 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -15042,8 +15104,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -15106,8 +15168,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -15625,8 +15687,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -15869,13 +15931,39 @@ digraph {
 	7 [label=6]
 	8 [label=6]
 	9 [label=END]
+	4 -> 7
 	8 -> 9
-	4 -> 5
-	2 -> 4
+	3 -> 6
+	5 -> 7
+	2 -> 5
+	7 -> 9
+	6 -> 8
 	2 -> 3
+	1 -> 2
+	3 -> 4
+	6 -> 7
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=9]
+	5 [label=8]
+	6 [label=9]
+	7 [label=6]
+	8 [label=6]
+	9 [label=END]
+	8 -> 9
+	3 -> 6
+	2 -> 5
+	2 -> 3
+	1 -> 2
+	3 -> 4
 	6 -> 7
 	5 -> 6
-	1 -> 2
 }
 
 // Unrepaired Instance Graph
@@ -15961,12 +16049,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
+	3 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
 	4 -> 6
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -16060,14 +16148,14 @@ digraph {
 	9 [label=6]
 	10 [label=END]
 	2 -> 6
+	2 -> 7
+	2 -> 8
 	7 -> 9
-	3 -> 5
+	2 -> 5
+	2 -> 3
 	1 -> 2
 	9 -> 10
 	5 -> 9
-	2 -> 8
-	3 -> 7
-	2 -> 3
 	4 -> 9
 	3 -> 4
 	8 -> 9
@@ -16087,43 +16175,17 @@ digraph {
 	8 [label=8]
 	9 [label=6]
 	10 [label=END]
-	2 -> 6
 	7 -> 9
 	2 -> 8
-	3 -> 7
+	2 -> 5
 	2 -> 3
 	1 -> 2
 	9 -> 10
-	5 -> 9
+	4 -> 9
 	3 -> 4
-	8 -> 9
-	6 -> 9
-	4 -> 5
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=9]
-	5 [label=9]
-	6 [label=8]
-	7 [label=9]
-	8 [label=8]
-	9 [label=6]
-	10 [label=END]
-	2 -> 6
-	2 -> 3
-	1 -> 2
-	9 -> 10
-	5 -> 9
-	3 -> 4
-	7 -> 8
 	8 -> 9
 	6 -> 7
-	4 -> 5
+	5 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -16300,13 +16362,38 @@ digraph {
 	7 [label=2]
 	8 [label=6]
 	9 [label=END]
+	2 -> 6
 	4 -> 5
-	5 -> 6
 	8 -> 9
+	3 -> 4
 	6 -> 7
-	2 -> 4
+	4 -> 8
 	2 -> 3
 	1 -> 2
+	5 -> 9
+	7 -> 8
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=2]
+	5 [label=6]
+	6 [label=8]
+	7 [label=2]
+	8 [label=6]
+	9 [label=END]
+	4 -> 5
+	8 -> 9
+	3 -> 4
+	6 -> 7
+	2 -> 3
+	1 -> 2
+	5 -> 6
+	7 -> 8
 }
 
 // Unrepaired Instance Graph
@@ -16501,12 +16588,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -16577,8 +16664,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -16700,12 +16787,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -16772,34 +16859,13 @@ digraph {
 	8 [label=END]
 	2 -> 6
 	4 -> 7
-	3 -> 5
 	5 -> 7
+	2 -> 5
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=9]
-	5 [label=9]
-	6 [label=8]
-	7 [label=6]
-	8 [label=END]
-	2 -> 6
-	5 -> 7
-	2 -> 3
-	1 -> 2
-	3 -> 4
-	7 -> 8
-	6 -> 7
-	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -16877,12 +16943,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -17110,8 +17176,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
-	3 -> 5
 	5 -> 6
+	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -17439,13 +17505,14 @@ digraph {
 	6 [label=9]
 	7 [label=6]
 	8 [label=END]
+	3 -> 5
 	5 -> 7
 	4 -> 6
+	6 -> 7
 	2 -> 3
 	1 -> 2
-	3 -> 4
 	7 -> 8
-	6 -> 7
+	1 -> 4
 	4 -> 5
 }
 
@@ -17484,13 +17551,14 @@ digraph {
 	7 [label=6]
 	8 [label=END]
 	2 -> 6
+	4 -> 7
 	5 -> 7
+	2 -> 5
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
-	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -17692,12 +17760,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -17793,8 +17861,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -17886,9 +17954,7 @@ digraph {
 	8 [label=8]
 	9 [label=6]
 	10 [label=END]
-	2 -> 6
 	7 -> 9
-	2 -> 8
 	3 -> 6
 	1 -> 3
 	3 -> 7
@@ -17917,8 +17983,8 @@ digraph {
 	9 [label=6]
 	10 [label=END]
 	7 -> 9
-	2 -> 8
 	1 -> 3
+	3 -> 7
 	1 -> 2
 	9 -> 10
 	4 -> 5
@@ -17926,7 +17992,32 @@ digraph {
 	5 -> 6
 	8 -> 9
 	3 -> 8
-	6 -> 7
+	2 -> 4
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=1]
+	4 [label=8]
+	5 [label=6]
+	6 [label=8]
+	7 [label=9]
+	8 [label=8]
+	9 [label=6]
+	10 [label=END]
+	2 -> 8
+	1 -> 3
+	3 -> 7
+	1 -> 2
+	9 -> 10
+	4 -> 5
+	3 -> 4
+	5 -> 6
+	7 -> 8
+	8 -> 9
 	2 -> 4
 }
 
@@ -17956,8 +18047,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -17991,8 +18082,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
+	3 -> 5
 	5 -> 6
-	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -18042,12 +18133,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -18076,8 +18167,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -18111,8 +18202,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
+	3 -> 5
 	5 -> 6
-	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -18200,9 +18291,10 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
-	1 -> 2
+	2 -> 5
+	5 -> 6
 	2 -> 3
-	4 -> 5
+	1 -> 2
 }
 
 // Unrepaired Instance Graph
@@ -18303,12 +18395,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -18356,12 +18448,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -18418,8 +18510,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -18758,8 +18850,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -18792,8 +18884,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -18955,12 +19047,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -19112,12 +19204,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -19242,38 +19334,14 @@ digraph {
 	8 [label=6]
 	9 [label=END]
 	2 -> 7
-	5 -> 8
-	8 -> 9
 	3 -> 4
-	2 -> 5
+	8 -> 9
 	6 -> 8
 	2 -> 3
 	1 -> 2
+	4 -> 5
 	7 -> 8
-	4 -> 6
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=6]
-	5 [label=8]
-	6 [label=9]
-	7 [label=8]
-	8 [label=6]
-	9 [label=END]
-	3 -> 4
-	5 -> 8
-	8 -> 9
-	2 -> 5
-	2 -> 3
-	1 -> 2
-	7 -> 8
-	4 -> 6
-	6 -> 7
+	5 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -19992,8 +20060,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
+	3 -> 5
 	5 -> 6
-	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -20031,13 +20099,13 @@ digraph {
 	6 [label=8]
 	7 [label=6]
 	8 [label=END]
-	3 -> 6
-	5 -> 7
+	4 -> 7
+	3 -> 5
 	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
-	4 -> 5
+	5 -> 6
 	2 -> 3
 }
 
@@ -20098,8 +20166,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -20266,8 +20334,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
-	3 -> 5
 	5 -> 6
+	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -20439,10 +20507,33 @@ digraph {
 	6 [label=8]
 	7 [label=6]
 	8 [label=END]
+	2 -> 6
+	5 -> 8
 	4 -> 5
 	3 -> 4
 	2 -> 3
 	1 -> 2
+	7 -> 8
+	6 -> 7
+	4 -> 7
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=2]
+	5 [label=6]
+	6 [label=8]
+	7 [label=6]
+	8 [label=END]
+	4 -> 5
+	3 -> 4
+	2 -> 3
+	1 -> 2
+	5 -> 6
 	7 -> 8
 	6 -> 7
 }
@@ -20473,8 +20564,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -20631,9 +20722,10 @@ digraph {
 	8 [label=END]
 	3 -> 5
 	5 -> 7
+	1 -> 3
 	6 -> 8
+	2 -> 5
 	5 -> 6
-	2 -> 3
 	1 -> 2
 	7 -> 8
 	1 -> 4
@@ -20653,8 +20745,32 @@ digraph {
 	8 [label=END]
 	3 -> 5
 	5 -> 7
+	1 -> 3
+	6 -> 8
+	2 -> 5
 	5 -> 6
-	2 -> 3
+	1 -> 2
+	7 -> 8
+	1 -> 4
+	4 -> 5
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=1]
+	4 [label=1]
+	5 [label=8]
+	6 [label=6]
+	7 [label=6]
+	8 [label=END]
+	3 -> 5
+	1 -> 3
+	6 -> 8
+	2 -> 5
+	5 -> 6
 	1 -> 2
 	7 -> 8
 	1 -> 4
@@ -20734,12 +20850,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
+	3 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
 	4 -> 6
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -20794,17 +20910,17 @@ digraph {
 	12 [label=END]
 	2 -> 6
 	5 -> 11
-	8 -> 11
 	6 -> 11
+	8 -> 11
 	2 -> 10
 	4 -> 11
-	2 -> 9
+	3 -> 9
 	1 -> 2
 	11 -> 12
 	10 -> 11
-	2 -> 7
 	2 -> 8
 	2 -> 5
+	3 -> 7
 	9 -> 11
 	2 -> 3
 	7 -> 11
@@ -20826,41 +20942,6 @@ digraph {
 	10 [label=8]
 	11 [label=6]
 	12 [label=END]
-	6 -> 11
-	8 -> 11
-	2 -> 10
-	4 -> 11
-	2 -> 9
-	1 -> 2
-	11 -> 12
-	10 -> 11
-	5 -> 6
-	2 -> 7
-	2 -> 8
-	2 -> 5
-	9 -> 11
-	2 -> 3
-	7 -> 11
-	3 -> 4
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=9]
-	5 [label=8]
-	6 [label=8]
-	7 [label=9]
-	8 [label=8]
-	9 [label=9]
-	10 [label=8]
-	11 [label=6]
-	12 [label=END]
-	6 -> 11
-	2 -> 7
 	8 -> 9
 	4 -> 11
 	2 -> 5
@@ -20869,6 +20950,7 @@ digraph {
 	9 -> 10
 	3 -> 4
 	7 -> 8
+	6 -> 7
 	11 -> 12
 	10 -> 11
 	5 -> 6
@@ -21582,7 +21664,7 @@ digraph {
 	4 -> 5
 	3 -> 5
 	2 -> 4
-	5 -> 7
+	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -21877,7 +21959,7 @@ digraph {
 	4 -> 5
 	3 -> 5
 	2 -> 4
-	5 -> 7
+	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -21991,18 +22073,18 @@ digraph {
 	8 [label=8]
 	9 [label=6]
 	10 [label=END]
+	4 -> 7
 	2 -> 8
-	5 -> 7
-	3 -> 6
-	2 -> 3
-	1 -> 2
+	2 -> 5
 	6 -> 7
+	1 -> 2
 	9 -> 10
-	5 -> 9
+	3 -> 9
+	2 -> 3
+	5 -> 6
+	3 -> 4
 	8 -> 9
 	7 -> 10
-	4 -> 5
-	2 -> 4
 }
 
 // Insertion repaired Instance Graph
@@ -22018,15 +22100,43 @@ digraph {
 	8 [label=8]
 	9 [label=6]
 	10 [label=END]
-	7 -> 8
-	3 -> 6
-	2 -> 3
+	2 -> 8
+	5 -> 7
+	6 -> 7
 	1 -> 2
 	9 -> 10
+	3 -> 9
+	2 -> 3
+	5 -> 9
+	3 -> 4
+	8 -> 9
+	7 -> 10
+	4 -> 5
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=9]
+	5 [label=8]
+	6 [label=2]
+	7 [label=6]
+	8 [label=8]
+	9 [label=6]
+	10 [label=END]
+	2 -> 8
+	2 -> 3
+	3 -> 9
+	9 -> 10
+	1 -> 2
 	6 -> 7
 	5 -> 9
+	3 -> 4
+	8 -> 9
 	4 -> 5
-	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -22206,12 +22316,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -22315,12 +22425,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -22350,8 +22460,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
-	3 -> 5
 	5 -> 6
+	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -22445,8 +22555,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -22633,8 +22743,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -22717,14 +22827,15 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
+	2 -> 7
 	8 -> 9
 	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
 	3 -> 4
+	7 -> 8
 	3 -> 8
-	6 -> 7
 }
 
 // Unrepaired Instance Graph
@@ -22826,8 +22937,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -23050,10 +23161,10 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -23176,10 +23287,10 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
+	2 -> 6
 	2 -> 7
 	5 -> 8
 	8 -> 9
-	3 -> 6
 	4 -> 8
 	2 -> 5
 	6 -> 8
@@ -23201,15 +23312,16 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
-	2 -> 7
+	2 -> 6
+	5 -> 8
 	8 -> 9
-	5 -> 6
-	6 -> 8
+	4 -> 7
+	2 -> 5
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
-	4 -> 5
+	6 -> 7
 }
 
 // Unrepaired Instance Graph
@@ -23469,45 +23581,11 @@ digraph {
 	12 [label=8]
 	13 [label=6]
 	14 [label=END]
-	2 -> 7
-	6 -> 14
-	5 -> 6
-	1 -> 2
-	13 -> 14
-	7 -> 10
-	10 -> 11
 	8 -> 11
+	2 -> 8
 	9 -> 10
-	2 -> 5
+	4 -> 5
 	2 -> 9
-	2 -> 3
-	12 -> 13
-	11 -> 14
-	3 -> 4
-	2 -> 12
-	3 -> 8
-	3 -> 13
-	4 -> 6
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=9]
-	5 [label=8]
-	6 [label=6]
-	7 [label=8]
-	8 [label=9]
-	9 [label=8]
-	10 [label=2]
-	11 [label=6]
-	12 [label=8]
-	13 [label=6]
-	14 [label=END]
-	8 -> 9
 	5 -> 6
 	2 -> 3
 	1 -> 2
@@ -23516,8 +23594,6 @@ digraph {
 	3 -> 4
 	2 -> 12
 	13 -> 14
-	7 -> 8
-	3 -> 13
 	10 -> 11
 	6 -> 7
 }
@@ -23539,7 +23615,43 @@ digraph {
 	12 [label=8]
 	13 [label=6]
 	14 [label=END]
+	2 -> 8
+	8 -> 9
+	5 -> 6
+	9 -> 11
+	1 -> 2
+	13 -> 14
 	10 -> 11
+	6 -> 7
+	2 -> 3
+	12 -> 13
+	11 -> 14
+	3 -> 4
+	2 -> 12
+	9 -> 13
+	4 -> 5
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=9]
+	5 [label=8]
+	6 [label=6]
+	7 [label=8]
+	8 [label=9]
+	9 [label=8]
+	10 [label=2]
+	11 [label=6]
+	12 [label=8]
+	13 [label=6]
+	14 [label=END]
+	2 -> 8
+	10 -> 11
+	8 -> 9
 	5 -> 6
 	2 -> 3
 	1 -> 2
@@ -23547,9 +23659,8 @@ digraph {
 	3 -> 4
 	2 -> 12
 	13 -> 14
-	7 -> 8
-	3 -> 13
-	8 -> 9
+	9 -> 13
+	4 -> 5
 	6 -> 7
 }
 
@@ -23623,12 +23734,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
+	3 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
 	4 -> 6
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -23999,12 +24110,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -24147,8 +24258,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -24196,8 +24307,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
+	3 -> 5
 	5 -> 6
-	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -24376,13 +24487,33 @@ digraph {
 	6 [label=8]
 	7 [label=6]
 	8 [label=END]
+	4 -> 7
 	5 -> 7
 	6 -> 7
-	3 -> 4
 	1 -> 2
+	3 -> 5
 	7 -> 8
 	2 -> 3
-	4 -> 5
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=8]
+	3 [label=6]
+	4 [label=8]
+	5 [label=9]
+	6 [label=8]
+	7 [label=6]
+	8 [label=END]
+	4 -> 7
+	6 -> 7
+	1 -> 2
+	3 -> 5
+	7 -> 8
+	2 -> 3
+	5 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -24582,12 +24713,39 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
+	2 -> 7
 	8 -> 9
-	4 -> 5
-	1 -> 2
-	2 -> 4
+	2 -> 5
 	5 -> 6
 	2 -> 3
+	1 -> 2
+	6 -> 9
+	3 -> 4
+	7 -> 8
+	4 -> 6
+	3 -> 8
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=9]
+	5 [label=8]
+	6 [label=6]
+	7 [label=8]
+	8 [label=6]
+	9 [label=END]
+	8 -> 9
+	2 -> 5
+	5 -> 6
+	2 -> 3
+	1 -> 2
+	3 -> 4
+	7 -> 8
+	4 -> 6
 	6 -> 7
 }
 
@@ -24878,9 +25036,8 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
-	5 -> 6
-	2 -> 3
 	1 -> 2
+	2 -> 3
 	4 -> 5
 }
 
@@ -24981,12 +25138,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -25308,38 +25465,12 @@ digraph {
 	5 -> 8
 	3 -> 6
 	8 -> 9
-	4 -> 7
 	1 -> 3
+	3 -> 7
 	6 -> 8
 	1 -> 2
 	3 -> 4
 	7 -> 8
-	4 -> 5
-	2 -> 4
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=1]
-	4 [label=8]
-	5 [label=9]
-	6 [label=8]
-	7 [label=9]
-	8 [label=6]
-	9 [label=END]
-	2 -> 6
-	5 -> 8
-	3 -> 6
-	8 -> 9
-	4 -> 7
-	1 -> 3
-	1 -> 2
-	3 -> 4
-	7 -> 8
-	6 -> 7
 	4 -> 5
 	2 -> 4
 }
@@ -25858,12 +25989,13 @@ digraph {
 	6 [label=9]
 	7 [label=6]
 	8 [label=END]
+	3 -> 5
 	5 -> 7
 	4 -> 6
-	2 -> 4
+	6 -> 7
 	1 -> 2
 	7 -> 8
-	6 -> 7
+	1 -> 4
 	4 -> 5
 	2 -> 3
 }
@@ -25922,8 +26054,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -25978,10 +26110,10 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -26102,12 +26234,40 @@ digraph {
 	6 [label=8]
 	7 [label=6]
 	8 [label=END]
+	2 -> 6
+	4 -> 7
+	3 -> 6
+	3 -> 5
 	5 -> 7
+	1 -> 3
+	1 -> 2
+	3 -> 4
+	7 -> 8
+	6 -> 7
+	2 -> 4
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=1]
+	4 [label=8]
+	5 [label=9]
+	6 [label=8]
+	7 [label=6]
+	8 [label=END]
+	2 -> 6
+	3 -> 6
+	5 -> 7
+	1 -> 3
+	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
 	4 -> 5
-	1 -> 2
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -26730,12 +26890,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -27035,8 +27195,9 @@ digraph {
 	2 -> 3
 	1 -> 2
 	9 -> 10
+	4 -> 9
 	3 -> 4
-	8 -> 9
+	6 -> 9
 	6 -> 7
 }
 
@@ -27220,17 +27381,17 @@ digraph {
 	9 [label=8]
 	10 [label=6]
 	11 [label=END]
-	8 -> 10
-	5 -> 6
+	4 -> 10
+	2 -> 5
 	6 -> 7
-	2 -> 9
+	8 -> 9
 	9 -> 10
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
 	10 -> 11
-	4 -> 5
+	5 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -27320,32 +27481,10 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	3 -> 5
-	1 -> 3
-	2 -> 5
 	5 -> 6
+	2 -> 3
 	1 -> 2
-	1 -> 4
-	4 -> 5
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=1]
-	4 [label=1]
-	5 [label=8]
-	6 [label=6]
-	7 [label=END]
-	6 -> 7
-	3 -> 5
-	2 -> 5
-	1 -> 3
-	5 -> 6
-	1 -> 2
-	1 -> 4
+	3 -> 4
 	4 -> 5
 }
 
@@ -27465,16 +27604,47 @@ digraph {
 	9 [label=8]
 	10 [label=6]
 	11 [label=END]
+	2 -> 7
 	8 -> 10
 	1 -> 3
 	2 -> 9
 	9 -> 10
-	5 -> 6
+	6 -> 8
 	1 -> 2
-	7 -> 8
+	5 -> 6
+	7 -> 10
 	10 -> 11
+	1 -> 4
 	4 -> 5
-	6 -> 7
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=1]
+	4 [label=1]
+	5 [label=8]
+	6 [label=6]
+	7 [label=8]
+	8 [label=9]
+	9 [label=8]
+	10 [label=6]
+	11 [label=END]
+	2 -> 7
+	4 -> 5
+	1 -> 3
+	3 -> 9
+	2 -> 9
+	5 -> 6
+	6 -> 8
+	1 -> 2
+	9 -> 10
+	7 -> 10
+	10 -> 11
+	1 -> 4
+	8 -> 9
 }
 
 // Unrepaired Instance Graph
@@ -27549,8 +27719,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
+	3 -> 5
 	5 -> 6
-	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -27618,29 +27788,8 @@ digraph {
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
+	3 -> 4
 	4 -> 6
-	2 -> 4
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=8]
-	5 [label=8]
-	6 [label=6]
-	7 [label=END]
-	6 -> 7
-	2 -> 5
-	5 -> 6
-	2 -> 3
-	1 -> 2
-	3 -> 6
-	4 -> 6
-	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -27738,8 +27887,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -27874,16 +28023,40 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
-	2 -> 6
 	2 -> 7
 	5 -> 8
 	8 -> 9
+	3 -> 6
+	4 -> 8
+	2 -> 5
 	6 -> 8
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
-	4 -> 5
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=9]
+	5 [label=8]
+	6 [label=9]
+	7 [label=8]
+	8 [label=6]
+	9 [label=END]
+	8 -> 9
+	4 -> 8
+	2 -> 5
+	6 -> 7
+	2 -> 3
+	1 -> 2
+	3 -> 4
+	7 -> 8
+	5 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -28014,12 +28187,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -28217,12 +28390,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -28262,12 +28435,39 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
-	1 -> 2
+	5 -> 8
+	4 -> 7
 	8 -> 9
-	5 -> 6
-	7 -> 8
+	4 -> 6
 	6 -> 8
+	2 -> 4
+	1 -> 2
+	7 -> 8
 	4 -> 5
+	2 -> 3
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=3]
+	3 [label=1]
+	4 [label=1]
+	5 [label=8]
+	6 [label=9]
+	7 [label=8]
+	8 [label=6]
+	9 [label=END]
+	5 -> 8
+	8 -> 9
+	4 -> 5
+	3 -> 7
+	4 -> 6
+	2 -> 4
+	1 -> 2
+	7 -> 8
+	6 -> 7
 	2 -> 3
 }
 
@@ -28352,7 +28552,6 @@ digraph {
 	6 [label=8]
 	7 [label=6]
 	8 [label=END]
-	2 -> 6
 	5 -> 8
 	3 -> 6
 	1 -> 3
@@ -28641,10 +28840,8 @@ digraph {
 	11 [label=END]
 	2 -> 6
 	2 -> 7
-	5 -> 8
 	8 -> 9
-	6 -> 8
-	9 -> 10
+	5 -> 10
 	2 -> 3
 	1 -> 2
 	3 -> 4
@@ -28835,9 +29032,33 @@ digraph {
 	8 [label=END]
 	3 -> 5
 	5 -> 7
+	1 -> 3
+	2 -> 5
+	4 -> 6
+	1 -> 4
+	1 -> 2
+	7 -> 8
+	6 -> 7
+	4 -> 5
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=1]
+	4 [label=1]
+	5 [label=8]
+	6 [label=9]
+	7 [label=6]
+	8 [label=END]
+	3 -> 5
+	5 -> 7
+	2 -> 5
+	1 -> 3
 	4 -> 6
 	6 -> 7
-	2 -> 3
 	1 -> 2
 	7 -> 8
 	1 -> 4
@@ -28958,8 +29179,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
-	3 -> 5
 	5 -> 6
+	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -29005,8 +29226,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
-	3 -> 5
 	5 -> 6
+	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -29139,17 +29360,20 @@ digraph {
 	11 -> 12
 	4 -> 7
 	4 -> 10
-	8 -> 9
+	3 -> 10
+	3 -> 7
 	5 -> 6
-	2 -> 3
 	10 -> 11
 	1 -> 2
-	12 -> 13
-	6 -> 13
-	3 -> 4
-	9 -> 13
 	4 -> 5
 	7 -> 8
+	3 -> 5
+	8 -> 9
+	2 -> 3
+	12 -> 13
+	6 -> 13
+	9 -> 13
+	1 -> 4
 }
 
 // Insertion repaired Instance Graph
@@ -29169,14 +29393,15 @@ digraph {
 	12 [label=6]
 	13 [label=END]
 	7 -> 8
+	3 -> 5
 	8 -> 9
 	5 -> 6
 	2 -> 3
 	1 -> 2
 	10 -> 11
 	12 -> 13
-	3 -> 4
 	9 -> 10
+	1 -> 4
 	4 -> 5
 	6 -> 7
 }
@@ -29290,10 +29515,11 @@ digraph {
 	6 [label=8]
 	7 [label=6]
 	8 [label=END]
+	2 -> 6
 	4 -> 5
-	2 -> 4
-	5 -> 6
+	3 -> 4
 	7 -> 8
+	6 -> 7
 	2 -> 3
 	1 -> 2
 }
@@ -29464,8 +29690,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -29594,16 +29820,17 @@ digraph {
 	8 [label=6]
 	9 [label=6]
 	10 [label=END]
+	2 -> 6
 	2 -> 7
 	7 -> 9
 	8 -> 10
+	6 -> 8
 	3 -> 9
 	1 -> 2
 	9 -> 10
 	2 -> 3
 	4 -> 5
 	3 -> 4
-	5 -> 6
 	7 -> 8
 	3 -> 8
 }
@@ -29621,16 +29848,15 @@ digraph {
 	8 [label=6]
 	9 [label=6]
 	10 [label=END]
-	2 -> 7
-	8 -> 10
+	2 -> 6
+	4 -> 7
+	3 -> 9
 	2 -> 3
-	1 -> 2
 	9 -> 10
+	1 -> 2
 	4 -> 5
 	3 -> 4
-	5 -> 6
 	7 -> 8
-	3 -> 8
 }
 
 // Unrepaired Instance Graph
@@ -29855,50 +30081,14 @@ digraph {
 	10 [label=8]
 	11 [label=6]
 	12 [label=END]
-	2 -> 6
-	8 -> 11
-	3 -> 6
 	2 -> 10
-	3 -> 10
-	1 -> 2
-	3 -> 4
-	4 -> 9
-	3 -> 8
-	11 -> 12
-	6 -> 7
-	10 -> 11
-	2 -> 4
-	2 -> 8
-	5 -> 7
-	1 -> 3
-	9 -> 11
-	7 -> 12
-	4 -> 5
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=1]
-	4 [label=8]
-	5 [label=9]
-	6 [label=8]
-	7 [label=6]
-	8 [label=8]
-	9 [label=9]
-	10 [label=8]
-	11 [label=6]
-	12 [label=END]
-	2 -> 6
-	3 -> 6
-	2 -> 10
-	8 -> 9
 	7 -> 8
 	1 -> 3
+	3 -> 9
 	3 -> 10
 	6 -> 7
+	5 -> 6
+	9 -> 11
 	1 -> 2
 	3 -> 4
 	11 -> 12
@@ -29948,8 +30138,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
-	3 -> 5
 	5 -> 6
+	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -30200,12 +30390,39 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
+	2 -> 7
 	8 -> 9
-	4 -> 5
-	1 -> 2
-	2 -> 4
+	2 -> 5
 	5 -> 6
 	2 -> 3
+	1 -> 2
+	6 -> 9
+	3 -> 4
+	7 -> 8
+	4 -> 6
+	3 -> 8
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=9]
+	5 [label=8]
+	6 [label=6]
+	7 [label=8]
+	8 [label=6]
+	9 [label=END]
+	8 -> 9
+	2 -> 5
+	5 -> 6
+	2 -> 3
+	1 -> 2
+	3 -> 4
+	7 -> 8
+	4 -> 6
 	6 -> 7
 }
 
@@ -30602,15 +30819,15 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
-	2 -> 7
 	8 -> 9
-	5 -> 6
-	6 -> 8
+	4 -> 8
+	2 -> 5
+	6 -> 7
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
-	4 -> 5
+	5 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -30768,61 +30985,14 @@ digraph {
 	8 [label=6]
 	9 [label=END]
 	2 -> 6
-	5 -> 9
+	2 -> 7
 	8 -> 9
-	3 -> 7
 	6 -> 8
 	2 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
 	7 -> 8
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=9]
-	5 [label=6]
-	6 [label=8]
-	7 [label=9]
-	8 [label=6]
-	9 [label=END]
-	2 -> 6
-	8 -> 9
-	3 -> 7
-	6 -> 8
-	2 -> 3
-	1 -> 2
-	4 -> 5
-	3 -> 4
-	7 -> 8
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=9]
-	5 [label=6]
-	6 [label=8]
-	7 [label=9]
-	8 [label=6]
-	9 [label=END]
-	2 -> 6
-	8 -> 9
-	3 -> 7
-	2 -> 3
-	1 -> 2
-	4 -> 5
-	3 -> 4
-	7 -> 8
-	6 -> 7
 }
 
 // Unrepaired Instance Graph
@@ -31052,8 +31222,8 @@ digraph {
 	6 [label=9]
 	7 [label=6]
 	8 [label=END]
+	2 -> 6
 	4 -> 7
-	3 -> 6
 	5 -> 7
 	2 -> 5
 	2 -> 3
@@ -31061,28 +31231,6 @@ digraph {
 	3 -> 4
 	7 -> 8
 	6 -> 7
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=9]
-	5 [label=8]
-	6 [label=9]
-	7 [label=6]
-	8 [label=END]
-	4 -> 7
-	3 -> 6
-	2 -> 5
-	2 -> 3
-	1 -> 2
-	3 -> 4
-	7 -> 8
-	6 -> 7
-	5 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -31319,8 +31467,29 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 5
+	1 -> 3
+	2 -> 5
 	5 -> 6
-	2 -> 3
+	1 -> 2
+	1 -> 4
+	4 -> 5
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=1]
+	4 [label=1]
+	5 [label=8]
+	6 [label=6]
+	7 [label=END]
+	6 -> 7
+	3 -> 5
+	2 -> 5
+	1 -> 3
+	5 -> 6
 	1 -> 2
 	1 -> 4
 	4 -> 5
@@ -31394,8 +31563,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -31949,8 +32118,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -32324,16 +32493,16 @@ digraph {
 	8 [label=8]
 	9 [label=6]
 	10 [label=END]
-	2 -> 6
-	3 -> 6
+	7 -> 9
+	2 -> 8
 	1 -> 3
+	6 -> 7
+	5 -> 6
 	1 -> 2
 	9 -> 10
-	5 -> 9
 	3 -> 4
-	7 -> 8
 	8 -> 9
-	6 -> 7
+	3 -> 8
 	4 -> 5
 	2 -> 4
 }
@@ -32473,40 +32642,16 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
+	2 -> 6
 	2 -> 7
 	5 -> 8
 	8 -> 9
-	3 -> 6
-	4 -> 8
-	2 -> 5
 	6 -> 8
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=9]
-	5 [label=8]
-	6 [label=9]
-	7 [label=8]
-	8 [label=6]
-	9 [label=END]
-	8 -> 9
-	4 -> 8
-	2 -> 5
-	6 -> 7
-	2 -> 3
-	1 -> 2
-	3 -> 4
-	7 -> 8
-	5 -> 6
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -32954,7 +33099,6 @@ digraph {
 	9 [label=6]
 	10 [label=END]
 	7 -> 9
-	3 -> 7
 	1 -> 2
 	9 -> 10
 	4 -> 5
@@ -32962,30 +33106,7 @@ digraph {
 	5 -> 6
 	8 -> 9
 	3 -> 8
-	2 -> 3
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=3]
-	3 [label=1]
-	4 [label=8]
-	5 [label=6]
-	6 [label=8]
-	7 [label=9]
-	8 [label=8]
-	9 [label=6]
-	10 [label=END]
-	3 -> 7
-	1 -> 2
-	9 -> 10
-	4 -> 5
-	3 -> 4
-	5 -> 6
-	7 -> 8
-	8 -> 9
+	6 -> 7
 	2 -> 3
 }
 
@@ -33047,14 +33168,14 @@ digraph {
 	6 [label=9]
 	7 [label=6]
 	8 [label=END]
-	5 -> 6
-	3 -> 7
+	2 -> 6
+	5 -> 7
 	2 -> 3
 	1 -> 2
+	3 -> 4
 	7 -> 8
 	6 -> 7
 	4 -> 5
-	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -33215,14 +33336,37 @@ digraph {
 	6 [label=8]
 	7 [label=6]
 	8 [label=END]
-	2 -> 6
+	4 -> 7
+	3 -> 6
 	5 -> 7
+	2 -> 5
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
-	4 -> 5
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=9]
+	4 [label=8]
+	5 [label=9]
+	6 [label=8]
+	7 [label=6]
+	8 [label=END]
+	4 -> 7
+	3 -> 6
+	2 -> 5
+	2 -> 3
+	1 -> 2
+	3 -> 4
+	7 -> 8
+	6 -> 7
+	5 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -33314,8 +33458,8 @@ digraph {
 	8 [label=END]
 	1 -> 2
 	4 -> 5
-	3 -> 6
 	3 -> 4
+	5 -> 6
 	7 -> 8
 	6 -> 7
 	2 -> 3
@@ -33430,12 +33574,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -33803,14 +33947,14 @@ digraph {
 	6 [label=8]
 	7 [label=6]
 	8 [label=END]
+	2 -> 6
 	5 -> 7
-	2 -> 5
-	4 -> 6
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -33864,6 +34008,7 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
+	2 -> 7
 	8 -> 9
 	3 -> 5
 	1 -> 3
@@ -33889,15 +34034,42 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
+	2 -> 7
 	8 -> 9
-	3 -> 5
-	6 -> 7
+	4 -> 8
 	1 -> 3
+	3 -> 7
+	5 -> 6
+	1 -> 2
+	6 -> 9
+	3 -> 4
+	7 -> 8
+	4 -> 5
+	2 -> 4
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=1]
+	4 [label=8]
+	5 [label=9]
+	6 [label=6]
+	7 [label=8]
+	8 [label=6]
+	9 [label=END]
+	2 -> 7
+	8 -> 9
+	4 -> 8
+	1 -> 3
+	3 -> 7
 	5 -> 6
 	1 -> 2
 	3 -> 4
 	7 -> 8
-	4 -> 6
+	4 -> 5
 	2 -> 4
 }
 
@@ -34012,33 +34184,11 @@ digraph {
 	8 [label=END]
 	2 -> 6
 	3 -> 4
-	5 -> 7
-	2 -> 5
-	2 -> 3
-	1 -> 2
+	4 -> 5
 	7 -> 8
 	6 -> 7
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=6]
-	5 [label=8]
-	6 [label=8]
-	7 [label=6]
-	8 [label=END]
-	3 -> 4
-	2 -> 6
-	5 -> 7
-	2 -> 5
 	2 -> 3
 	1 -> 2
-	7 -> 8
-	6 -> 7
 }
 
 // Unrepaired Instance Graph
@@ -34269,8 +34419,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -34327,8 +34477,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -34424,8 +34574,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
+	3 -> 5
 	5 -> 6
-	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -34836,12 +34986,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -35026,15 +35176,43 @@ digraph {
 	11 [label=6]
 	12 [label=END]
 	2 -> 6
+	8 -> 11
 	3 -> 6
 	4 -> 11
-	7 -> 8
 	6 -> 7
+	9 -> 11
+	1 -> 2
+	3 -> 4
+	11 -> 12
+	10 -> 11
+	4 -> 5
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=1]
+	4 [label=8]
+	5 [label=9]
+	6 [label=8]
+	7 [label=6]
+	8 [label=8]
+	9 [label=8]
+	10 [label=8]
+	11 [label=6]
+	12 [label=END]
+	2 -> 6
+	3 -> 6
+	4 -> 11
+	10 -> 11
+	9 -> 10
 	1 -> 2
 	8 -> 9
 	3 -> 4
 	11 -> 12
-	10 -> 11
+	6 -> 7
 	4 -> 5
 }
 
@@ -35374,10 +35552,9 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
-	2 -> 5
-	5 -> 6
-	2 -> 3
 	1 -> 2
+	2 -> 3
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -35657,8 +35834,29 @@ digraph {
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
+	3 -> 6
 	4 -> 6
+	2 -> 4
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=8]
+	5 [label=8]
+	6 [label=6]
+	7 [label=END]
+	6 -> 7
+	2 -> 5
+	5 -> 6
+	2 -> 3
+	1 -> 2
+	3 -> 6
+	4 -> 6
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -35797,8 +35995,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
+	3 -> 5
 	5 -> 6
-	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -36111,21 +36309,17 @@ digraph {
 	12 [label=END]
 	2 -> 7
 	2 -> 10
-	4 -> 8
+	2 -> 9
 	5 -> 6
 	9 -> 11
 	1 -> 2
+	2 -> 3
 	3 -> 4
 	7 -> 8
-	4 -> 6
-	6 -> 12
 	11 -> 12
 	10 -> 11
+	4 -> 5
 	8 -> 12
-	4 -> 11
-	2 -> 5
-	2 -> 9
-	2 -> 3
 }
 
 // Insertion repaired Instance Graph
@@ -36143,8 +36337,7 @@ digraph {
 	10 [label=8]
 	11 [label=6]
 	12 [label=END]
-	4 -> 11
-	2 -> 5
+	2 -> 7
 	8 -> 9
 	5 -> 6
 	2 -> 3
@@ -36153,7 +36346,7 @@ digraph {
 	3 -> 4
 	7 -> 8
 	11 -> 12
-	6 -> 7
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -36225,8 +36418,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
-	3 -> 5
 	5 -> 6
+	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -36647,6 +36840,27 @@ digraph {
 	6 -> 7
 }
 
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=9]
+	5 [label=9]
+	6 [label=8]
+	7 [label=6]
+	8 [label=END]
+	2 -> 5
+	4 -> 6
+	2 -> 3
+	1 -> 2
+	3 -> 4
+	7 -> 8
+	6 -> 7
+	5 -> 6
+}
+
 // Unrepaired Instance Graph
 digraph {
 	node [shape=circle]
@@ -36740,6 +36954,7 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
+	2 -> 6
 	2 -> 7
 	3 -> 4
 	8 -> 9
@@ -36748,7 +36963,28 @@ digraph {
 	1 -> 2
 	4 -> 5
 	7 -> 8
-	5 -> 6
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=6]
+	5 [label=8]
+	6 [label=9]
+	7 [label=8]
+	8 [label=6]
+	9 [label=END]
+	2 -> 6
+	3 -> 4
+	8 -> 9
+	2 -> 3
+	4 -> 5
+	1 -> 2
+	7 -> 8
+	6 -> 7
 }
 
 // Unrepaired Instance Graph
@@ -36910,12 +37146,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -37056,8 +37292,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -37230,16 +37466,15 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
+	2 -> 6
 	2 -> 7
-	5 -> 8
-	8 -> 9
 	3 -> 4
-	2 -> 5
+	8 -> 9
 	6 -> 8
 	2 -> 3
 	1 -> 2
+	4 -> 5
 	7 -> 8
-	4 -> 6
 }
 
 // Insertion repaired Instance Graph
@@ -37254,14 +37489,13 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
+	2 -> 6
 	3 -> 4
-	5 -> 8
 	8 -> 9
-	2 -> 5
 	2 -> 3
+	4 -> 5
 	1 -> 2
 	7 -> 8
-	4 -> 6
 	6 -> 7
 }
 
@@ -37299,40 +37533,12 @@ digraph {
 	6 [label=8]
 	7 [label=6]
 	8 [label=END]
-	2 -> 6
-	4 -> 7
-	3 -> 6
-	3 -> 5
 	5 -> 7
-	1 -> 3
-	1 -> 2
-	3 -> 4
-	7 -> 8
-	6 -> 7
-	2 -> 4
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=1]
-	4 [label=8]
-	5 [label=9]
-	6 [label=8]
-	7 [label=6]
-	8 [label=END]
-	2 -> 6
-	3 -> 6
-	5 -> 7
-	1 -> 3
-	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
 	4 -> 5
-	2 -> 4
+	1 -> 2
 }
 
 // Unrepaired Instance Graph
@@ -37389,8 +37595,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -37488,17 +37694,20 @@ digraph {
 	10 [label=8]
 	11 [label=6]
 	12 [label=END]
+	2 -> 6
+	8 -> 11
 	2 -> 10
-	7 -> 8
-	6 -> 7
-	2 -> 9
-	5 -> 6
-	2 -> 3
-	9 -> 11
 	1 -> 2
 	3 -> 4
+	4 -> 9
 	11 -> 12
+	6 -> 7
 	10 -> 11
+	2 -> 8
+	5 -> 7
+	9 -> 11
+	2 -> 3
+	7 -> 12
 	4 -> 5
 }
 
@@ -37517,17 +37726,16 @@ digraph {
 	10 [label=8]
 	11 [label=6]
 	12 [label=END]
-	5 -> 10
+	2 -> 6
+	2 -> 10
+	8 -> 9
 	7 -> 8
-	10 -> 11
-	2 -> 9
-	5 -> 6
-	1 -> 2
+	6 -> 7
 	2 -> 3
-	9 -> 10
+	1 -> 2
 	3 -> 4
 	11 -> 12
-	6 -> 7
+	10 -> 11
 	4 -> 5
 }
 
@@ -37574,8 +37782,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -37622,8 +37830,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -37937,8 +38145,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -38035,10 +38243,9 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
-	2 -> 5
-	5 -> 6
-	2 -> 3
 	1 -> 2
+	2 -> 3
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -38098,8 +38305,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
+	3 -> 5
 	5 -> 6
-	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -38275,8 +38482,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -38408,10 +38615,32 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	3 -> 5
+	1 -> 3
+	2 -> 5
 	5 -> 6
-	2 -> 3
 	1 -> 2
-	3 -> 4
+	1 -> 4
+	4 -> 5
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=1]
+	4 [label=1]
+	5 [label=8]
+	6 [label=6]
+	7 [label=END]
+	6 -> 7
+	3 -> 5
+	2 -> 5
+	1 -> 3
+	5 -> 6
+	1 -> 2
+	1 -> 4
 	4 -> 5
 }
 
@@ -38705,38 +38934,14 @@ digraph {
 	8 [label=6]
 	9 [label=END]
 	2 -> 7
-	5 -> 8
-	8 -> 9
 	3 -> 4
-	2 -> 5
+	8 -> 9
 	6 -> 8
 	2 -> 3
 	1 -> 2
+	4 -> 5
 	7 -> 8
-	4 -> 6
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=6]
-	5 [label=8]
-	6 [label=9]
-	7 [label=8]
-	8 [label=6]
-	9 [label=END]
-	3 -> 4
-	5 -> 8
-	8 -> 9
-	2 -> 5
-	2 -> 3
-	1 -> 2
-	7 -> 8
-	4 -> 6
-	6 -> 7
+	5 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -38766,8 +38971,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
+	3 -> 5
 	5 -> 6
-	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -39099,12 +39304,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -39684,13 +39889,40 @@ digraph {
 	9 [label=6]
 	10 [label=END]
 	7 -> 9
+	3 -> 6
 	3 -> 7
-	5 -> 6
 	1 -> 2
 	9 -> 10
+	5 -> 9
 	3 -> 4
 	8 -> 9
 	3 -> 8
+	6 -> 9
+	4 -> 5
+	2 -> 3
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=3]
+	3 [label=1]
+	4 [label=8]
+	5 [label=9]
+	6 [label=8]
+	7 [label=9]
+	8 [label=8]
+	9 [label=6]
+	10 [label=END]
+	5 -> 8
+	3 -> 6
+	3 -> 7
+	1 -> 2
+	9 -> 10
+	3 -> 4
+	7 -> 8
+	8 -> 9
 	6 -> 9
 	4 -> 5
 	2 -> 3
@@ -39989,14 +40221,37 @@ digraph {
 	6 [label=9]
 	7 [label=6]
 	8 [label=END]
-	2 -> 6
+	4 -> 7
+	3 -> 6
 	5 -> 7
+	2 -> 5
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
-	4 -> 5
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=9]
+	5 [label=8]
+	6 [label=9]
+	7 [label=6]
+	8 [label=END]
+	4 -> 7
+	3 -> 6
+	2 -> 5
+	2 -> 3
+	1 -> 2
+	3 -> 4
+	7 -> 8
+	6 -> 7
+	5 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -40235,15 +40490,46 @@ digraph {
 	9 [label=8]
 	10 [label=6]
 	11 [label=END]
-	6 -> 7
-	2 -> 5
-	5 -> 6
+	2 -> 7
+	2 -> 8
+	8 -> 10
+	2 -> 9
+	9 -> 10
 	2 -> 3
 	1 -> 2
-	7 -> 8
+	5 -> 6
+	7 -> 10
+	3 -> 4
 	10 -> 11
+	4 -> 5
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=9]
+	5 [label=8]
+	6 [label=6]
+	7 [label=8]
+	8 [label=9]
+	9 [label=8]
+	10 [label=6]
+	11 [label=END]
+	2 -> 7
+	2 -> 8
 	8 -> 9
-	2 -> 4
+	5 -> 6
+	2 -> 3
+	1 -> 2
+	9 -> 10
+	7 -> 10
+	3 -> 4
+	10 -> 11
+	4 -> 9
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -40361,14 +40647,15 @@ digraph {
 	6 [label=9]
 	7 [label=6]
 	8 [label=END]
-	5 -> 6
-	3 -> 7
+	2 -> 6
+	4 -> 7
+	5 -> 7
+	2 -> 5
 	2 -> 3
 	1 -> 2
+	3 -> 4
 	7 -> 8
 	6 -> 7
-	4 -> 5
-	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -40429,8 +40716,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -40577,40 +40864,15 @@ digraph {
 	7 [label=9]
 	8 [label=6]
 	9 [label=END]
-	2 -> 6
-	2 -> 7
-	5 -> 8
 	8 -> 9
-	6 -> 8
+	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
+	6 -> 7
 	7 -> 8
+	3 -> 8
 	4 -> 5
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=9]
-	5 [label=9]
-	6 [label=9]
-	7 [label=9]
-	8 [label=6]
-	9 [label=END]
-	2 -> 6
-	5 -> 8
-	8 -> 9
-	3 -> 7
-	6 -> 8
-	2 -> 3
-	1 -> 2
-	3 -> 4
-	7 -> 8
-	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -40817,8 +41079,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -41411,34 +41673,10 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
+	2 -> 6
 	2 -> 7
 	5 -> 8
 	8 -> 9
-	3 -> 6
-	4 -> 8
-	2 -> 5
-	6 -> 8
-	2 -> 3
-	1 -> 2
-	3 -> 4
-	7 -> 8
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=9]
-	5 [label=8]
-	6 [label=9]
-	7 [label=8]
-	8 [label=6]
-	9 [label=END]
-	2 -> 7
-	8 -> 9
-	5 -> 6
 	6 -> 8
 	2 -> 3
 	1 -> 2
@@ -41527,8 +41765,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
+	3 -> 5
 	5 -> 6
-	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -41564,10 +41802,10 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -41721,9 +41959,9 @@ digraph {
 	8 [label=END]
 	1 -> 2
 	3 -> 4
-	4 -> 5
+	6 -> 7
 	7 -> 8
-	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 }
@@ -41947,12 +42185,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -42101,14 +42339,38 @@ digraph {
 	8 [label=6]
 	9 [label=END]
 	2 -> 7
-	3 -> 4
+	5 -> 8
 	8 -> 9
+	3 -> 4
+	2 -> 5
 	6 -> 8
 	2 -> 3
 	1 -> 2
-	4 -> 5
 	7 -> 8
-	5 -> 6
+	4 -> 6
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=6]
+	5 [label=8]
+	6 [label=9]
+	7 [label=8]
+	8 [label=6]
+	9 [label=END]
+	3 -> 4
+	5 -> 8
+	8 -> 9
+	2 -> 5
+	2 -> 3
+	1 -> 2
+	7 -> 8
+	4 -> 6
+	6 -> 7
 }
 
 // Unrepaired Instance Graph
@@ -42475,12 +42737,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -42706,10 +42968,10 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -42780,8 +43042,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -43436,8 +43698,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -43489,32 +43751,10 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	3 -> 5
-	1 -> 3
-	2 -> 5
 	5 -> 6
+	2 -> 3
 	1 -> 2
-	1 -> 4
-	4 -> 5
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=1]
-	4 [label=1]
-	5 [label=8]
-	6 [label=6]
-	7 [label=END]
-	6 -> 7
-	3 -> 5
-	2 -> 5
-	1 -> 3
-	5 -> 6
-	1 -> 2
-	1 -> 4
+	3 -> 4
 	4 -> 5
 }
 
@@ -43626,12 +43866,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -43660,8 +43900,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -43786,8 +44026,8 @@ digraph {
 	3 [label=1]
 	4 [label=6]
 	5 [label=END]
+	1 -> 3
 	3 -> 4
-	2 -> 4
 	4 -> 5
 	1 -> 2
 }
@@ -43849,17 +44089,16 @@ digraph {
 	9 [label=6]
 	10 [label=END]
 	5 -> 8
-	2 -> 6
 	7 -> 9
-	2 -> 8
 	3 -> 6
 	5 -> 7
-	1 -> 3
 	4 -> 6
 	1 -> 5
 	1 -> 2
 	9 -> 10
+	2 -> 3
 	8 -> 9
+	3 -> 8
 	6 -> 9
 	1 -> 4
 	5 -> 6
@@ -43880,13 +44119,12 @@ digraph {
 	10 [label=END]
 	5 -> 6
 	7 -> 9
-	2 -> 8
-	1 -> 3
+	2 -> 3
 	1 -> 2
 	9 -> 10
-	3 -> 4
-	4 -> 5
 	8 -> 9
+	3 -> 8
+	1 -> 4
 	6 -> 7
 }
 
@@ -43944,8 +44182,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -44001,13 +44239,14 @@ digraph {
 	7 [label=6]
 	8 [label=END]
 	2 -> 6
+	4 -> 7
 	5 -> 7
+	2 -> 5
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
-	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -44224,15 +44463,15 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
+	2 -> 7
 	8 -> 9
-	4 -> 8
-	2 -> 5
-	6 -> 7
+	5 -> 6
+	6 -> 8
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
-	5 -> 6
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -44324,9 +44563,10 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
-	1 -> 2
+	2 -> 5
+	5 -> 6
 	2 -> 3
-	4 -> 5
+	1 -> 2
 }
 
 // Unrepaired Instance Graph
@@ -44377,8 +44617,8 @@ digraph {
 	6 [label=9]
 	7 [label=6]
 	8 [label=END]
+	2 -> 6
 	4 -> 7
-	3 -> 6
 	5 -> 7
 	2 -> 5
 	2 -> 3
@@ -44386,28 +44626,6 @@ digraph {
 	3 -> 4
 	7 -> 8
 	6 -> 7
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=9]
-	5 [label=8]
-	6 [label=9]
-	7 [label=6]
-	8 [label=END]
-	4 -> 7
-	3 -> 6
-	2 -> 5
-	2 -> 3
-	1 -> 2
-	3 -> 4
-	7 -> 8
-	6 -> 7
-	5 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -44520,12 +44738,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -44559,12 +44777,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -44692,36 +44910,13 @@ digraph {
 	7 [label=6]
 	8 [label=END]
 	2 -> 6
-	4 -> 7
 	5 -> 7
-	2 -> 5
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=9]
-	5 [label=9]
-	6 [label=9]
-	7 [label=6]
-	8 [label=END]
-	4 -> 7
-	3 -> 6
-	5 -> 7
-	2 -> 5
-	2 -> 3
-	1 -> 2
-	3 -> 4
-	7 -> 8
-	6 -> 7
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -44755,12 +44950,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -44932,40 +45127,12 @@ digraph {
 	6 [label=8]
 	7 [label=6]
 	8 [label=END]
-	2 -> 6
-	4 -> 7
-	3 -> 6
-	3 -> 5
 	5 -> 7
-	1 -> 3
-	1 -> 2
-	3 -> 4
-	7 -> 8
-	6 -> 7
-	2 -> 4
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=1]
-	4 [label=8]
-	5 [label=9]
-	6 [label=8]
-	7 [label=6]
-	8 [label=END]
-	2 -> 6
-	3 -> 6
-	5 -> 7
-	1 -> 3
-	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
 	4 -> 5
-	2 -> 4
+	1 -> 2
 }
 
 // Unrepaired Instance Graph
@@ -45013,11 +45180,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
 	3 -> 4
-	4 -> 5
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -45100,12 +45268,40 @@ digraph {
 	6 [label=8]
 	7 [label=6]
 	8 [label=END]
+	2 -> 6
+	4 -> 7
+	3 -> 6
+	3 -> 5
 	5 -> 7
+	1 -> 3
+	1 -> 2
+	3 -> 4
+	7 -> 8
+	6 -> 7
+	2 -> 4
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=1]
+	4 [label=8]
+	5 [label=9]
+	6 [label=8]
+	7 [label=6]
+	8 [label=END]
+	2 -> 6
+	3 -> 6
+	5 -> 7
+	1 -> 3
+	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
 	4 -> 5
-	1 -> 2
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -45244,15 +45440,39 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
+	2 -> 6
+	2 -> 7
+	5 -> 8
 	8 -> 9
-	5 -> 6
-	6 -> 7
+	6 -> 8
 	2 -> 3
 	1 -> 2
+	3 -> 4
 	7 -> 8
-	3 -> 8
 	4 -> 5
-	2 -> 4
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=9]
+	5 [label=9]
+	6 [label=9]
+	7 [label=8]
+	8 [label=6]
+	9 [label=END]
+	2 -> 6
+	8 -> 9
+	5 -> 7
+	4 -> 5
+	2 -> 3
+	1 -> 2
+	3 -> 4
+	7 -> 8
+	6 -> 7
 }
 
 // Unrepaired Instance Graph
@@ -45356,16 +45576,41 @@ digraph {
 	6 [label=9]
 	7 [label=6]
 	8 [label=END]
+	3 -> 5
 	5 -> 7
+	1 -> 3
+	2 -> 5
 	4 -> 6
-	2 -> 3
+	1 -> 4
 	1 -> 2
-	3 -> 4
 	7 -> 8
 	6 -> 7
 	4 -> 5
 }
 
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=1]
+	4 [label=1]
+	5 [label=8]
+	6 [label=9]
+	7 [label=6]
+	8 [label=END]
+	3 -> 5
+	5 -> 7
+	2 -> 5
+	1 -> 3
+	4 -> 6
+	6 -> 7
+	1 -> 2
+	7 -> 8
+	1 -> 4
+	4 -> 5
+}
+
 // Unrepaired Instance Graph
 digraph {
 	node [shape=circle]
@@ -45421,10 +45666,9 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
-	2 -> 5
-	5 -> 6
-	2 -> 3
 	1 -> 2
+	2 -> 3
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -45458,9 +45702,10 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
-	1 -> 2
+	2 -> 5
+	5 -> 6
 	2 -> 3
-	4 -> 5
+	1 -> 2
 }
 
 // Unrepaired Instance Graph
@@ -45541,8 +45786,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -45600,22 +45845,6 @@ digraph {
 	3 -> 4
 	4 -> 5
 }
-
-+--------+---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+---+------------------+------------------------------------------------------------------------------------------------------------------+
-|trace_id|trace                      |alignment                                                                                                                                     |V                                                             |W                                                                                                                                     |D  |I                 |Wi                                                                                                                |
-+--------+---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+---+------------------+------------------------------------------------------------------------------------------------------------------+
-|2       |[START, 1, 8, 6, END]      |[{START, START}, {>>, null}, {>>, null}, {1, 1}, {>>, null}, {>>, null}, {8, 8}, {>>, null}, {>>, null}, {6, 6}, {END, END}]                  |[{1, START}, {2, 1}, {3, 8}, {4, 6}, {5, END}]                |[{{1, START}, {2, 1}}, {{2, 1}, {3, 8}}, {{3, 8}, {4, 6}}, {{4, 6}, {5, END}}]                                                        |[] |[]                |null                                                                                                              |
-|3       |[START, 1, 8, 6, END]      |[{START, START}, {>>, null}, {>>, null}, {1, 1}, {>>, null}, {>>, null}, {8, 8}, {>>, null}, {>>, null}, {6, 6}, {END, END}]                  |[{1, START}, {2, 1}, {3, 8}, {4, 6}, {5, END}]                |[{{1, START}, {2, 1}}, {{2, 1}, {3, 8}}, {{3, 8}, {4, 6}}, {{4, 6}, {5, END}}]                                                        |[] |[]                |null                                                                                                              |
-|4       |[START, 1, 8, 6, END]      |[{START, START}, {>>, null}, {>>, null}, {1, 1}, {>>, null}, {>>, null}, {8, 8}, {>>, null}, {>>, null}, {6, 6}, {END, END}]                  |[{1, START}, {2, 1}, {3, 8}, {4, 6}, {5, END}]                |[{{1, START}, {2, 1}}, {{2, 1}, {3, 8}}, {{3, 8}, {4, 6}}, {{4, 6}, {5, END}}]                                                        |[] |[]                |null                                                                                                              |
-|5       |[START, 1, 8, 6, 8, 6, END]|[{START, START}, {>>, null}, {>>, null}, {1, 1}, {8, >>}, {>>, null}, {>>, null}, {6, >>}, {8, 8}, {>>, null}, {>>, null}, {6, 6}, {END, END}]|[{1, START}, {2, 1}, {3, 8}, {4, 6}, {5, 8}, {6, 6}, {7, END}]|[{{1, START}, {2, 1}}, {{2, 1}, {3, 8}}, {{2, 1}, {5, 8}}, {{3, 8}, {4, 6}}, {{4, 6}, {7, END}}, {{5, 8}, {6, 6}}, {{6, 6}, {7, END}}]|[] |[[{3, 8}, {4, 6}]]|[{{6, 6}, {7, END}}, {{3, 8}, {4, 6}}, {{2, 1}, {5, 8}}, {{5, 8}, {6, 6}}, {{2, 1}, {3, 8}}, {{1, START}, {2, 1}}]|
-|6       |[START, 1, 8, 6, END]      |[{START, START}, {>>, null}, {>>, null}, {1, 1}, {>>, null}, {>>, null}, {8, 8}, {>>, null}, {>>, null}, {6, 6}, {END, END}]                  |[{1, START}, {2, 1}, {3, 8}, {4, 6}, {5, END}]                |[{{1, START}, {2, 1}}, {{2, 1}, {3, 8}}, {{3, 8}, {4, 6}}, {{4, 6}, {5, END}}]                                                        |[] |[]                |null                                                                                                              |
-+--------+---------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+---+------------------+------------------------------------------------------------------------------------------------------------------+
-only showing top 5 rows
-
-
--------------- EXEC_TIME ---------------
-
-29.031147480010986 secondi
 
 // Unrepaired Instance Graph
 digraph {
@@ -45962,12 +46191,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -46001,12 +46230,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -46100,44 +46329,16 @@ digraph {
 	10 [label=6]
 	11 [label=END]
 	3 -> 4
-	2 -> 7
 	8 -> 10
 	2 -> 9
 	9 -> 10
-	6 -> 8
-	1 -> 2
 	2 -> 3
+	1 -> 2
 	4 -> 5
 	5 -> 6
-	7 -> 10
+	7 -> 8
 	10 -> 11
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=6]
-	5 [label=8]
-	6 [label=6]
-	7 [label=8]
-	8 [label=9]
-	9 [label=8]
-	10 [label=6]
-	11 [label=END]
-	3 -> 4
-	2 -> 7
-	5 -> 6
-	6 -> 8
-	1 -> 2
-	2 -> 3
-	4 -> 5
-	9 -> 10
-	7 -> 10
-	10 -> 11
-	8 -> 9
+	6 -> 7
 }
 
 // Unrepaired Instance Graph
@@ -46417,8 +46618,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -46652,10 +46853,9 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
-	2 -> 5
-	5 -> 6
-	2 -> 3
 	1 -> 2
+	2 -> 3
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -46786,13 +46986,13 @@ digraph {
 	6 [label=8]
 	7 [label=6]
 	8 [label=END]
-	3 -> 6
-	5 -> 7
+	4 -> 7
+	3 -> 5
 	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
-	4 -> 5
+	5 -> 6
 	2 -> 3
 }
 
@@ -46915,9 +47115,10 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
-	1 -> 2
+	2 -> 5
+	5 -> 6
 	2 -> 3
-	4 -> 5
+	1 -> 2
 }
 
 // Unrepaired Instance Graph
@@ -47519,8 +47720,8 @@ digraph {
 	5 [label=6]
 	6 [label=END]
 	3 -> 4
+	3 -> 5
 	5 -> 6
-	4 -> 6
 	2 -> 3
 	1 -> 2
 }
@@ -47609,12 +47810,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
+	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 6
-	4 -> 5
-	2 -> 4
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -47990,7 +48191,6 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
-	2 -> 6
 	2 -> 7
 	3 -> 4
 	8 -> 9
@@ -47999,28 +48199,7 @@ digraph {
 	1 -> 2
 	4 -> 5
 	7 -> 8
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=6]
-	5 [label=8]
-	6 [label=9]
-	7 [label=8]
-	8 [label=6]
-	9 [label=END]
-	2 -> 6
-	3 -> 4
-	8 -> 9
-	2 -> 3
-	4 -> 5
-	1 -> 2
-	7 -> 8
-	6 -> 7
+	5 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -48364,8 +48543,8 @@ digraph {
 	7 -> 9
 	2 -> 8
 	3 -> 6
+	4 -> 7
 	1 -> 3
-	3 -> 7
 	1 -> 2
 	9 -> 10
 	5 -> 9
@@ -48390,17 +48569,16 @@ digraph {
 	8 [label=8]
 	9 [label=6]
 	10 [label=END]
-	5 -> 8
-	2 -> 6
-	3 -> 6
+	7 -> 9
+	2 -> 8
 	1 -> 3
-	3 -> 7
+	6 -> 7
+	5 -> 6
 	1 -> 2
 	9 -> 10
 	3 -> 4
-	7 -> 8
 	8 -> 9
-	6 -> 9
+	3 -> 8
 	4 -> 5
 	2 -> 4
 }
@@ -48733,8 +48911,8 @@ digraph {
 	3 [label=1]
 	4 [label=6]
 	5 [label=END]
-	1 -> 3
 	3 -> 4
+	2 -> 4
 	4 -> 5
 	1 -> 2
 }
@@ -48818,28 +48996,11 @@ digraph {
 	4 [label=1]
 	5 [label=6]
 	6 [label=END]
-	4 -> 5
-	3 -> 5
 	5 -> 6
-	1 -> 4
-	1 -> 3
+	2 -> 3
 	1 -> 2
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=1]
-	4 [label=1]
-	5 [label=6]
-	6 [label=END]
 	4 -> 5
-	3 -> 5
-	5 -> 6
-	1 -> 3
-	1 -> 2
+	3 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -48873,12 +49034,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
+	3 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
 	4 -> 6
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -49452,12 +49613,37 @@ digraph {
 	6 [label=6]
 	7 [label=6]
 	8 [label=END]
-	4 -> 5
-	2 -> 4
 	7 -> 8
+	5 -> 7
+	2 -> 5
+	6 -> 8
+	3 -> 7
 	5 -> 6
 	2 -> 3
 	1 -> 2
+	3 -> 4
+	4 -> 6
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=8]
+	4 [label=9]
+	5 [label=8]
+	6 [label=6]
+	7 [label=6]
+	8 [label=END]
+	7 -> 8
+	2 -> 5
+	6 -> 8
+	5 -> 6
+	2 -> 3
+	1 -> 2
+	3 -> 4
+	4 -> 6
 }
 
 // Unrepaired Instance Graph
@@ -49630,14 +49816,15 @@ digraph {
 	7 [label=8]
 	8 [label=6]
 	9 [label=END]
+	2 -> 7
 	8 -> 9
 	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
 	3 -> 4
+	7 -> 8
 	3 -> 8
-	6 -> 7
 }
 
 // Unrepaired Instance Graph
@@ -49701,13 +49888,14 @@ digraph {
 	6 [label=9]
 	7 [label=6]
 	8 [label=END]
-	3 -> 6
+	2 -> 6
+	7 -> 8
 	5 -> 7
+	3 -> 4
 	2 -> 3
 	1 -> 2
-	7 -> 8
+	4 -> 5
 	6 -> 7
-	4 -> 7
 }
 
 // Unrepaired Instance Graph
@@ -49750,8 +49938,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -49912,12 +50100,40 @@ digraph {
 	6 [label=8]
 	7 [label=6]
 	8 [label=END]
+	2 -> 6
+	4 -> 7
+	3 -> 6
+	3 -> 5
 	5 -> 7
+	1 -> 3
+	1 -> 2
+	3 -> 4
+	7 -> 8
+	6 -> 7
+	2 -> 4
+}
+
+// Insertion repaired Instance Graph
+digraph {
+	node [shape=circle]
+	1 [label=START]
+	2 [label=1]
+	3 [label=1]
+	4 [label=8]
+	5 [label=9]
+	6 [label=8]
+	7 [label=6]
+	8 [label=END]
+	2 -> 6
+	3 -> 6
+	5 -> 7
+	1 -> 3
+	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
 	4 -> 5
-	1 -> 2
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -50096,8 +50312,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -50341,35 +50557,13 @@ digraph {
 	7 [label=6]
 	8 [label=END]
 	2 -> 6
-	4 -> 7
 	5 -> 7
-	2 -> 5
 	2 -> 3
 	1 -> 2
 	3 -> 4
 	7 -> 8
 	6 -> 7
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=8]
-	5 [label=9]
-	6 [label=8]
-	7 [label=6]
-	8 [label=END]
-	4 -> 7
-	2 -> 5
-	2 -> 3
-	1 -> 2
-	3 -> 4
-	7 -> 8
-	6 -> 7
-	5 -> 6
+	4 -> 5
 }
 
 // Unrepaired Instance Graph
@@ -50580,8 +50774,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	5 -> 6
 	1 -> 3
+	5 -> 6
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -50771,8 +50965,8 @@ digraph {
 	4 [label=8]
 	5 [label=6]
 	6 [label=END]
-	1 -> 3
 	5 -> 6
+	1 -> 3
 	1 -> 2
 	4 -> 5
 	3 -> 4
@@ -51026,29 +51220,8 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 5
-	1 -> 3
-	2 -> 5
 	5 -> 6
-	1 -> 2
-	1 -> 4
-	4 -> 5
-}
-
-// Insertion repaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=1]
-	4 [label=1]
-	5 [label=8]
-	6 [label=6]
-	7 [label=END]
-	6 -> 7
-	3 -> 5
-	2 -> 5
-	1 -> 3
-	5 -> 6
+	2 -> 3
 	1 -> 2
 	1 -> 4
 	4 -> 5
@@ -51157,12 +51330,12 @@ digraph {
 	6 [label=6]
 	7 [label=END]
 	6 -> 7
-	2 -> 5
 	5 -> 6
 	2 -> 3
 	1 -> 2
-	3 -> 4
-	4 -> 6
+	3 -> 6
+	4 -> 5
+	2 -> 4
 }
 
 // Unrepaired Instance Graph
@@ -51224,8 +51397,9 @@ digraph {
 	7 [label=END]
 	6 -> 7
 	3 -> 4
-	1 -> 2
+	5 -> 6
 	2 -> 3
+	1 -> 2
 	4 -> 5
 }
 
@@ -51371,13 +51545,11 @@ digraph {
 	7 [label=6]
 	8 [label=END]
 	3 -> 4
-	5 -> 7
-	2 -> 5
 	6 -> 8
-	5 -> 6
+	4 -> 5
+	7 -> 8
 	2 -> 3
 	1 -> 2
-	7 -> 8
 }
 
 // Insertion repaired Instance Graph
@@ -51392,26 +51564,10 @@ digraph {
 	7 [label=6]
 	8 [label=END]
 	3 -> 4
-	5 -> 7
-	2 -> 5
-	5 -> 6
-	2 -> 3
 	1 -> 2
-	3 -> 6
+	6 -> 8
 	7 -> 8
-}
-
-// Unrepaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=6]
-	5 [label=END]
-	1 -> 2
 	2 -> 3
-	3 -> 4
 	4 -> 5
 }
 
@@ -51455,31 +51611,5 @@ digraph {
 	2 -> 3
 	3 -> 4
 	4 -> 5
-}
-
-// Unrepaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=8]
-	4 [label=6]
-	5 [label=END]
-	1 -> 2
-	2 -> 3
-	3 -> 4
-	4 -> 5
-}
-
-// Unrepaired Instance Graph
-digraph {
-	node [shape=circle]
-	1 [label=START]
-	2 [label=1]
-	3 [label=6]
-	4 [label=END]
-	1 -> 2
-	2 -> 3
-	3 -> 4
 }
 

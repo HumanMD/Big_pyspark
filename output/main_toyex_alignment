@@ -1,0 +1,110 @@
+TRACE_ID: 1, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('E', 'E'), ('D', 'D'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 2, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('E', 'E'), ('D', 'D'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 3, ALIGNMENT: [('A', 'A'), ('>>', None), ('I', 'I'), ('>>', None), ('L', 'L'), ('>>', None), ('M', 'M'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 4, ALIGNMENT: [('A', 'A'), ('>>', None), ('>>', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('D', 'D'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 5, ALIGNMENT: [('A', 'A'), ('C', '>>'), ('>>', None), ('>>', 'I'), ('>>', None), ('L', 'L'), ('>>', None), ('M', 'M'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 6, ALIGNMENT: [('A', 'A'), ('D', '>>'), ('>>', None), ('I', 'I'), ('>>', None), ('L', 'L'), ('>>', None), ('M', 'M'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 7, ALIGNMENT: [('A', 'A'), ('>>', None), ('I', 'I'), ('>>', None), ('>>', 'L'), ('>>', None), ('M', 'M'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 8, ALIGNMENT: [('A', 'A'), ('>>', None), ('I', 'I'), ('>>', None), ('>>', 'L'), ('>>', None), ('M', 'M'), ('L', '>>'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 9, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('>>', 'C'), ('>>', None), ('E', 'E'), ('D', 'D'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 10, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('>>', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('D', 'D'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 11, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('M', '>>'), ('>>', None), ('D', 'D'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 12, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('K', 'K'), ('E', 'E'), ('D', 'D'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 13, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('>>', 'B'), ('>>', None), ('C', 'C'), ('B', '>>'), ('>>', None), ('E', 'E'), ('D', 'D'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 15, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('E', 'E'), ('D', 'D'), ('M', '>>'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 16, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('D', 'D'), ('E', 'E'), ('K', 'K'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 17, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('E', 'E'), ('D', 'D'), ('>>', None), ('>>', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 18, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('E', 'E'), ('D', 'D'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 19, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('E', 'E'), ('D', 'D'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 20, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('E', 'E'), ('D', 'D'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 21, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('E', 'E'), ('D', 'D'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 22, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('E', 'E'), ('D', 'D'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 23, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('E', 'E'), ('D', 'D'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 24, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('E', 'E'), ('D', 'D'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 25, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('E', 'E'), ('D', 'D'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 26, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('E', 'E'), ('D', 'D'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 27, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('E', 'E'), ('D', 'D'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 28, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('E', 'E'), ('D', 'D'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 29, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('D', 'D'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 30, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('D', 'D'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 31, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('D', 'D'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 32, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('D', 'D'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 33, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('D', 'D'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 34, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('D', 'D'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 35, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('D', 'D'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 36, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('D', 'D'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 37, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('D', 'D'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 38, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('D', 'D'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 39, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('D', 'D'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 40, ALIGNMENT: [('A', 'A'), ('>>', None), ('I', 'I'), ('>>', None), ('L', 'L'), ('>>', None), ('M', 'M'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 41, ALIGNMENT: [('A', 'A'), ('>>', None), ('I', 'I'), ('>>', None), ('L', 'L'), ('>>', None), ('M', 'M'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 42, ALIGNMENT: [('A', 'A'), ('>>', None), ('I', 'I'), ('>>', None), ('L', 'L'), ('>>', None), ('M', 'M'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 43, ALIGNMENT: [('A', 'A'), ('>>', None), ('I', 'I'), ('>>', None), ('L', 'L'), ('>>', None), ('M', 'M'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 44, ALIGNMENT: [('A', 'A'), ('>>', None), ('I', 'I'), ('>>', None), ('L', 'L'), ('>>', None), ('M', 'M'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 45, ALIGNMENT: [('A', 'A'), ('>>', None), ('I', 'I'), ('>>', None), ('L', 'L'), ('>>', None), ('M', 'M'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 46, ALIGNMENT: [('A', 'A'), ('>>', None), ('I', 'I'), ('>>', None), ('L', 'L'), ('>>', None), ('M', 'M'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 47, ALIGNMENT: [('A', 'A'), ('>>', None), ('I', 'I'), ('>>', None), ('L', 'L'), ('>>', None), ('M', 'M'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 48, ALIGNMENT: [('A', 'A'), ('>>', None), ('I', 'I'), ('>>', None), ('L', 'L'), ('>>', None), ('M', 'M'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 49, ALIGNMENT: [('A', 'A'), ('>>', None), ('I', 'I'), ('>>', None), ('L', 'L'), ('>>', None), ('M', 'M'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 50, ALIGNMENT: [('A', 'A'), ('>>', None), ('I', 'I'), ('>>', None), ('L', 'L'), ('>>', None), ('M', 'M'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 51, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('>>', 'C'), ('>>', None), ('D', 'D'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 52, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('>>', 'B'), ('>>', None), ('J', 'J'), ('>>', None), ('R', 'R'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('D', 'D'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 53, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('I', '>>'), ('>>', None), ('D', 'D'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 54, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('>>', None), ('C', 'C'), ('>>', None), ('D', 'D'), ('X', '>>'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+TRACE_ID: 55, ALIGNMENT: [('A', 'A'), ('>>', None), ('B', 'B'), ('I', '>>'), ('>>', None), ('>>', 'C'), ('>>', None), ('D', 'D'), ('E', 'E'), ('>>', None), ('F', 'F'), ('>>', None), ('G', 'G')]
+
+54
+

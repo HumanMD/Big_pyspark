@@ -1,0 +1,4 @@
+36
+
+[('SRP', 'SRPP'), ('SRPP', 'EPP'), ('EPP', 'SLRRP'), ('SLRRP', 'LRERV'), ('LRIRV', 'FLRRP'), ('LRRR', 'FRP'), ('SRP', 'FRPP'), ('LRIRV', 'LRRR'), ('FLRRP', 'FRP'), ('FRPP', 'EPP'), ('EPP', 'SHRRP'), ('SHRRP', 'SHRRPC'), ('FHRRPC', 'HRRR'), ('HRRR', 'FHRRP'), ('FHRRP', 'FRP'), ('MHRRPC', 'FHRRPC'), ('SLRRP', 'LRIRV'), ('LRERV', 'LRRR'), ('SHRRPC', 'MHRRPC'), ('EPP', 'SRP'), ('SRP', 'FRP'), ('FRP', 'HRHA'), ('FHRRPC', 'EPP'), ('FRP', 'SHRRPC'), ('SHRRPC', 'AHRRPC'), ('HRRAN', 'HRRR'), ('AHRRPC', 'FHRRPC'), ('LRERV', 'FLRRP'), ('SHRRP', 'HRHA'), ('FHRRPC', 'RHRRPC'), ('RHRRPC', 'SHRRPC'), ('SHRRP', 'HRRAN'), ('FRP', 'HRRAN'), ('HRHA', 'EPP'), ('HRRAN', 'EPP'), ('HRHA', 'HRRR')]
+

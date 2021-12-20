@@ -1,0 +1,110 @@
+TRACE_ID: 1, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'E', 'D', 'F', 'G']
+
+TRACE_ID: 2, TRACE: ['A', 'B', 'J', 'R', 'B', 'J', 'R', 'B', 'C', 'E', 'D', 'F', 'G']
+
+TRACE_ID: 3, TRACE: ['A', 'I', 'L', 'M', 'G']
+
+TRACE_ID: 4, TRACE: ['A', 'C', 'D', 'E', 'F', 'G']
+
+TRACE_ID: 5, TRACE: ['A', 'C', 'L', 'M', 'G']
+
+TRACE_ID: 6, TRACE: ['A', 'D', 'I', 'L', 'M', 'G']
+
+TRACE_ID: 7, TRACE: ['A', 'I', 'M', 'G']
+
+TRACE_ID: 8, TRACE: ['A', 'I', 'M', 'L', 'G']
+
+TRACE_ID: 9, TRACE: ['A', 'B', 'E', 'D', 'F', 'G']
+
+TRACE_ID: 10, TRACE: ['A', 'B', 'J', 'B', 'C', 'D', 'E', 'F', 'G']
+
+TRACE_ID: 11, TRACE: ['A', 'B', 'J', 'R', 'B', 'J', 'R', 'B', 'C', 'M', 'D', 'E', 'F', 'G']
+
+TRACE_ID: 12, TRACE: ['A', 'B', 'J', 'R', 'B', 'J', 'R', 'B', 'C', 'K', 'E', 'D', 'F', 'G']
+
+TRACE_ID: 13, TRACE: ['A', 'B', 'J', 'R', 'C', 'B', 'E', 'D', 'F', 'G']
+
+TRACE_ID: 15, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'E', 'D', 'M', 'F', 'G']
+
+TRACE_ID: 16, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'D', 'E', 'K', 'F', 'G']
+
+TRACE_ID: 17, TRACE: ['A', 'B', 'C', 'E', 'D', 'G']
+
+TRACE_ID: 18, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'E', 'D', 'F', 'G']
+
+TRACE_ID: 19, TRACE: ['A', 'B', 'C', 'E', 'D', 'F', 'G']
+
+TRACE_ID: 20, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'E', 'D', 'F', 'G']
+
+TRACE_ID: 21, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'E', 'D', 'F', 'G']
+
+TRACE_ID: 22, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'E', 'D', 'F', 'G']
+
+TRACE_ID: 23, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'E', 'D', 'F', 'G']
+
+TRACE_ID: 24, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'E', 'D', 'F', 'G']
+
+TRACE_ID: 25, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'E', 'D', 'F', 'G']
+
+TRACE_ID: 26, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'E', 'D', 'F', 'G']
+
+TRACE_ID: 27, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'E', 'D', 'F', 'G']
+
+TRACE_ID: 28, TRACE: ['A', 'B', 'C', 'E', 'D', 'F', 'G']
+
+TRACE_ID: 29, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'D', 'E', 'F', 'G']
+
+TRACE_ID: 30, TRACE: ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+
+TRACE_ID: 31, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'D', 'E', 'F', 'G']
+
+TRACE_ID: 32, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'D', 'E', 'F', 'G']
+
+TRACE_ID: 33, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'D', 'E', 'F', 'G']
+
+TRACE_ID: 34, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'D', 'E', 'F', 'G']
+
+TRACE_ID: 35, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'D', 'E', 'F', 'G']
+
+TRACE_ID: 36, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'D', 'E', 'F', 'G']
+
+TRACE_ID: 37, TRACE: ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+
+TRACE_ID: 38, TRACE: ['A', 'B', 'J', 'R', 'B', 'C', 'D', 'E', 'F', 'G']
+
+TRACE_ID: 39, TRACE: ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+
+TRACE_ID: 40, TRACE: ['A', 'I', 'L', 'M', 'G']
+
+TRACE_ID: 41, TRACE: ['A', 'I', 'L', 'M', 'G']
+
+TRACE_ID: 42, TRACE: ['A', 'I', 'L', 'M', 'G']
+
+TRACE_ID: 43, TRACE: ['A', 'I', 'L', 'M', 'G']
+
+TRACE_ID: 44, TRACE: ['A', 'I', 'L', 'M', 'G']
+
+TRACE_ID: 45, TRACE: ['A', 'I', 'L', 'M', 'G']
+
+TRACE_ID: 46, TRACE: ['A', 'I', 'L', 'M', 'G']
+
+TRACE_ID: 47, TRACE: ['A', 'I', 'L', 'M', 'G']
+
+TRACE_ID: 48, TRACE: ['A', 'I', 'L', 'M', 'G']
+
+TRACE_ID: 49, TRACE: ['A', 'I', 'L', 'M', 'G']
+
+TRACE_ID: 50, TRACE: ['A', 'I', 'L', 'M', 'G']
+
+TRACE_ID: 51, TRACE: ['A', 'B', 'D', 'E', 'F', 'G']
+
+TRACE_ID: 52, TRACE: ['A', 'B', 'J', 'R', 'J', 'R', 'B', 'C', 'D', 'E', 'F', 'G']
+
+TRACE_ID: 53, TRACE: ['A', 'B', 'C', 'I', 'D', 'E', 'F', 'G']
+
+TRACE_ID: 54, TRACE: ['A', 'B', 'C', 'D', 'X', 'E', 'F', 'G']
+
+TRACE_ID: 55, TRACE: ['A', 'B', 'I', 'D', 'E', 'F', 'G']
+
+54
+

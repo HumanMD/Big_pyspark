@@ -234,13 +234,13 @@ def create_D_or_I(alignments, toReturn):
 
 
 def irregularGraphRepairing(V, W, D, I, cr, path):
-    writeInstanceGraph(V, W, path, title='Unrepaired Instance Graph')
+    # writeInstanceGraph(V, W, path, title='Unrepaired Instance Graph')
     if len(D) + len(I) > 0:
         Wi = W
         for d_element in D:
             Wi = DeletionRepair(Wi, V, d_element, cr)
-            writeInstanceGraph(V, Wi, path, title='Deletion repaired Instance Graph')
+            # writeInstanceGraph(V, Wi, path, title='Deletion repaired Instance Graph')
         for i_element in I:
             Wi = InsertionRepair(Wi, V, i_element, cr)
-            writeInstanceGraph(V, Wi, path, title='Insertion repaired Instance Graph')
+            # writeInstanceGraph(V, Wi, path, title='Insertion repaired Instance Graph')
         return Wi

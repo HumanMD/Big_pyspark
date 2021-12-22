@@ -39,11 +39,11 @@ pnmlFileName = ['toyex_petriNet.pnml',
                 'andreaHelpdesk_petriNet.pnml',
                 ]
 outputFileNames = [
-    'main_toyex_W',
-    'main_testBank2000NoRandomNoise_W',
-    'main_andreaHelpdesk_W',
+    'main_toyex_Wi',
+    'main_testBank2000NoRandomNoise_Wi',
+    'main_andreaHelpdesk_Wi',
 ]
-test = 0
+test = 2
 outputPath = localPath + 'output/' + outputFileNames[test]
 start = time.time()
 
@@ -96,20 +96,20 @@ udf_create_I = F.udf(lambda alignments: create_D_or_I(alignments, 'I'), D_I_sche
 udf_irregularGraphRepairing = F.udf(lambda V, W, D, I: irregularGraphRepairing(V, W, D, I, cr, outputPath), W_schema)
 
 # ---- FINAL DATAFRAME ---- #
-# final_df = df.withColumn('V', udf_create_V('trace')) \
-#     .withColumn('W', udf_create_W('V')) \
-#     .withColumn("D", udf_create_D('alignment')) \
-#     .withColumn("I", udf_create_I('alignment')) \
-#     .withColumn('Wi', udf_irregularGraphRepairing('V', 'W', 'D', 'I'))
+final_df = df.withColumn('V', udf_create_V('trace')) \
+    .withColumn('W', udf_create_W('V')) \
+    .withColumn("D", udf_create_D('alignment')) \
+    .withColumn("I", udf_create_I('alignment')) \
+    .withColumn('Wi', udf_irregularGraphRepairing('V', 'W', 'D', 'I'))
 # EOFError happens here for all xes file except toyex
 
-out = df.withColumn("D", udf_create_D('alignment')) \
-    .select('trace_id', 'D').rdd.collect()
+out = final_df.select('trace_id', 'Wi').rdd.collect()
 
 for row in out:
-    print(row)
-    # tmp = 'TRACE_ID: ' + row[0] + ', W: ' + str([((sn, sa), (en, ea)) for (sn, sa), (en, ea) in row[1]])
-    # writeOnFile('/media/sf_cartella_condivisa/progetto/Big_pyspark/output/' + outputFileNames[test], tmp)
+    if row[1] is not None:
+        tmp = 'TRACE_ID: ' + row[0] + ', Wi: ' + str([((a, b), (c, d)) for ((a, b), (c, d)) in row[1]])
+        # print(tmp)
+        writeOnFile('/media/sf_cartella_condivisa/progetto/Big_pyspark/output/' + outputFileNames[test], tmp)
 
 # showFinalDf = getShowString(final_df, n=5, truncate=False, vertical=False)
 # writeOnFile(outputPath, showFinalDf)

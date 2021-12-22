@@ -1,0 +1,7608 @@
+TRACE_ID: 2, I: []
+
+TRACE_ID: 3, I: []
+
+TRACE_ID: 4, I: []
+
+TRACE_ID: 5, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 6, I: []
+
+TRACE_ID: 8, I: []
+
+TRACE_ID: 9, I: []
+
+TRACE_ID: 10, I: []
+
+TRACE_ID: 11, I: []
+
+TRACE_ID: 14, I: []
+
+TRACE_ID: 16, I: [[(4, '8')]]
+
+TRACE_ID: 17, I: []
+
+TRACE_ID: 19, I: []
+
+TRACE_ID: 21, I: []
+
+TRACE_ID: 22, I: []
+
+TRACE_ID: 24, I: []
+
+TRACE_ID: 25, I: []
+
+TRACE_ID: 26, I: [[(3, '8')]]
+
+TRACE_ID: 27, I: []
+
+TRACE_ID: 29, I: []
+
+TRACE_ID: 30, I: []
+
+TRACE_ID: 32, I: []
+
+TRACE_ID: 35, I: []
+
+TRACE_ID: 36, I: []
+
+TRACE_ID: 37, I: [[(3, '8'), (4, '6'), (5, '6')], [(8, '8')]]
+
+TRACE_ID: 38, I: []
+
+TRACE_ID: 40, I: []
+
+TRACE_ID: 41, I: []
+
+TRACE_ID: 42, I: []
+
+TRACE_ID: 43, I: []
+
+TRACE_ID: 44, I: []
+
+TRACE_ID: 45, I: []
+
+TRACE_ID: 47, I: []
+
+TRACE_ID: 48, I: []
+
+TRACE_ID: 49, I: []
+
+TRACE_ID: 50, I: [[(4, '6')]]
+
+TRACE_ID: 51, I: []
+
+TRACE_ID: 52, I: []
+
+TRACE_ID: 53, I: [[(3, '8')], [(5, '9')]]
+
+TRACE_ID: 55, I: []
+
+TRACE_ID: 56, I: []
+
+TRACE_ID: 57, I: []
+
+TRACE_ID: 59, I: [[(4, '6')]]
+
+TRACE_ID: 60, I: [[(3, '8')]]
+
+TRACE_ID: 61, I: []
+
+TRACE_ID: 62, I: []
+
+TRACE_ID: 64, I: [[(2, '1')], [(6, '9'), (7, '8')]]
+
+TRACE_ID: 66, I: []
+
+TRACE_ID: 67, I: []
+
+TRACE_ID: 68, I: []
+
+TRACE_ID: 70, I: []
+
+TRACE_ID: 71, I: []
+
+TRACE_ID: 72, I: []
+
+TRACE_ID: 73, I: []
+
+TRACE_ID: 74, I: []
+
+TRACE_ID: 75, I: [[(3, '1')]]
+
+TRACE_ID: 76, I: []
+
+TRACE_ID: 78, I: []
+
+TRACE_ID: 80, I: []
+
+TRACE_ID: 81, I: [[(4, '9')], [(6, '8')]]
+
+TRACE_ID: 84, I: []
+
+TRACE_ID: 85, I: []
+
+TRACE_ID: 86, I: []
+
+TRACE_ID: 87, I: [[(3, '8'), (4, '9'), (5, '6')]]
+
+TRACE_ID: 88, I: [[(2, '1')]]
+
+TRACE_ID: 90, I: []
+
+TRACE_ID: 91, I: []
+
+TRACE_ID: 92, I: []
+
+TRACE_ID: 93, I: []
+
+TRACE_ID: 94, I: []
+
+TRACE_ID: 95, I: []
+
+TRACE_ID: 96, I: [[(4, '6')]]
+
+TRACE_ID: 98, I: []
+
+TRACE_ID: 99, I: []
+
+TRACE_ID: 101, I: []
+
+TRACE_ID: 102, I: []
+
+TRACE_ID: 103, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 104, I: []
+
+TRACE_ID: 108, I: []
+
+TRACE_ID: 109, I: [[(3, '8')]]
+
+TRACE_ID: 110, I: []
+
+TRACE_ID: 111, I: [[(4, '6'), (5, '8')], [(7, '8')]]
+
+TRACE_ID: 112, I: []
+
+TRACE_ID: 113, I: []
+
+TRACE_ID: 116, I: []
+
+TRACE_ID: 117, I: []
+
+TRACE_ID: 118, I: []
+
+TRACE_ID: 119, I: []
+
+TRACE_ID: 120, I: []
+
+TRACE_ID: 121, I: []
+
+TRACE_ID: 122, I: []
+
+TRACE_ID: 123, I: [[(5, '8')]]
+
+TRACE_ID: 124, I: []
+
+TRACE_ID: 125, I: [[(3, '8')]]
+
+TRACE_ID: 126, I: [[(2, '1')]]
+
+TRACE_ID: 127, I: []
+
+TRACE_ID: 128, I: [[(3, '6')]]
+
+TRACE_ID: 130, I: []
+
+TRACE_ID: 132, I: []
+
+TRACE_ID: 133, I: [[(2, '1')]]
+
+TRACE_ID: 134, I: []
+
+TRACE_ID: 135, I: [[(3, '8')], [(5, '8'), (6, '6')]]
+
+TRACE_ID: 136, I: []
+
+TRACE_ID: 137, I: []
+
+TRACE_ID: 138, I: []
+
+TRACE_ID: 139, I: []
+
+TRACE_ID: 141, I: [[(3, '8'), (4, '9')], [(7, '8')]]
+
+TRACE_ID: 142, I: []
+
+TRACE_ID: 146, I: []
+
+TRACE_ID: 148, I: [[(4, '6')]]
+
+TRACE_ID: 149, I: []
+
+TRACE_ID: 150, I: [[(4, '8')]]
+
+TRACE_ID: 151, I: []
+
+TRACE_ID: 152, I: []
+
+TRACE_ID: 153, I: []
+
+TRACE_ID: 155, I: [[(5, '8')]]
+
+TRACE_ID: 157, I: []
+
+TRACE_ID: 158, I: []
+
+TRACE_ID: 159, I: []
+
+TRACE_ID: 160, I: []
+
+TRACE_ID: 161, I: []
+
+TRACE_ID: 162, I: [[(2, '1')]]
+
+TRACE_ID: 163, I: []
+
+TRACE_ID: 164, I: []
+
+TRACE_ID: 165, I: []
+
+TRACE_ID: 166, I: []
+
+TRACE_ID: 167, I: [[(5, '6')]]
+
+TRACE_ID: 168, I: []
+
+TRACE_ID: 170, I: [[(4, '9'), (5, '8')]]
+
+TRACE_ID: 171, I: [[(3, '1')]]
+
+TRACE_ID: 172, I: []
+
+TRACE_ID: 173, I: [[(2, '1')]]
+
+TRACE_ID: 174, I: []
+
+TRACE_ID: 175, I: []
+
+TRACE_ID: 176, I: []
+
+TRACE_ID: 177, I: []
+
+TRACE_ID: 178, I: []
+
+TRACE_ID: 179, I: []
+
+TRACE_ID: 180, I: []
+
+TRACE_ID: 181, I: []
+
+TRACE_ID: 182, I: []
+
+TRACE_ID: 183, I: []
+
+TRACE_ID: 185, I: [[(5, '8')]]
+
+TRACE_ID: 186, I: []
+
+TRACE_ID: 187, I: []
+
+TRACE_ID: 188, I: []
+
+TRACE_ID: 189, I: [[(2, '1')]]
+
+TRACE_ID: 190, I: []
+
+TRACE_ID: 194, I: []
+
+TRACE_ID: 195, I: [[(5, '8'), (6, '9'), (7, '8')]]
+
+TRACE_ID: 196, I: []
+
+TRACE_ID: 197, I: [[(4, '6')]]
+
+TRACE_ID: 198, I: []
+
+TRACE_ID: 199, I: []
+
+TRACE_ID: 200, I: []
+
+TRACE_ID: 201, I: []
+
+TRACE_ID: 203, I: []
+
+TRACE_ID: 204, I: []
+
+TRACE_ID: 205, I: [[(3, '8')]]
+
+TRACE_ID: 206, I: [[(5, '8')]]
+
+TRACE_ID: 207, I: []
+
+TRACE_ID: 208, I: []
+
+TRACE_ID: 209, I: []
+
+TRACE_ID: 211, I: []
+
+TRACE_ID: 212, I: []
+
+TRACE_ID: 213, I: []
+
+TRACE_ID: 214, I: [[(2, '1')]]
+
+TRACE_ID: 215, I: []
+
+TRACE_ID: 216, I: [[(2, '1')]]
+
+TRACE_ID: 217, I: []
+
+TRACE_ID: 218, I: [[(3, '8'), (4, '6'), (5, '8')]]
+
+TRACE_ID: 219, I: [[(2, '8')], [(5, '6')]]
+
+TRACE_ID: 220, I: []
+
+TRACE_ID: 221, I: []
+
+TRACE_ID: 222, I: []
+
+TRACE_ID: 223, I: [[(5, '6')]]
+
+TRACE_ID: 224, I: []
+
+TRACE_ID: 225, I: []
+
+TRACE_ID: 226, I: []
+
+TRACE_ID: 227, I: []
+
+TRACE_ID: 228, I: []
+
+TRACE_ID: 229, I: []
+
+TRACE_ID: 231, I: [[(2, '1')]]
+
+TRACE_ID: 234, I: [[(3, '1')]]
+
+TRACE_ID: 236, I: []
+
+TRACE_ID: 238, I: []
+
+TRACE_ID: 239, I: []
+
+TRACE_ID: 240, I: []
+
+TRACE_ID: 241, I: []
+
+TRACE_ID: 242, I: []
+
+TRACE_ID: 243, I: []
+
+TRACE_ID: 244, I: []
+
+TRACE_ID: 245, I: []
+
+TRACE_ID: 246, I: [[(2, '1')]]
+
+TRACE_ID: 247, I: []
+
+TRACE_ID: 248, I: [[(3, '6')]]
+
+TRACE_ID: 249, I: []
+
+TRACE_ID: 250, I: []
+
+TRACE_ID: 251, I: []
+
+TRACE_ID: 252, I: [[(4, '6'), (5, '8')]]
+
+TRACE_ID: 254, I: []
+
+TRACE_ID: 255, I: []
+
+TRACE_ID: 256, I: []
+
+TRACE_ID: 257, I: []
+
+TRACE_ID: 258, I: [[(3, '8')]]
+
+TRACE_ID: 259, I: [[(2, '1')]]
+
+TRACE_ID: 260, I: [[(2, '1')]]
+
+TRACE_ID: 261, I: []
+
+TRACE_ID: 263, I: []
+
+TRACE_ID: 264, I: []
+
+TRACE_ID: 266, I: [[(3, '6')]]
+
+TRACE_ID: 267, I: []
+
+TRACE_ID: 268, I: []
+
+TRACE_ID: 269, I: []
+
+TRACE_ID: 270, I: [[(4, '9')], [(6, '8')]]
+
+TRACE_ID: 271, I: [[(4, '1')]]
+
+TRACE_ID: 272, I: []
+
+TRACE_ID: 273, I: []
+
+TRACE_ID: 274, I: []
+
+TRACE_ID: 275, I: []
+
+TRACE_ID: 276, I: []
+
+TRACE_ID: 277, I: []
+
+TRACE_ID: 278, I: [[(3, '9'), (4, '8')]]
+
+TRACE_ID: 279, I: []
+
+TRACE_ID: 280, I: [[(3, '8')], [(5, '8'), (6, '6')]]
+
+TRACE_ID: 281, I: [[(3, '1')]]
+
+TRACE_ID: 283, I: []
+
+TRACE_ID: 284, I: []
+
+TRACE_ID: 285, I: []
+
+TRACE_ID: 287, I: []
+
+TRACE_ID: 288, I: []
+
+TRACE_ID: 289, I: []
+
+TRACE_ID: 290, I: [[(4, '6')]]
+
+TRACE_ID: 291, I: [[(2, '1')]]
+
+TRACE_ID: 292, I: []
+
+TRACE_ID: 293, I: []
+
+TRACE_ID: 294, I: []
+
+TRACE_ID: 295, I: [[(5, '6')]]
+
+TRACE_ID: 297, I: []
+
+TRACE_ID: 298, I: []
+
+TRACE_ID: 300, I: []
+
+TRACE_ID: 301, I: [[(3, '8'), (4, '6')], [(7, '8')]]
+
+TRACE_ID: 302, I: []
+
+TRACE_ID: 303, I: []
+
+TRACE_ID: 304, I: []
+
+TRACE_ID: 305, I: []
+
+TRACE_ID: 306, I: []
+
+TRACE_ID: 307, I: []
+
+TRACE_ID: 309, I: []
+
+TRACE_ID: 310, I: []
+
+TRACE_ID: 311, I: []
+
+TRACE_ID: 312, I: []
+
+TRACE_ID: 314, I: []
+
+TRACE_ID: 315, I: [[(3, '8')]]
+
+TRACE_ID: 316, I: [[(2, '1')]]
+
+TRACE_ID: 318, I: []
+
+TRACE_ID: 319, I: [[(3, '8')]]
+
+TRACE_ID: 320, I: []
+
+TRACE_ID: 321, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 322, I: [[(3, '8')]]
+
+TRACE_ID: 324, I: []
+
+TRACE_ID: 325, I: [[(3, '1')]]
+
+TRACE_ID: 327, I: []
+
+TRACE_ID: 328, I: []
+
+TRACE_ID: 329, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 330, I: [[(3, '1')], [(6, '6')]]
+
+TRACE_ID: 334, I: [[(3, '8')]]
+
+TRACE_ID: 335, I: []
+
+TRACE_ID: 336, I: []
+
+TRACE_ID: 338, I: []
+
+TRACE_ID: 339, I: []
+
+TRACE_ID: 340, I: []
+
+TRACE_ID: 341, I: []
+
+TRACE_ID: 342, I: []
+
+TRACE_ID: 344, I: []
+
+TRACE_ID: 347, I: [[(3, '6')]]
+
+TRACE_ID: 350, I: []
+
+TRACE_ID: 351, I: []
+
+TRACE_ID: 352, I: [[(3, '6')]]
+
+TRACE_ID: 353, I: []
+
+TRACE_ID: 354, I: [[(4, '6')]]
+
+TRACE_ID: 355, I: [[(3, '1')]]
+
+TRACE_ID: 356, I: []
+
+TRACE_ID: 357, I: []
+
+TRACE_ID: 358, I: [[(2, '1')]]
+
+TRACE_ID: 359, I: []
+
+TRACE_ID: 360, I: []
+
+TRACE_ID: 362, I: []
+
+TRACE_ID: 363, I: [[(2, '1')]]
+
+TRACE_ID: 365, I: [[(5, '8')]]
+
+TRACE_ID: 366, I: []
+
+TRACE_ID: 368, I: [[(3, '1'), (4, '8'), (5, '9')]]
+
+TRACE_ID: 369, I: [[(4, '8')]]
+
+TRACE_ID: 371, I: []
+
+TRACE_ID: 372, I: []
+
+TRACE_ID: 373, I: []
+
+TRACE_ID: 375, I: []
+
+TRACE_ID: 376, I: [[(5, '8')]]
+
+TRACE_ID: 377, I: []
+
+TRACE_ID: 379, I: []
+
+TRACE_ID: 381, I: []
+
+TRACE_ID: 385, I: []
+
+TRACE_ID: 386, I: [[(3, '8')]]
+
+TRACE_ID: 387, I: [[(5, '6')]]
+
+TRACE_ID: 388, I: []
+
+TRACE_ID: 389, I: [[(2, '1')]]
+
+TRACE_ID: 390, I: []
+
+TRACE_ID: 391, I: []
+
+TRACE_ID: 392, I: [[(3, '6')]]
+
+TRACE_ID: 393, I: []
+
+TRACE_ID: 394, I: []
+
+TRACE_ID: 395, I: []
+
+TRACE_ID: 396, I: [[(2, '1')]]
+
+TRACE_ID: 397, I: []
+
+TRACE_ID: 398, I: []
+
+TRACE_ID: 400, I: []
+
+TRACE_ID: 401, I: []
+
+TRACE_ID: 403, I: []
+
+TRACE_ID: 404, I: []
+
+TRACE_ID: 405, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 406, I: [[(3, '1')]]
+
+TRACE_ID: 409, I: []
+
+TRACE_ID: 410, I: []
+
+TRACE_ID: 411, I: []
+
+TRACE_ID: 413, I: [[(5, '6')]]
+
+TRACE_ID: 415, I: [[(4, '6')]]
+
+TRACE_ID: 416, I: []
+
+TRACE_ID: 417, I: []
+
+TRACE_ID: 418, I: []
+
+TRACE_ID: 419, I: [[(3, '8')]]
+
+TRACE_ID: 420, I: []
+
+TRACE_ID: 422, I: []
+
+TRACE_ID: 423, I: []
+
+TRACE_ID: 424, I: [[(5, '6')]]
+
+TRACE_ID: 425, I: []
+
+TRACE_ID: 426, I: [[(4, '9')], [(6, '8')]]
+
+TRACE_ID: 427, I: []
+
+TRACE_ID: 428, I: []
+
+TRACE_ID: 429, I: [[(2, '1')]]
+
+TRACE_ID: 430, I: []
+
+TRACE_ID: 431, I: []
+
+TRACE_ID: 432, I: []
+
+TRACE_ID: 434, I: []
+
+TRACE_ID: 436, I: [[(4, '6')]]
+
+TRACE_ID: 437, I: []
+
+TRACE_ID: 439, I: []
+
+TRACE_ID: 440, I: []
+
+TRACE_ID: 442, I: []
+
+TRACE_ID: 443, I: [[(2, '1')]]
+
+TRACE_ID: 444, I: []
+
+TRACE_ID: 445, I: []
+
+TRACE_ID: 448, I: []
+
+TRACE_ID: 449, I: [[(3, '8')]]
+
+TRACE_ID: 450, I: []
+
+TRACE_ID: 451, I: [[(3, '1')]]
+
+TRACE_ID: 452, I: []
+
+TRACE_ID: 453, I: [[(5, '6')]]
+
+TRACE_ID: 454, I: []
+
+TRACE_ID: 455, I: [[(3, '8')]]
+
+TRACE_ID: 457, I: []
+
+TRACE_ID: 458, I: []
+
+TRACE_ID: 459, I: []
+
+TRACE_ID: 460, I: []
+
+TRACE_ID: 461, I: []
+
+TRACE_ID: 462, I: [[(4, '4')]]
+
+TRACE_ID: 463, I: [[(4, '6')]]
+
+TRACE_ID: 464, I: [[(4, '6')]]
+
+TRACE_ID: 465, I: [[(2, '1')]]
+
+TRACE_ID: 466, I: []
+
+TRACE_ID: 468, I: [[(3, '8')]]
+
+TRACE_ID: 469, I: [[(3, '8')]]
+
+TRACE_ID: 471, I: [[(5, '8')]]
+
+TRACE_ID: 472, I: []
+
+TRACE_ID: 473, I: []
+
+TRACE_ID: 475, I: []
+
+TRACE_ID: 476, I: [[(3, '8')]]
+
+TRACE_ID: 477, I: []
+
+TRACE_ID: 478, I: [[(2, '1')]]
+
+TRACE_ID: 479, I: []
+
+TRACE_ID: 481, I: []
+
+TRACE_ID: 482, I: [[(3, '6')]]
+
+TRACE_ID: 483, I: []
+
+TRACE_ID: 485, I: [[(2, '1')]]
+
+TRACE_ID: 486, I: []
+
+TRACE_ID: 488, I: []
+
+TRACE_ID: 489, I: []
+
+TRACE_ID: 490, I: []
+
+TRACE_ID: 491, I: []
+
+TRACE_ID: 492, I: []
+
+TRACE_ID: 493, I: []
+
+TRACE_ID: 494, I: []
+
+TRACE_ID: 495, I: []
+
+TRACE_ID: 497, I: []
+
+TRACE_ID: 498, I: [[(4, '6')]]
+
+TRACE_ID: 499, I: []
+
+TRACE_ID: 500, I: []
+
+TRACE_ID: 501, I: [[(2, '1')]]
+
+TRACE_ID: 502, I: []
+
+TRACE_ID: 503, I: []
+
+TRACE_ID: 505, I: []
+
+TRACE_ID: 508, I: []
+
+TRACE_ID: 509, I: [[(3, '8')], [(5, '9')]]
+
+TRACE_ID: 510, I: []
+
+TRACE_ID: 511, I: []
+
+TRACE_ID: 512, I: []
+
+TRACE_ID: 513, I: []
+
+TRACE_ID: 514, I: [[(5, '6')]]
+
+TRACE_ID: 515, I: []
+
+TRACE_ID: 516, I: []
+
+TRACE_ID: 517, I: [[(3, '8'), (4, '8')]]
+
+TRACE_ID: 518, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 519, I: []
+
+TRACE_ID: 520, I: [[(5, '6')]]
+
+TRACE_ID: 521, I: []
+
+TRACE_ID: 522, I: []
+
+TRACE_ID: 524, I: []
+
+TRACE_ID: 526, I: []
+
+TRACE_ID: 528, I: []
+
+TRACE_ID: 531, I: []
+
+TRACE_ID: 533, I: []
+
+TRACE_ID: 534, I: []
+
+TRACE_ID: 535, I: []
+
+TRACE_ID: 536, I: []
+
+TRACE_ID: 537, I: []
+
+TRACE_ID: 538, I: []
+
+TRACE_ID: 539, I: []
+
+TRACE_ID: 540, I: []
+
+TRACE_ID: 541, I: []
+
+TRACE_ID: 542, I: []
+
+TRACE_ID: 543, I: []
+
+TRACE_ID: 544, I: []
+
+TRACE_ID: 545, I: []
+
+TRACE_ID: 546, I: []
+
+TRACE_ID: 547, I: [[(3, '9')], [(6, '8')]]
+
+TRACE_ID: 548, I: []
+
+TRACE_ID: 549, I: []
+
+TRACE_ID: 550, I: []
+
+TRACE_ID: 551, I: []
+
+TRACE_ID: 552, I: []
+
+TRACE_ID: 555, I: []
+
+TRACE_ID: 556, I: []
+
+TRACE_ID: 560, I: []
+
+TRACE_ID: 561, I: []
+
+TRACE_ID: 562, I: []
+
+TRACE_ID: 563, I: []
+
+TRACE_ID: 564, I: []
+
+TRACE_ID: 565, I: []
+
+TRACE_ID: 567, I: []
+
+TRACE_ID: 568, I: []
+
+TRACE_ID: 569, I: [[(2, '1')]]
+
+TRACE_ID: 570, I: []
+
+TRACE_ID: 571, I: [[(3, '8')]]
+
+TRACE_ID: 572, I: [[(5, '6'), (6, '8'), (7, '9'), (8, '8')]]
+
+TRACE_ID: 573, I: []
+
+TRACE_ID: 574, I: []
+
+TRACE_ID: 576, I: [[(5, '6')]]
+
+TRACE_ID: 577, I: [[(4, '8')]]
+
+TRACE_ID: 578, I: []
+
+TRACE_ID: 579, I: []
+
+TRACE_ID: 580, I: []
+
+TRACE_ID: 581, I: []
+
+TRACE_ID: 582, I: [[(3, '8'), (4, '6'), (5, '8')]]
+
+TRACE_ID: 583, I: []
+
+TRACE_ID: 584, I: [[(3, '8'), (4, '9'), (5, '8')]]
+
+TRACE_ID: 585, I: []
+
+TRACE_ID: 586, I: []
+
+TRACE_ID: 587, I: [[(3, '8')]]
+
+TRACE_ID: 588, I: []
+
+TRACE_ID: 589, I: []
+
+TRACE_ID: 590, I: []
+
+TRACE_ID: 591, I: []
+
+TRACE_ID: 592, I: []
+
+TRACE_ID: 596, I: []
+
+TRACE_ID: 597, I: []
+
+TRACE_ID: 598, I: [[(3, '1')]]
+
+TRACE_ID: 599, I: []
+
+TRACE_ID: 600, I: []
+
+TRACE_ID: 601, I: []
+
+TRACE_ID: 602, I: []
+
+TRACE_ID: 604, I: []
+
+TRACE_ID: 605, I: []
+
+TRACE_ID: 607, I: [[(3, '8')]]
+
+TRACE_ID: 608, I: [[(3, '8')]]
+
+TRACE_ID: 609, I: [[(2, '1')]]
+
+TRACE_ID: 610, I: []
+
+TRACE_ID: 611, I: []
+
+TRACE_ID: 612, I: []
+
+TRACE_ID: 613, I: []
+
+TRACE_ID: 614, I: []
+
+TRACE_ID: 615, I: []
+
+TRACE_ID: 616, I: []
+
+TRACE_ID: 617, I: []
+
+TRACE_ID: 618, I: []
+
+TRACE_ID: 619, I: []
+
+TRACE_ID: 620, I: [[(5, '8')]]
+
+TRACE_ID: 621, I: []
+
+TRACE_ID: 622, I: [[(4, '2')]]
+
+TRACE_ID: 623, I: [[(5, '6')]]
+
+TRACE_ID: 625, I: []
+
+TRACE_ID: 627, I: []
+
+TRACE_ID: 628, I: [[(3, '8')]]
+
+TRACE_ID: 629, I: []
+
+TRACE_ID: 632, I: []
+
+TRACE_ID: 633, I: []
+
+TRACE_ID: 634, I: []
+
+TRACE_ID: 635, I: [[(2, '1')]]
+
+TRACE_ID: 636, I: [[(5, '9'), (6, '8')]]
+
+TRACE_ID: 637, I: []
+
+TRACE_ID: 640, I: []
+
+TRACE_ID: 641, I: []
+
+TRACE_ID: 642, I: [[(2, '1')]]
+
+TRACE_ID: 643, I: []
+
+TRACE_ID: 644, I: []
+
+TRACE_ID: 646, I: [[(3, '8')]]
+
+TRACE_ID: 647, I: []
+
+TRACE_ID: 648, I: []
+
+TRACE_ID: 649, I: []
+
+TRACE_ID: 650, I: []
+
+TRACE_ID: 651, I: []
+
+TRACE_ID: 652, I: []
+
+TRACE_ID: 653, I: [[(3, '1')]]
+
+TRACE_ID: 654, I: []
+
+TRACE_ID: 655, I: []
+
+TRACE_ID: 657, I: []
+
+TRACE_ID: 658, I: []
+
+TRACE_ID: 659, I: []
+
+TRACE_ID: 660, I: [[(3, '8')]]
+
+TRACE_ID: 661, I: []
+
+TRACE_ID: 662, I: []
+
+TRACE_ID: 663, I: []
+
+TRACE_ID: 665, I: [[(3, '1')]]
+
+TRACE_ID: 666, I: [[(3, '1')]]
+
+TRACE_ID: 667, I: []
+
+TRACE_ID: 668, I: []
+
+TRACE_ID: 669, I: []
+
+TRACE_ID: 670, I: []
+
+TRACE_ID: 671, I: [[(2, '1')]]
+
+TRACE_ID: 672, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 673, I: []
+
+TRACE_ID: 674, I: [[(3, '8')]]
+
+TRACE_ID: 675, I: [[(3, '8')]]
+
+TRACE_ID: 677, I: []
+
+TRACE_ID: 678, I: [[(3, '8')]]
+
+TRACE_ID: 680, I: []
+
+TRACE_ID: 681, I: []
+
+TRACE_ID: 682, I: []
+
+TRACE_ID: 683, I: []
+
+TRACE_ID: 684, I: []
+
+TRACE_ID: 686, I: []
+
+TRACE_ID: 687, I: []
+
+TRACE_ID: 688, I: [[(3, '1')]]
+
+TRACE_ID: 689, I: []
+
+TRACE_ID: 690, I: [[(2, '1')]]
+
+TRACE_ID: 692, I: []
+
+TRACE_ID: 693, I: []
+
+TRACE_ID: 694, I: []
+
+TRACE_ID: 695, I: [[(3, '8')]]
+
+TRACE_ID: 697, I: []
+
+TRACE_ID: 698, I: [[(4, '6')]]
+
+TRACE_ID: 699, I: [[(3, '8')], [(5, '9')]]
+
+TRACE_ID: 700, I: [[(3, '6')]]
+
+TRACE_ID: 702, I: []
+
+TRACE_ID: 703, I: [[(3, '8')]]
+
+TRACE_ID: 704, I: []
+
+TRACE_ID: 705, I: []
+
+TRACE_ID: 706, I: []
+
+TRACE_ID: 707, I: []
+
+TRACE_ID: 709, I: [[(2, '1')], [(6, '6')]]
+
+TRACE_ID: 710, I: []
+
+TRACE_ID: 711, I: []
+
+TRACE_ID: 712, I: []
+
+TRACE_ID: 713, I: []
+
+TRACE_ID: 714, I: []
+
+TRACE_ID: 715, I: [[(3, '8')]]
+
+TRACE_ID: 716, I: [[(4, '6')]]
+
+TRACE_ID: 717, I: []
+
+TRACE_ID: 718, I: []
+
+TRACE_ID: 719, I: []
+
+TRACE_ID: 720, I: []
+
+TRACE_ID: 721, I: []
+
+TRACE_ID: 722, I: []
+
+TRACE_ID: 723, I: []
+
+TRACE_ID: 724, I: []
+
+TRACE_ID: 725, I: [[(3, '1'), (4, '1')]]
+
+TRACE_ID: 726, I: []
+
+TRACE_ID: 727, I: [[(4, '6'), (5, '8')], [(7, '8')]]
+
+TRACE_ID: 729, I: []
+
+TRACE_ID: 730, I: [[(3, '8')]]
+
+TRACE_ID: 731, I: [[(4, '8')]]
+
+TRACE_ID: 733, I: []
+
+TRACE_ID: 734, I: []
+
+TRACE_ID: 735, I: []
+
+TRACE_ID: 736, I: []
+
+TRACE_ID: 737, I: []
+
+TRACE_ID: 738, I: [[(3, '1')]]
+
+TRACE_ID: 739, I: []
+
+TRACE_ID: 740, I: []
+
+TRACE_ID: 741, I: []
+
+TRACE_ID: 742, I: []
+
+TRACE_ID: 743, I: [[(4, '6')]]
+
+TRACE_ID: 744, I: []
+
+TRACE_ID: 745, I: []
+
+TRACE_ID: 746, I: []
+
+TRACE_ID: 748, I: [[(5, '8')]]
+
+TRACE_ID: 749, I: [[(5, '6')]]
+
+TRACE_ID: 750, I: [[(2, '1')]]
+
+TRACE_ID: 751, I: [[(4, '1')]]
+
+TRACE_ID: 752, I: []
+
+TRACE_ID: 753, I: []
+
+TRACE_ID: 754, I: [[(3, '8')]]
+
+TRACE_ID: 755, I: []
+
+TRACE_ID: 756, I: []
+
+TRACE_ID: 758, I: []
+
+TRACE_ID: 759, I: [[(2, '1')]]
+
+TRACE_ID: 760, I: []
+
+TRACE_ID: 761, I: []
+
+TRACE_ID: 762, I: []
+
+TRACE_ID: 763, I: []
+
+TRACE_ID: 764, I: []
+
+TRACE_ID: 765, I: []
+
+TRACE_ID: 766, I: []
+
+TRACE_ID: 767, I: []
+
+TRACE_ID: 768, I: [[(3, '8')]]
+
+TRACE_ID: 769, I: []
+
+TRACE_ID: 770, I: []
+
+TRACE_ID: 771, I: []
+
+TRACE_ID: 772, I: []
+
+TRACE_ID: 773, I: []
+
+TRACE_ID: 774, I: [[(2, '1')]]
+
+TRACE_ID: 776, I: []
+
+TRACE_ID: 777, I: [[(3, '1')]]
+
+TRACE_ID: 778, I: []
+
+TRACE_ID: 779, I: [[(3, '8')]]
+
+TRACE_ID: 781, I: [[(3, '8'), (4, '6')], [(7, '6')]]
+
+TRACE_ID: 783, I: []
+
+TRACE_ID: 784, I: [[(5, '6')]]
+
+TRACE_ID: 785, I: []
+
+TRACE_ID: 786, I: [[(3, '1')], [(5, '8')]]
+
+TRACE_ID: 787, I: []
+
+TRACE_ID: 788, I: []
+
+TRACE_ID: 789, I: []
+
+TRACE_ID: 790, I: []
+
+TRACE_ID: 791, I: []
+
+TRACE_ID: 792, I: []
+
+TRACE_ID: 793, I: []
+
+TRACE_ID: 794, I: []
+
+TRACE_ID: 795, I: [[(5, '6')]]
+
+TRACE_ID: 796, I: []
+
+TRACE_ID: 797, I: []
+
+TRACE_ID: 798, I: [[(2, '1'), (3, '1')], [(5, '8')], [(7, '8'), (8, '9')]]
+
+TRACE_ID: 799, I: []
+
+TRACE_ID: 800, I: []
+
+TRACE_ID: 801, I: []
+
+TRACE_ID: 802, I: []
+
+TRACE_ID: 803, I: [[(3, '1')]]
+
+TRACE_ID: 804, I: [[(2, '1')], [(4, '1'), (5, '1')]]
+
+TRACE_ID: 806, I: []
+
+TRACE_ID: 808, I: []
+
+TRACE_ID: 810, I: []
+
+TRACE_ID: 811, I: [[(3, '6')]]
+
+TRACE_ID: 812, I: []
+
+TRACE_ID: 813, I: []
+
+TRACE_ID: 814, I: []
+
+TRACE_ID: 815, I: []
+
+TRACE_ID: 816, I: []
+
+TRACE_ID: 817, I: [[(3, '8'), (4, '9')]]
+
+TRACE_ID: 818, I: []
+
+TRACE_ID: 819, I: []
+
+TRACE_ID: 820, I: []
+
+TRACE_ID: 822, I: []
+
+TRACE_ID: 823, I: []
+
+TRACE_ID: 827, I: []
+
+TRACE_ID: 828, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 829, I: []
+
+TRACE_ID: 830, I: [[(3, '1')]]
+
+TRACE_ID: 832, I: []
+
+TRACE_ID: 833, I: []
+
+TRACE_ID: 834, I: [[(3, '1')]]
+
+TRACE_ID: 835, I: [[(3, '1')]]
+
+TRACE_ID: 836, I: [[(4, '2'), (5, '5')]]
+
+TRACE_ID: 837, I: []
+
+TRACE_ID: 838, I: []
+
+TRACE_ID: 840, I: []
+
+TRACE_ID: 842, I: []
+
+TRACE_ID: 843, I: []
+
+TRACE_ID: 844, I: []
+
+TRACE_ID: 846, I: []
+
+TRACE_ID: 847, I: []
+
+TRACE_ID: 848, I: []
+
+TRACE_ID: 850, I: []
+
+TRACE_ID: 851, I: []
+
+TRACE_ID: 852, I: []
+
+TRACE_ID: 853, I: []
+
+TRACE_ID: 854, I: []
+
+TRACE_ID: 855, I: []
+
+TRACE_ID: 857, I: []
+
+TRACE_ID: 858, I: []
+
+TRACE_ID: 859, I: []
+
+TRACE_ID: 860, I: []
+
+TRACE_ID: 861, I: [[(3, '1'), (4, '8')]]
+
+TRACE_ID: 862, I: []
+
+TRACE_ID: 863, I: []
+
+TRACE_ID: 864, I: [[(3, '8')]]
+
+TRACE_ID: 865, I: []
+
+TRACE_ID: 866, I: []
+
+TRACE_ID: 867, I: [[(2, '1')]]
+
+TRACE_ID: 869, I: []
+
+TRACE_ID: 870, I: []
+
+TRACE_ID: 871, I: []
+
+TRACE_ID: 872, I: []
+
+TRACE_ID: 873, I: []
+
+TRACE_ID: 874, I: [[(3, '1'), (4, '1')]]
+
+TRACE_ID: 876, I: []
+
+TRACE_ID: 877, I: []
+
+TRACE_ID: 878, I: []
+
+TRACE_ID: 879, I: []
+
+TRACE_ID: 880, I: []
+
+TRACE_ID: 882, I: []
+
+TRACE_ID: 883, I: [[(3, '8')], [(6, '9'), (7, '6')]]
+
+TRACE_ID: 884, I: []
+
+TRACE_ID: 885, I: []
+
+TRACE_ID: 886, I: []
+
+TRACE_ID: 887, I: [[(5, '9')]]
+
+TRACE_ID: 888, I: []
+
+TRACE_ID: 889, I: [[(3, '1')]]
+
+TRACE_ID: 890, I: [[(3, '8')], [(5, '9')], [(7, '9'), (8, '8')]]
+
+TRACE_ID: 891, I: []
+
+TRACE_ID: 892, I: []
+
+TRACE_ID: 893, I: []
+
+TRACE_ID: 895, I: [[(5, '6'), (6, '8'), (7, '6')]]
+
+TRACE_ID: 896, I: []
+
+TRACE_ID: 897, I: []
+
+TRACE_ID: 898, I: []
+
+TRACE_ID: 899, I: [[(3, '8'), (4, '2'), (5, '6')], [(7, '2')]]
+
+TRACE_ID: 900, I: [[(3, '8')]]
+
+TRACE_ID: 901, I: [[(3, '6')]]
+
+TRACE_ID: 902, I: []
+
+TRACE_ID: 903, I: []
+
+TRACE_ID: 904, I: []
+
+TRACE_ID: 905, I: [[(3, '1')]]
+
+TRACE_ID: 907, I: [[(3, '8')]]
+
+TRACE_ID: 908, I: []
+
+TRACE_ID: 909, I: []
+
+TRACE_ID: 910, I: []
+
+TRACE_ID: 912, I: [[(2, '1')]]
+
+TRACE_ID: 913, I: []
+
+TRACE_ID: 914, I: []
+
+TRACE_ID: 915, I: []
+
+TRACE_ID: 916, I: []
+
+TRACE_ID: 917, I: []
+
+TRACE_ID: 918, I: []
+
+TRACE_ID: 919, I: [[(5, '8')]]
+
+TRACE_ID: 920, I: []
+
+TRACE_ID: 921, I: []
+
+TRACE_ID: 922, I: [[(5, '9'), (6, '8')]]
+
+TRACE_ID: 923, I: [[(3, '6')]]
+
+TRACE_ID: 924, I: [[(3, '8')]]
+
+TRACE_ID: 925, I: []
+
+TRACE_ID: 926, I: []
+
+TRACE_ID: 927, I: []
+
+TRACE_ID: 928, I: []
+
+TRACE_ID: 929, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 931, I: []
+
+TRACE_ID: 932, I: []
+
+TRACE_ID: 933, I: [[(2, '1')]]
+
+TRACE_ID: 934, I: [[(5, '6')]]
+
+TRACE_ID: 935, I: []
+
+TRACE_ID: 936, I: [[(3, '8')]]
+
+TRACE_ID: 937, I: [[(4, '4')]]
+
+TRACE_ID: 938, I: []
+
+TRACE_ID: 940, I: []
+
+TRACE_ID: 941, I: []
+
+TRACE_ID: 942, I: []
+
+TRACE_ID: 943, I: []
+
+TRACE_ID: 944, I: [[(3, '8'), (4, '8')], [(7, '9'), (8, '8')]]
+
+TRACE_ID: 945, I: [[(2, '1')]]
+
+TRACE_ID: 946, I: []
+
+TRACE_ID: 947, I: [[(2, '1'), (3, '1')]]
+
+TRACE_ID: 948, I: [[(3, '9'), (4, '8')]]
+
+TRACE_ID: 950, I: []
+
+TRACE_ID: 952, I: []
+
+TRACE_ID: 953, I: []
+
+TRACE_ID: 954, I: []
+
+TRACE_ID: 955, I: []
+
+TRACE_ID: 956, I: []
+
+TRACE_ID: 957, I: []
+
+TRACE_ID: 958, I: [[(3, '8')]]
+
+TRACE_ID: 960, I: []
+
+TRACE_ID: 962, I: []
+
+TRACE_ID: 965, I: [[(3, '8')]]
+
+TRACE_ID: 966, I: [[(5, '8')]]
+
+TRACE_ID: 967, I: []
+
+TRACE_ID: 968, I: []
+
+TRACE_ID: 969, I: [[(2, '1')]]
+
+TRACE_ID: 970, I: []
+
+TRACE_ID: 971, I: []
+
+TRACE_ID: 972, I: []
+
+TRACE_ID: 973, I: [[(2, '1')], [(4, '8'), (5, '6')], [(8, '8')]]
+
+TRACE_ID: 974, I: [[(2, '1')]]
+
+TRACE_ID: 975, I: [[(4, '6')]]
+
+TRACE_ID: 976, I: []
+
+TRACE_ID: 977, I: [[(3, '8')]]
+
+TRACE_ID: 978, I: [[(3, '1')]]
+
+TRACE_ID: 981, I: [[(5, '6')]]
+
+TRACE_ID: 982, I: []
+
+TRACE_ID: 983, I: []
+
+TRACE_ID: 985, I: []
+
+TRACE_ID: 987, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 990, I: []
+
+TRACE_ID: 991, I: [[(3, '8')]]
+
+TRACE_ID: 992, I: []
+
+TRACE_ID: 993, I: [[(3, '8')]]
+
+TRACE_ID: 994, I: []
+
+TRACE_ID: 995, I: [[(3, '8')]]
+
+TRACE_ID: 996, I: []
+
+TRACE_ID: 997, I: []
+
+TRACE_ID: 1000, I: [[(3, '1')]]
+
+TRACE_ID: 1002, I: []
+
+TRACE_ID: 1003, I: []
+
+TRACE_ID: 1004, I: []
+
+TRACE_ID: 1005, I: []
+
+TRACE_ID: 1006, I: []
+
+TRACE_ID: 1008, I: []
+
+TRACE_ID: 1009, I: []
+
+TRACE_ID: 1011, I: []
+
+TRACE_ID: 1012, I: []
+
+TRACE_ID: 1013, I: []
+
+TRACE_ID: 1014, I: [[(3, '8')]]
+
+TRACE_ID: 1015, I: []
+
+TRACE_ID: 1016, I: []
+
+TRACE_ID: 1017, I: [[(5, '6')]]
+
+TRACE_ID: 1018, I: []
+
+TRACE_ID: 1020, I: []
+
+TRACE_ID: 1021, I: []
+
+TRACE_ID: 1022, I: [[(2, '1')]]
+
+TRACE_ID: 1024, I: [[(3, '1')]]
+
+TRACE_ID: 1025, I: [[(3, '8')]]
+
+TRACE_ID: 1028, I: []
+
+TRACE_ID: 1029, I: []
+
+TRACE_ID: 1030, I: [[(2, '1')], [(5, '2')]]
+
+TRACE_ID: 1031, I: [[(3, '8')]]
+
+TRACE_ID: 1032, I: []
+
+TRACE_ID: 1033, I: []
+
+TRACE_ID: 1034, I: []
+
+TRACE_ID: 1035, I: [[(3, '1'), (4, '8')]]
+
+TRACE_ID: 1036, I: [[(3, '8')]]
+
+TRACE_ID: 1037, I: []
+
+TRACE_ID: 1038, I: []
+
+TRACE_ID: 1039, I: []
+
+TRACE_ID: 1040, I: []
+
+TRACE_ID: 1041, I: []
+
+TRACE_ID: 1042, I: []
+
+TRACE_ID: 1044, I: [[(3, '8'), (4, '6'), (5, '8')]]
+
+TRACE_ID: 1045, I: []
+
+TRACE_ID: 1046, I: []
+
+TRACE_ID: 1047, I: [[(2, '1')]]
+
+TRACE_ID: 1048, I: [[(3, '8')]]
+
+TRACE_ID: 1049, I: [[(4, '6')]]
+
+TRACE_ID: 1050, I: [[(5, '8'), (6, '6'), (7, '8'), (8, '9'), (9, '8')]]
+
+TRACE_ID: 1051, I: []
+
+TRACE_ID: 1052, I: []
+
+TRACE_ID: 1053, I: [[(2, '1')]]
+
+TRACE_ID: 1055, I: []
+
+TRACE_ID: 1056, I: []
+
+TRACE_ID: 1058, I: []
+
+TRACE_ID: 1059, I: []
+
+TRACE_ID: 1060, I: []
+
+TRACE_ID: 1061, I: [[(2, '1')]]
+
+TRACE_ID: 1062, I: []
+
+TRACE_ID: 1063, I: []
+
+TRACE_ID: 1064, I: []
+
+TRACE_ID: 1065, I: []
+
+TRACE_ID: 1066, I: []
+
+TRACE_ID: 1067, I: []
+
+TRACE_ID: 1068, I: []
+
+TRACE_ID: 1069, I: []
+
+TRACE_ID: 1071, I: []
+
+TRACE_ID: 1072, I: [[(2, '1')]]
+
+TRACE_ID: 1073, I: []
+
+TRACE_ID: 1074, I: []
+
+TRACE_ID: 1075, I: []
+
+TRACE_ID: 1076, I: []
+
+TRACE_ID: 1077, I: [[(3, '1')]]
+
+TRACE_ID: 1078, I: [[(4, '6')]]
+
+TRACE_ID: 1080, I: [[(4, '8')]]
+
+TRACE_ID: 1081, I: []
+
+TRACE_ID: 1082, I: []
+
+TRACE_ID: 1083, I: [[(2, '1')]]
+
+TRACE_ID: 1084, I: []
+
+TRACE_ID: 1085, I: [[(3, '8')], [(5, '8')]]
+
+TRACE_ID: 1086, I: []
+
+TRACE_ID: 1089, I: [[(3, '8')]]
+
+TRACE_ID: 1090, I: [[(4, '6')]]
+
+TRACE_ID: 1091, I: []
+
+TRACE_ID: 1092, I: []
+
+TRACE_ID: 1093, I: []
+
+TRACE_ID: 1094, I: []
+
+TRACE_ID: 1095, I: [[(2, '1')]]
+
+TRACE_ID: 1097, I: [[(4, '2'), (5, '6'), (6, '8')]]
+
+TRACE_ID: 1098, I: [[(3, '1')]]
+
+TRACE_ID: 1099, I: []
+
+TRACE_ID: 1100, I: [[(5, '8')]]
+
+TRACE_ID: 1101, I: []
+
+TRACE_ID: 1102, I: [[(5, '6')]]
+
+TRACE_ID: 1103, I: []
+
+TRACE_ID: 1105, I: [[(2, '1')], [(4, '1')], [(7, '6')]]
+
+TRACE_ID: 1106, I: []
+
+TRACE_ID: 1107, I: []
+
+TRACE_ID: 1108, I: []
+
+TRACE_ID: 1112, I: [[(5, '9')]]
+
+TRACE_ID: 1114, I: [[(3, '8')], [(5, '8'), (6, '8'), (7, '9'), (8, '8'), (9, '9')]]
+
+TRACE_ID: 1115, I: []
+
+TRACE_ID: 1116, I: []
+
+TRACE_ID: 1117, I: []
+
+TRACE_ID: 1118, I: [[(3, '1')]]
+
+TRACE_ID: 1119, I: []
+
+TRACE_ID: 1120, I: []
+
+TRACE_ID: 1121, I: []
+
+TRACE_ID: 1122, I: []
+
+TRACE_ID: 1123, I: []
+
+TRACE_ID: 1125, I: []
+
+TRACE_ID: 1126, I: [[(3, '6')]]
+
+TRACE_ID: 1127, I: []
+
+TRACE_ID: 1128, I: []
+
+TRACE_ID: 1130, I: []
+
+TRACE_ID: 1131, I: []
+
+TRACE_ID: 1132, I: []
+
+TRACE_ID: 1133, I: []
+
+TRACE_ID: 1134, I: []
+
+TRACE_ID: 1135, I: [[(4, '4')]]
+
+TRACE_ID: 1136, I: []
+
+TRACE_ID: 1137, I: []
+
+TRACE_ID: 1138, I: []
+
+TRACE_ID: 1139, I: []
+
+TRACE_ID: 1140, I: [[(5, '8')]]
+
+TRACE_ID: 1141, I: [[(3, '8'), (4, '9'), (5, '8')], [(7, '8'), (8, '9'), (9, '8'), (10, '9')]]
+
+TRACE_ID: 1143, I: []
+
+TRACE_ID: 1146, I: []
+
+TRACE_ID: 1147, I: []
+
+TRACE_ID: 1148, I: []
+
+TRACE_ID: 1149, I: []
+
+TRACE_ID: 1150, I: []
+
+TRACE_ID: 1151, I: []
+
+TRACE_ID: 1152, I: []
+
+TRACE_ID: 1153, I: []
+
+TRACE_ID: 1154, I: [[(5, '6')]]
+
+TRACE_ID: 1155, I: [[(3, '8')]]
+
+TRACE_ID: 1157, I: []
+
+TRACE_ID: 1158, I: [[(3, '1'), (4, '8')]]
+
+TRACE_ID: 1160, I: []
+
+TRACE_ID: 1161, I: []
+
+TRACE_ID: 1162, I: []
+
+TRACE_ID: 1163, I: []
+
+TRACE_ID: 1165, I: []
+
+TRACE_ID: 1166, I: []
+
+TRACE_ID: 1167, I: [[(3, '8')]]
+
+TRACE_ID: 1168, I: [[(5, '6')]]
+
+TRACE_ID: 1169, I: []
+
+TRACE_ID: 1170, I: []
+
+TRACE_ID: 1171, I: []
+
+TRACE_ID: 1172, I: []
+
+TRACE_ID: 1173, I: [[(3, '8')], [(7, '6'), (8, '8')]]
+
+TRACE_ID: 1174, I: []
+
+TRACE_ID: 1175, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 1177, I: []
+
+TRACE_ID: 1178, I: []
+
+TRACE_ID: 1180, I: [[(3, '8')]]
+
+TRACE_ID: 1181, I: []
+
+TRACE_ID: 1182, I: []
+
+TRACE_ID: 1183, I: [[(5, '8')]]
+
+TRACE_ID: 1184, I: []
+
+TRACE_ID: 1185, I: []
+
+TRACE_ID: 1186, I: []
+
+TRACE_ID: 1187, I: []
+
+TRACE_ID: 1188, I: []
+
+TRACE_ID: 1189, I: [[(3, '8')]]
+
+TRACE_ID: 1190, I: [[(4, '6')]]
+
+TRACE_ID: 1191, I: [[(3, '8')]]
+
+TRACE_ID: 1192, I: []
+
+TRACE_ID: 1194, I: [[(3, '1')]]
+
+TRACE_ID: 1195, I: []
+
+TRACE_ID: 1196, I: []
+
+TRACE_ID: 1197, I: [[(2, '1')]]
+
+TRACE_ID: 1198, I: [[(3, '6')]]
+
+TRACE_ID: 1199, I: []
+
+TRACE_ID: 1200, I: []
+
+TRACE_ID: 1201, I: []
+
+TRACE_ID: 1202, I: [[(2, '1')]]
+
+TRACE_ID: 1203, I: []
+
+TRACE_ID: 1204, I: [[(3, '8')], [(5, '8'), (6, '6')]]
+
+TRACE_ID: 1205, I: []
+
+TRACE_ID: 1206, I: []
+
+TRACE_ID: 1207, I: []
+
+TRACE_ID: 1208, I: []
+
+TRACE_ID: 1209, I: []
+
+TRACE_ID: 1211, I: [[(2, '1')]]
+
+TRACE_ID: 1212, I: []
+
+TRACE_ID: 1213, I: []
+
+TRACE_ID: 1214, I: [[(3, '8')]]
+
+TRACE_ID: 1215, I: []
+
+TRACE_ID: 1216, I: []
+
+TRACE_ID: 1217, I: []
+
+TRACE_ID: 1218, I: [[(5, '8')]]
+
+TRACE_ID: 1219, I: []
+
+TRACE_ID: 1220, I: []
+
+TRACE_ID: 1222, I: []
+
+TRACE_ID: 1223, I: [[(5, '8'), (6, '6')]]
+
+TRACE_ID: 1224, I: []
+
+TRACE_ID: 1225, I: []
+
+TRACE_ID: 1226, I: [[(3, '6')]]
+
+TRACE_ID: 1227, I: [[(3, '8')], [(5, '8'), (6, '9')]]
+
+TRACE_ID: 1228, I: []
+
+TRACE_ID: 1229, I: []
+
+TRACE_ID: 1230, I: []
+
+TRACE_ID: 1231, I: []
+
+TRACE_ID: 1232, I: []
+
+TRACE_ID: 1233, I: []
+
+TRACE_ID: 1234, I: []
+
+TRACE_ID: 1236, I: []
+
+TRACE_ID: 1237, I: []
+
+TRACE_ID: 1240, I: []
+
+TRACE_ID: 1241, I: []
+
+TRACE_ID: 1242, I: []
+
+TRACE_ID: 1243, I: []
+
+TRACE_ID: 1244, I: []
+
+TRACE_ID: 1245, I: [[(3, '8'), (4, '9'), (5, '8'), (6, '6'), (7, '8')], [(9, '8')], [(11, '6')]]
+
+TRACE_ID: 1247, I: [[(3, '8')]]
+
+TRACE_ID: 1248, I: [[(4, '9')]]
+
+TRACE_ID: 1251, I: []
+
+TRACE_ID: 1252, I: [[(5, '6')]]
+
+TRACE_ID: 1253, I: []
+
+TRACE_ID: 1255, I: []
+
+TRACE_ID: 1256, I: []
+
+TRACE_ID: 1257, I: []
+
+TRACE_ID: 1258, I: []
+
+TRACE_ID: 1259, I: [[(3, '6')]]
+
+TRACE_ID: 1260, I: []
+
+TRACE_ID: 1262, I: []
+
+TRACE_ID: 1263, I: []
+
+TRACE_ID: 1264, I: [[(5, '8')]]
+
+TRACE_ID: 1265, I: [[(3, '1')]]
+
+TRACE_ID: 1266, I: []
+
+TRACE_ID: 1267, I: []
+
+TRACE_ID: 1268, I: []
+
+TRACE_ID: 1270, I: [[(3, '8')]]
+
+TRACE_ID: 1271, I: []
+
+TRACE_ID: 1273, I: []
+
+TRACE_ID: 1274, I: []
+
+TRACE_ID: 1276, I: [[(2, '1')]]
+
+TRACE_ID: 1277, I: []
+
+TRACE_ID: 1278, I: []
+
+TRACE_ID: 1279, I: [[(3, '1')]]
+
+TRACE_ID: 1280, I: []
+
+TRACE_ID: 1281, I: [[(4, '6')]]
+
+TRACE_ID: 1282, I: [[(3, '1')], [(7, '8')]]
+
+TRACE_ID: 1283, I: []
+
+TRACE_ID: 1284, I: []
+
+TRACE_ID: 1285, I: []
+
+TRACE_ID: 1286, I: []
+
+TRACE_ID: 1287, I: []
+
+TRACE_ID: 1288, I: [[(2, '8'), (3, '6'), (4, '8')]]
+
+TRACE_ID: 1289, I: []
+
+TRACE_ID: 1290, I: []
+
+TRACE_ID: 1291, I: []
+
+TRACE_ID: 1293, I: []
+
+TRACE_ID: 1294, I: []
+
+TRACE_ID: 1295, I: []
+
+TRACE_ID: 1296, I: []
+
+TRACE_ID: 1297, I: [[(4, '8')]]
+
+TRACE_ID: 1298, I: []
+
+TRACE_ID: 1300, I: []
+
+TRACE_ID: 1302, I: [[(3, '8')], [(5, '8'), (6, '6')]]
+
+TRACE_ID: 1306, I: []
+
+TRACE_ID: 1307, I: [[(3, '8')]]
+
+TRACE_ID: 1308, I: []
+
+TRACE_ID: 1310, I: [[(3, '8')]]
+
+TRACE_ID: 1311, I: []
+
+TRACE_ID: 1312, I: []
+
+TRACE_ID: 1313, I: []
+
+TRACE_ID: 1316, I: []
+
+TRACE_ID: 1317, I: []
+
+TRACE_ID: 1320, I: []
+
+TRACE_ID: 1321, I: []
+
+TRACE_ID: 1322, I: [[(3, '8')]]
+
+TRACE_ID: 1324, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 1325, I: []
+
+TRACE_ID: 1326, I: []
+
+TRACE_ID: 1327, I: []
+
+TRACE_ID: 1328, I: [[(5, '8')]]
+
+TRACE_ID: 1329, I: []
+
+TRACE_ID: 1330, I: [[(3, '6')]]
+
+TRACE_ID: 1331, I: []
+
+TRACE_ID: 1332, I: []
+
+TRACE_ID: 1333, I: [[(3, '8')]]
+
+TRACE_ID: 1334, I: [[(3, '1')]]
+
+TRACE_ID: 1335, I: []
+
+TRACE_ID: 1336, I: [[(4, '6')]]
+
+TRACE_ID: 1337, I: []
+
+TRACE_ID: 1338, I: []
+
+TRACE_ID: 1339, I: [[(3, '1'), (4, '8')], [(7, '9')]]
+
+TRACE_ID: 1340, I: []
+
+TRACE_ID: 1341, I: []
+
+TRACE_ID: 1342, I: [[(3, '6')]]
+
+TRACE_ID: 1343, I: []
+
+TRACE_ID: 1344, I: []
+
+TRACE_ID: 1345, I: [[(3, '8')]]
+
+TRACE_ID: 1346, I: []
+
+TRACE_ID: 1347, I: []
+
+TRACE_ID: 1348, I: []
+
+TRACE_ID: 1349, I: []
+
+TRACE_ID: 1350, I: []
+
+TRACE_ID: 1351, I: []
+
+TRACE_ID: 1352, I: []
+
+TRACE_ID: 1353, I: [[(3, '8')], [(5, '9')]]
+
+TRACE_ID: 1354, I: []
+
+TRACE_ID: 1355, I: []
+
+TRACE_ID: 1356, I: []
+
+TRACE_ID: 1357, I: []
+
+TRACE_ID: 1360, I: []
+
+TRACE_ID: 1361, I: []
+
+TRACE_ID: 1362, I: []
+
+TRACE_ID: 1363, I: []
+
+TRACE_ID: 1365, I: []
+
+TRACE_ID: 1367, I: []
+
+TRACE_ID: 1368, I: []
+
+TRACE_ID: 1369, I: [[(3, '1')]]
+
+TRACE_ID: 1370, I: []
+
+TRACE_ID: 1372, I: []
+
+TRACE_ID: 1373, I: [[(3, '1')]]
+
+TRACE_ID: 1374, I: []
+
+TRACE_ID: 1376, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 1377, I: [[(3, '8')]]
+
+TRACE_ID: 1378, I: []
+
+TRACE_ID: 1379, I: []
+
+TRACE_ID: 1380, I: []
+
+TRACE_ID: 1381, I: [[(3, '1'), (4, '8')]]
+
+TRACE_ID: 1382, I: []
+
+TRACE_ID: 1383, I: []
+
+TRACE_ID: 1385, I: [[(3, '1')]]
+
+TRACE_ID: 1389, I: []
+
+TRACE_ID: 1390, I: [[(3, '8')]]
+
+TRACE_ID: 1391, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 1392, I: []
+
+TRACE_ID: 1394, I: []
+
+TRACE_ID: 1395, I: [[(3, '1')]]
+
+TRACE_ID: 1399, I: []
+
+TRACE_ID: 1400, I: []
+
+TRACE_ID: 1401, I: []
+
+TRACE_ID: 1402, I: []
+
+TRACE_ID: 1403, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 1404, I: []
+
+TRACE_ID: 1405, I: []
+
+TRACE_ID: 1406, I: []
+
+TRACE_ID: 1408, I: [[(4, '6')]]
+
+TRACE_ID: 1410, I: []
+
+TRACE_ID: 1411, I: [[(3, '8')], [(5, '8'), (6, '9')]]
+
+TRACE_ID: 1412, I: []
+
+TRACE_ID: 1413, I: [[(3, '8')]]
+
+TRACE_ID: 1414, I: [[(3, '8')]]
+
+TRACE_ID: 1415, I: []
+
+TRACE_ID: 1416, I: []
+
+TRACE_ID: 1417, I: []
+
+TRACE_ID: 1418, I: []
+
+TRACE_ID: 1419, I: []
+
+TRACE_ID: 1421, I: []
+
+TRACE_ID: 1422, I: [[(2, '1')]]
+
+TRACE_ID: 1423, I: []
+
+TRACE_ID: 1424, I: []
+
+TRACE_ID: 1425, I: []
+
+TRACE_ID: 1426, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 1427, I: []
+
+TRACE_ID: 1428, I: [[(3, '8'), (4, '9')], [(8, '6'), (9, '6')]]
+
+TRACE_ID: 1429, I: []
+
+TRACE_ID: 1430, I: []
+
+TRACE_ID: 1431, I: [[(4, '8')]]
+
+TRACE_ID: 1434, I: []
+
+TRACE_ID: 1435, I: []
+
+TRACE_ID: 1436, I: [[(3, '8')], [(6, '9'), (7, '8'), (8, '9'), (9, '8')]]
+
+TRACE_ID: 1437, I: []
+
+TRACE_ID: 1438, I: []
+
+TRACE_ID: 1439, I: []
+
+TRACE_ID: 1440, I: []
+
+TRACE_ID: 1442, I: [[(2, '1')], [(4, '1')]]
+
+TRACE_ID: 1443, I: []
+
+TRACE_ID: 1444, I: []
+
+TRACE_ID: 1446, I: [[(3, '1'), (4, '1'), (5, '8'), (6, '6'), (7, '8')]]
+
+TRACE_ID: 1447, I: []
+
+TRACE_ID: 1448, I: []
+
+TRACE_ID: 1452, I: []
+
+TRACE_ID: 1453, I: [[(4, '6')]]
+
+TRACE_ID: 1454, I: []
+
+TRACE_ID: 1455, I: []
+
+TRACE_ID: 1456, I: [[(3, '8'), (4, '8')]]
+
+TRACE_ID: 1458, I: []
+
+TRACE_ID: 1459, I: []
+
+TRACE_ID: 1461, I: []
+
+TRACE_ID: 1462, I: []
+
+TRACE_ID: 1463, I: [[(2, '1')]]
+
+TRACE_ID: 1466, I: []
+
+TRACE_ID: 1467, I: []
+
+TRACE_ID: 1468, I: [[(2, '1')]]
+
+TRACE_ID: 1469, I: []
+
+TRACE_ID: 1470, I: []
+
+TRACE_ID: 1472, I: [[(3, '8')], [(6, '9'), (7, '8')]]
+
+TRACE_ID: 1473, I: [[(3, '6')]]
+
+TRACE_ID: 1474, I: []
+
+TRACE_ID: 1475, I: [[(3, '8')]]
+
+TRACE_ID: 1476, I: [[(3, '8')]]
+
+TRACE_ID: 1477, I: []
+
+TRACE_ID: 1479, I: []
+
+TRACE_ID: 1480, I: []
+
+TRACE_ID: 1481, I: []
+
+TRACE_ID: 1482, I: []
+
+TRACE_ID: 1483, I: []
+
+TRACE_ID: 1485, I: []
+
+TRACE_ID: 1486, I: []
+
+TRACE_ID: 1488, I: []
+
+TRACE_ID: 1489, I: []
+
+TRACE_ID: 1490, I: []
+
+TRACE_ID: 1491, I: [[(5, '8')]]
+
+TRACE_ID: 1492, I: [[(4, '1'), (5, '8')]]
+
+TRACE_ID: 1493, I: []
+
+TRACE_ID: 1494, I: [[(2, '1')]]
+
+TRACE_ID: 1496, I: [[(2, '1')], [(6, '8'), (7, '6')]]
+
+TRACE_ID: 1497, I: [[(3, '6')]]
+
+TRACE_ID: 1498, I: []
+
+TRACE_ID: 1499, I: [[(3, '8'), (4, '9'), (5, '8'), (6, '9'), (7, '8'), (8, '9'), (9, '8'), (10, '6'), (11, '8')]]
+
+TRACE_ID: 1500, I: [[(3, '6')]]
+
+TRACE_ID: 1502, I: [[(3, '8')], [(6, '9'), (7, '8'), (8, '6'), (9, '8')]]
+
+TRACE_ID: 1503, I: []
+
+TRACE_ID: 1504, I: []
+
+TRACE_ID: 1505, I: []
+
+TRACE_ID: 1508, I: []
+
+TRACE_ID: 1511, I: []
+
+TRACE_ID: 1512, I: []
+
+TRACE_ID: 1513, I: [[(2, '1')]]
+
+TRACE_ID: 1514, I: []
+
+TRACE_ID: 1515, I: []
+
+TRACE_ID: 1516, I: [[(2, '1'), (3, '1')]]
+
+TRACE_ID: 1517, I: []
+
+TRACE_ID: 1518, I: [[(3, '9'), (4, '8')]]
+
+TRACE_ID: 1520, I: []
+
+TRACE_ID: 1521, I: []
+
+TRACE_ID: 1522, I: [[(4, '6')]]
+
+TRACE_ID: 1523, I: []
+
+TRACE_ID: 1524, I: [[(5, '6')]]
+
+TRACE_ID: 1525, I: []
+
+TRACE_ID: 1526, I: []
+
+TRACE_ID: 1527, I: [[(3, '1')]]
+
+TRACE_ID: 1528, I: [[(3, '1'), (4, '1')], [(6, '6'), (7, '8'), (8, '2'), (9, '6'), (10, '8'), (11, '2')]]
+
+TRACE_ID: 1529, I: []
+
+TRACE_ID: 1530, I: [[(2, '1')]]
+
+TRACE_ID: 1531, I: []
+
+TRACE_ID: 1532, I: []
+
+TRACE_ID: 1533, I: [[(4, '8'), (5, '6'), (6, '8')]]
+
+TRACE_ID: 1534, I: []
+
+TRACE_ID: 1536, I: []
+
+TRACE_ID: 1537, I: []
+
+TRACE_ID: 1538, I: []
+
+TRACE_ID: 1539, I: [[(3, '8')]]
+
+TRACE_ID: 1540, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 1541, I: [[(2, '1')]]
+
+TRACE_ID: 1542, I: []
+
+TRACE_ID: 1544, I: []
+
+TRACE_ID: 1545, I: []
+
+TRACE_ID: 1546, I: [[(3, '8')], [(5, '6')], [(7, '8'), (8, '6')]]
+
+TRACE_ID: 1547, I: []
+
+TRACE_ID: 1548, I: []
+
+TRACE_ID: 1549, I: []
+
+TRACE_ID: 1550, I: []
+
+TRACE_ID: 1551, I: []
+
+TRACE_ID: 1552, I: []
+
+TRACE_ID: 1554, I: []
+
+TRACE_ID: 1555, I: []
+
+TRACE_ID: 1556, I: []
+
+TRACE_ID: 1557, I: [[(3, '1'), (4, '8'), (5, '9'), (6, '8'), (7, '6'), (8, '8')]]
+
+TRACE_ID: 1558, I: []
+
+TRACE_ID: 1559, I: [[(4, '6')]]
+
+TRACE_ID: 1560, I: []
+
+TRACE_ID: 1561, I: []
+
+TRACE_ID: 1563, I: []
+
+TRACE_ID: 1564, I: []
+
+TRACE_ID: 1565, I: []
+
+TRACE_ID: 1566, I: []
+
+TRACE_ID: 1567, I: [[(3, '8')]]
+
+TRACE_ID: 1568, I: []
+
+TRACE_ID: 1569, I: []
+
+TRACE_ID: 1572, I: [[(3, '1')]]
+
+TRACE_ID: 1573, I: []
+
+TRACE_ID: 1575, I: [[(5, '8'), (6, '6'), (7, '8')]]
+
+TRACE_ID: 1576, I: []
+
+TRACE_ID: 1578, I: []
+
+TRACE_ID: 1579, I: []
+
+TRACE_ID: 1581, I: []
+
+TRACE_ID: 1582, I: [[(4, '6')]]
+
+TRACE_ID: 1583, I: []
+
+TRACE_ID: 1584, I: []
+
+TRACE_ID: 1585, I: []
+
+TRACE_ID: 1586, I: []
+
+TRACE_ID: 1587, I: []
+
+TRACE_ID: 1588, I: []
+
+TRACE_ID: 1589, I: []
+
+TRACE_ID: 1590, I: []
+
+TRACE_ID: 1591, I: []
+
+TRACE_ID: 1592, I: []
+
+TRACE_ID: 1593, I: []
+
+TRACE_ID: 1594, I: [[(3, '8'), (4, '6'), (5, '8'), (6, '2'), (7, '6')], [(9, '2')]]
+
+TRACE_ID: 1595, I: [[(3, '8')], [(5, '8'), (6, '9')]]
+
+TRACE_ID: 1596, I: []
+
+TRACE_ID: 1597, I: []
+
+TRACE_ID: 1598, I: [[(5, '6')]]
+
+TRACE_ID: 1599, I: []
+
+TRACE_ID: 1600, I: []
+
+TRACE_ID: 1601, I: []
+
+TRACE_ID: 1602, I: []
+
+TRACE_ID: 1606, I: [[(3, '8'), (4, '9'), (5, '6')]]
+
+TRACE_ID: 1607, I: []
+
+TRACE_ID: 1608, I: []
+
+TRACE_ID: 1611, I: [[(2, '1')]]
+
+TRACE_ID: 1612, I: []
+
+TRACE_ID: 1613, I: []
+
+TRACE_ID: 1614, I: []
+
+TRACE_ID: 1616, I: []
+
+TRACE_ID: 1617, I: []
+
+TRACE_ID: 1618, I: []
+
+TRACE_ID: 1619, I: [[(3, '6')]]
+
+TRACE_ID: 1620, I: [[(3, '8')], [(6, '9')]]
+
+TRACE_ID: 1621, I: []
+
+TRACE_ID: 1622, I: [[(2, '1')], [(4, '8')], [(6, '9')]]
+
+TRACE_ID: 1623, I: []
+
+TRACE_ID: 1624, I: []
+
+TRACE_ID: 1625, I: []
+
+TRACE_ID: 1626, I: []
+
+TRACE_ID: 1627, I: []
+
+TRACE_ID: 1628, I: []
+
+TRACE_ID: 1629, I: [[(2, '1'), (3, '1')]]
+
+TRACE_ID: 1630, I: []
+
+TRACE_ID: 1631, I: []
+
+TRACE_ID: 1632, I: []
+
+TRACE_ID: 1633, I: [[(3, '1')]]
+
+TRACE_ID: 1634, I: []
+
+TRACE_ID: 1635, I: []
+
+TRACE_ID: 1636, I: []
+
+TRACE_ID: 1637, I: [[(3, '6')]]
+
+TRACE_ID: 1638, I: []
+
+TRACE_ID: 1639, I: []
+
+TRACE_ID: 1640, I: []
+
+TRACE_ID: 1641, I: [[(3, '1'), (4, '1'), (5, '8')]]
+
+TRACE_ID: 1642, I: []
+
+TRACE_ID: 1643, I: []
+
+TRACE_ID: 1644, I: []
+
+TRACE_ID: 1645, I: []
+
+TRACE_ID: 1646, I: []
+
+TRACE_ID: 1647, I: []
+
+TRACE_ID: 1648, I: []
+
+TRACE_ID: 1649, I: []
+
+TRACE_ID: 1651, I: []
+
+TRACE_ID: 1652, I: [[(2, '1')]]
+
+TRACE_ID: 1653, I: []
+
+TRACE_ID: 1654, I: []
+
+TRACE_ID: 1656, I: []
+
+TRACE_ID: 1657, I: []
+
+TRACE_ID: 1659, I: [[(2, '1')]]
+
+TRACE_ID: 1660, I: []
+
+TRACE_ID: 1661, I: []
+
+TRACE_ID: 1662, I: [[(3, '1')]]
+
+TRACE_ID: 1665, I: []
+
+TRACE_ID: 1666, I: []
+
+TRACE_ID: 1667, I: []
+
+TRACE_ID: 1668, I: []
+
+TRACE_ID: 1669, I: []
+
+TRACE_ID: 1670, I: [[(3, '8')]]
+
+TRACE_ID: 1672, I: [[(3, '8')]]
+
+TRACE_ID: 1673, I: []
+
+TRACE_ID: 1676, I: []
+
+TRACE_ID: 1677, I: []
+
+TRACE_ID: 1678, I: []
+
+TRACE_ID: 1680, I: []
+
+TRACE_ID: 1682, I: []
+
+TRACE_ID: 1683, I: []
+
+TRACE_ID: 1684, I: [[(2, '1')], [(4, '8')], [(6, '8'), (7, '9')]]
+
+TRACE_ID: 1685, I: [[(4, '9')]]
+
+TRACE_ID: 1686, I: [[(3, '6')]]
+
+TRACE_ID: 1687, I: []
+
+TRACE_ID: 1688, I: [[(3, '8')], [(5, '8'), (6, '9')]]
+
+TRACE_ID: 1689, I: []
+
+TRACE_ID: 1690, I: []
+
+TRACE_ID: 1692, I: [[(3, '8')]]
+
+TRACE_ID: 1693, I: [[(3, '8'), (4, '8')]]
+
+TRACE_ID: 1694, I: []
+
+TRACE_ID: 1695, I: []
+
+TRACE_ID: 1696, I: []
+
+TRACE_ID: 1698, I: []
+
+TRACE_ID: 1699, I: []
+
+TRACE_ID: 1700, I: []
+
+TRACE_ID: 1701, I: [[(2, '1')]]
+
+TRACE_ID: 1702, I: []
+
+TRACE_ID: 1703, I: []
+
+TRACE_ID: 1705, I: []
+
+TRACE_ID: 1706, I: [[(2, '1')]]
+
+TRACE_ID: 1707, I: [[(2, '1')]]
+
+TRACE_ID: 1708, I: []
+
+TRACE_ID: 1710, I: []
+
+TRACE_ID: 1712, I: []
+
+TRACE_ID: 1713, I: []
+
+TRACE_ID: 1714, I: [[(4, '8'), (5, '6')], [(8, '8')]]
+
+TRACE_ID: 1715, I: []
+
+TRACE_ID: 1716, I: [[(5, '9'), (6, '9')]]
+
+TRACE_ID: 1717, I: []
+
+TRACE_ID: 1719, I: [[(4, '6')]]
+
+TRACE_ID: 1720, I: [[(3, '8')]]
+
+TRACE_ID: 1721, I: []
+
+TRACE_ID: 1722, I: []
+
+TRACE_ID: 1724, I: [[(3, '9'), (4, '8')]]
+
+TRACE_ID: 1725, I: []
+
+TRACE_ID: 1726, I: []
+
+TRACE_ID: 1727, I: []
+
+TRACE_ID: 1728, I: [[(4, '8'), (5, '6')]]
+
+TRACE_ID: 1729, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 1731, I: []
+
+TRACE_ID: 1732, I: []
+
+TRACE_ID: 1733, I: []
+
+TRACE_ID: 1734, I: [[(3, '8')]]
+
+TRACE_ID: 1736, I: []
+
+TRACE_ID: 1737, I: []
+
+TRACE_ID: 1738, I: []
+
+TRACE_ID: 1739, I: []
+
+TRACE_ID: 1740, I: [[(2, '1')]]
+
+TRACE_ID: 1741, I: []
+
+TRACE_ID: 1742, I: []
+
+TRACE_ID: 1743, I: [[(3, '6')]]
+
+TRACE_ID: 1744, I: [[(4, '6'), (5, '8')]]
+
+TRACE_ID: 1745, I: []
+
+TRACE_ID: 1747, I: []
+
+TRACE_ID: 1748, I: []
+
+TRACE_ID: 1749, I: []
+
+TRACE_ID: 1750, I: []
+
+TRACE_ID: 1751, I: []
+
+TRACE_ID: 1752, I: [[(5, '8'), (6, '8')]]
+
+TRACE_ID: 1753, I: []
+
+TRACE_ID: 1755, I: [[(2, '1')], [(4, '8')], [(6, '6')]]
+
+TRACE_ID: 1756, I: []
+
+TRACE_ID: 1757, I: [[(3, '8'), (4, '6')], [(6, '2')]]
+
+TRACE_ID: 1758, I: [[(4, '6'), (5, '8'), (6, '8')]]
+
+TRACE_ID: 1759, I: []
+
+TRACE_ID: 1762, I: []
+
+TRACE_ID: 1763, I: []
+
+TRACE_ID: 1765, I: []
+
+TRACE_ID: 1766, I: []
+
+TRACE_ID: 1767, I: []
+
+TRACE_ID: 1768, I: []
+
+TRACE_ID: 1769, I: []
+
+TRACE_ID: 1770, I: [[(5, '2')]]
+
+TRACE_ID: 1773, I: []
+
+TRACE_ID: 1774, I: [[(4, '1')]]
+
+TRACE_ID: 1775, I: [[(2, '1')]]
+
+TRACE_ID: 1778, I: []
+
+TRACE_ID: 1779, I: [[(2, '1')]]
+
+TRACE_ID: 1780, I: []
+
+TRACE_ID: 1781, I: []
+
+TRACE_ID: 1782, I: []
+
+TRACE_ID: 1783, I: []
+
+TRACE_ID: 1784, I: [[(5, '6')]]
+
+TRACE_ID: 1785, I: []
+
+TRACE_ID: 1786, I: []
+
+TRACE_ID: 1787, I: [[(4, '9')], [(6, '6')]]
+
+TRACE_ID: 1789, I: [[(2, '1')]]
+
+TRACE_ID: 1790, I: []
+
+TRACE_ID: 1791, I: []
+
+TRACE_ID: 1793, I: []
+
+TRACE_ID: 1794, I: []
+
+TRACE_ID: 1796, I: [[(3, '8')]]
+
+TRACE_ID: 1797, I: []
+
+TRACE_ID: 1798, I: [[(4, '2')]]
+
+TRACE_ID: 1800, I: []
+
+TRACE_ID: 1801, I: []
+
+TRACE_ID: 1802, I: []
+
+TRACE_ID: 1803, I: [[(2, '1')]]
+
+TRACE_ID: 1804, I: []
+
+TRACE_ID: 1805, I: []
+
+TRACE_ID: 1806, I: [[(3, '8')]]
+
+TRACE_ID: 1807, I: []
+
+TRACE_ID: 1808, I: []
+
+TRACE_ID: 1809, I: []
+
+TRACE_ID: 1810, I: []
+
+TRACE_ID: 1811, I: []
+
+TRACE_ID: 1813, I: []
+
+TRACE_ID: 1815, I: []
+
+TRACE_ID: 1816, I: [[(2, '1')], [(4, '8')], [(7, '6'), (8, '8'), (9, '8'), (10, '8')]]
+
+TRACE_ID: 1817, I: []
+
+TRACE_ID: 1818, I: []
+
+TRACE_ID: 1819, I: []
+
+TRACE_ID: 1820, I: [[(3, '9'), (4, '8'), (5, '9'), (6, '8'), (7, '6'), (8, '8'), (9, '9'), (10, '8'), (11, '6')], [(14, '8')]]
+
+TRACE_ID: 1821, I: [[(5, '8')]]
+
+TRACE_ID: 1822, I: []
+
+TRACE_ID: 1824, I: [[(3, '6')]]
+
+TRACE_ID: 1825, I: []
+
+TRACE_ID: 1827, I: []
+
+TRACE_ID: 1829, I: []
+
+TRACE_ID: 1830, I: [[(4, '6'), (5, '8')]]
+
+TRACE_ID: 1832, I: [[(5, '8')]]
+
+TRACE_ID: 1833, I: []
+
+TRACE_ID: 1834, I: []
+
+TRACE_ID: 1835, I: []
+
+TRACE_ID: 1836, I: []
+
+TRACE_ID: 1837, I: []
+
+TRACE_ID: 1838, I: []
+
+TRACE_ID: 1839, I: [[(2, '1')]]
+
+TRACE_ID: 1840, I: [[(2, '1')]]
+
+TRACE_ID: 1841, I: []
+
+TRACE_ID: 1842, I: []
+
+TRACE_ID: 1844, I: []
+
+TRACE_ID: 1845, I: [[(3, '8'), (4, '8')]]
+
+TRACE_ID: 1846, I: [[(3, '8')]]
+
+TRACE_ID: 1847, I: []
+
+TRACE_ID: 1849, I: [[(5, '8')]]
+
+TRACE_ID: 1850, I: []
+
+TRACE_ID: 1851, I: [[(5, '6')]]
+
+TRACE_ID: 1852, I: []
+
+TRACE_ID: 1853, I: []
+
+TRACE_ID: 1854, I: []
+
+TRACE_ID: 1855, I: []
+
+TRACE_ID: 1856, I: []
+
+TRACE_ID: 1857, I: []
+
+TRACE_ID: 1859, I: []
+
+TRACE_ID: 1861, I: [[(2, '1')]]
+
+TRACE_ID: 1862, I: []
+
+TRACE_ID: 1863, I: []
+
+TRACE_ID: 1864, I: []
+
+TRACE_ID: 1865, I: [[(5, '8')]]
+
+TRACE_ID: 1866, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 1867, I: [[(3, '8')], [(5, '8'), (6, '6'), (7, '8'), (8, '6'), (9, '8'), (10, '8')]]
+
+TRACE_ID: 1870, I: []
+
+TRACE_ID: 1871, I: []
+
+TRACE_ID: 1872, I: []
+
+TRACE_ID: 1873, I: [[(5, '6')]]
+
+TRACE_ID: 1875, I: []
+
+TRACE_ID: 1876, I: [[(4, '6')]]
+
+TRACE_ID: 1877, I: [[(4, '8')]]
+
+TRACE_ID: 1878, I: []
+
+TRACE_ID: 1879, I: []
+
+TRACE_ID: 1880, I: []
+
+TRACE_ID: 1881, I: []
+
+TRACE_ID: 1883, I: []
+
+TRACE_ID: 1885, I: []
+
+TRACE_ID: 1886, I: []
+
+TRACE_ID: 1887, I: []
+
+TRACE_ID: 1888, I: []
+
+TRACE_ID: 1889, I: []
+
+TRACE_ID: 1890, I: []
+
+TRACE_ID: 1891, I: []
+
+TRACE_ID: 1893, I: []
+
+TRACE_ID: 1895, I: []
+
+TRACE_ID: 1896, I: []
+
+TRACE_ID: 1897, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 1898, I: []
+
+TRACE_ID: 1899, I: [[(3, '8')], [(5, '9')]]
+
+TRACE_ID: 1902, I: []
+
+TRACE_ID: 1904, I: []
+
+TRACE_ID: 1905, I: []
+
+TRACE_ID: 1906, I: []
+
+TRACE_ID: 1907, I: [[(3, '8'), (4, '6'), (5, '8')]]
+
+TRACE_ID: 1908, I: []
+
+TRACE_ID: 1909, I: []
+
+TRACE_ID: 1910, I: []
+
+TRACE_ID: 1911, I: []
+
+TRACE_ID: 1912, I: []
+
+TRACE_ID: 1913, I: []
+
+TRACE_ID: 1914, I: []
+
+TRACE_ID: 1917, I: []
+
+TRACE_ID: 1919, I: [[(3, '8')]]
+
+TRACE_ID: 1920, I: []
+
+TRACE_ID: 1921, I: []
+
+TRACE_ID: 1922, I: []
+
+TRACE_ID: 1923, I: []
+
+TRACE_ID: 1925, I: []
+
+TRACE_ID: 1926, I: []
+
+TRACE_ID: 1927, I: []
+
+TRACE_ID: 1928, I: []
+
+TRACE_ID: 1929, I: [[(2, '1')]]
+
+TRACE_ID: 1930, I: []
+
+TRACE_ID: 1931, I: [[(5, '6')]]
+
+TRACE_ID: 1932, I: [[(2, '1')]]
+
+TRACE_ID: 1933, I: [[(3, '8')]]
+
+TRACE_ID: 1934, I: []
+
+TRACE_ID: 1935, I: [[(3, '8'), (4, '6'), (5, '8')]]
+
+TRACE_ID: 1936, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 1937, I: []
+
+TRACE_ID: 1938, I: []
+
+TRACE_ID: 1939, I: [[(2, '1')]]
+
+TRACE_ID: 1940, I: []
+
+TRACE_ID: 1941, I: []
+
+TRACE_ID: 1942, I: []
+
+TRACE_ID: 1943, I: [[(4, '8'), (5, '9'), (6, '8'), (7, '6'), (8, '8')], [(10, '8')]]
+
+TRACE_ID: 1944, I: []
+
+TRACE_ID: 1945, I: [[(3, '1')]]
+
+TRACE_ID: 1946, I: []
+
+TRACE_ID: 1947, I: [[(3, '1')]]
+
+TRACE_ID: 1948, I: [[(3, '1'), (4, '8')]]
+
+TRACE_ID: 1949, I: [[(3, '6')]]
+
+TRACE_ID: 1950, I: []
+
+TRACE_ID: 1951, I: []
+
+TRACE_ID: 1952, I: []
+
+TRACE_ID: 1953, I: [[(4, '8')]]
+
+TRACE_ID: 1954, I: []
+
+TRACE_ID: 1955, I: []
+
+TRACE_ID: 1956, I: [[(3, '8')]]
+
+TRACE_ID: 1957, I: []
+
+TRACE_ID: 1958, I: [[(2, '1')]]
+
+TRACE_ID: 1959, I: []
+
+TRACE_ID: 1960, I: []
+
+TRACE_ID: 1962, I: []
+
+TRACE_ID: 1963, I: []
+
+TRACE_ID: 1964, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 1965, I: []
+
+TRACE_ID: 1966, I: []
+
+TRACE_ID: 1967, I: [[(4, '6')]]
+
+TRACE_ID: 1968, I: []
+
+TRACE_ID: 1969, I: []
+
+TRACE_ID: 1970, I: []
+
+TRACE_ID: 1971, I: []
+
+TRACE_ID: 1972, I: []
+
+TRACE_ID: 1973, I: []
+
+TRACE_ID: 1974, I: []
+
+TRACE_ID: 1976, I: []
+
+TRACE_ID: 1977, I: []
+
+TRACE_ID: 1979, I: []
+
+TRACE_ID: 1981, I: [[(3, '1')]]
+
+TRACE_ID: 1982, I: []
+
+TRACE_ID: 1983, I: []
+
+TRACE_ID: 1984, I: []
+
+TRACE_ID: 1985, I: []
+
+TRACE_ID: 1986, I: []
+
+TRACE_ID: 1988, I: []
+
+TRACE_ID: 1989, I: [[(2, '1'), (3, '1')]]
+
+TRACE_ID: 1990, I: []
+
+TRACE_ID: 1991, I: []
+
+TRACE_ID: 1992, I: []
+
+TRACE_ID: 1993, I: []
+
+TRACE_ID: 1994, I: []
+
+TRACE_ID: 1995, I: []
+
+TRACE_ID: 1996, I: []
+
+TRACE_ID: 1997, I: []
+
+TRACE_ID: 1998, I: []
+
+TRACE_ID: 1999, I: [[(4, '6')]]
+
+TRACE_ID: 2000, I: []
+
+TRACE_ID: 2001, I: [[(3, '8')]]
+
+TRACE_ID: 2002, I: []
+
+TRACE_ID: 2003, I: [[(3, '8'), (4, '6'), (5, '8')]]
+
+TRACE_ID: 2004, I: [[(5, '6')]]
+
+TRACE_ID: 2005, I: []
+
+TRACE_ID: 2006, I: []
+
+TRACE_ID: 2008, I: []
+
+TRACE_ID: 2009, I: []
+
+TRACE_ID: 2010, I: [[(4, '6'), (5, '8')], [(7, '8'), (8, '9'), (9, '8'), (10, '9')]]
+
+TRACE_ID: 2011, I: [[(3, '1')]]
+
+TRACE_ID: 2012, I: []
+
+TRACE_ID: 2014, I: []
+
+TRACE_ID: 2015, I: []
+
+TRACE_ID: 2016, I: []
+
+TRACE_ID: 2017, I: []
+
+TRACE_ID: 2018, I: [[(3, '8')]]
+
+TRACE_ID: 2019, I: [[(3, '8')]]
+
+TRACE_ID: 2020, I: []
+
+TRACE_ID: 2023, I: [[(3, '6')]]
+
+TRACE_ID: 2024, I: []
+
+TRACE_ID: 2025, I: [[(4, '6')]]
+
+TRACE_ID: 2026, I: []
+
+TRACE_ID: 2027, I: []
+
+TRACE_ID: 2028, I: []
+
+TRACE_ID: 2029, I: []
+
+TRACE_ID: 2030, I: []
+
+TRACE_ID: 2031, I: []
+
+TRACE_ID: 2032, I: []
+
+TRACE_ID: 2033, I: []
+
+TRACE_ID: 2034, I: []
+
+TRACE_ID: 2036, I: []
+
+TRACE_ID: 2038, I: []
+
+TRACE_ID: 2039, I: []
+
+TRACE_ID: 2040, I: []
+
+TRACE_ID: 2041, I: []
+
+TRACE_ID: 2042, I: []
+
+TRACE_ID: 2043, I: []
+
+TRACE_ID: 2044, I: []
+
+TRACE_ID: 2045, I: []
+
+TRACE_ID: 2046, I: []
+
+TRACE_ID: 2047, I: []
+
+TRACE_ID: 2048, I: [[(3, '8')]]
+
+TRACE_ID: 2049, I: []
+
+TRACE_ID: 2051, I: [[(5, '9'), (6, '8')]]
+
+TRACE_ID: 2052, I: []
+
+TRACE_ID: 2053, I: [[(4, '8'), (5, '9'), (6, '8')]]
+
+TRACE_ID: 2054, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 2055, I: []
+
+TRACE_ID: 2056, I: []
+
+TRACE_ID: 2057, I: []
+
+TRACE_ID: 2058, I: []
+
+TRACE_ID: 2060, I: []
+
+TRACE_ID: 2061, I: []
+
+TRACE_ID: 2063, I: []
+
+TRACE_ID: 2064, I: []
+
+TRACE_ID: 2065, I: []
+
+TRACE_ID: 2066, I: []
+
+TRACE_ID: 2067, I: [[(5, '8')]]
+
+TRACE_ID: 2069, I: []
+
+TRACE_ID: 2070, I: []
+
+TRACE_ID: 2071, I: [[(3, '8')], [(6, '9')]]
+
+TRACE_ID: 2072, I: []
+
+TRACE_ID: 2073, I: []
+
+TRACE_ID: 2074, I: []
+
+TRACE_ID: 2075, I: []
+
+TRACE_ID: 2076, I: []
+
+TRACE_ID: 2077, I: []
+
+TRACE_ID: 2078, I: []
+
+TRACE_ID: 2079, I: [[(4, '9')]]
+
+TRACE_ID: 2080, I: [[(3, '8')]]
+
+TRACE_ID: 2082, I: [[(4, '9'), (5, '8'), (6, '6'), (7, '8')], [(9, '8')]]
+
+TRACE_ID: 2084, I: []
+
+TRACE_ID: 2085, I: [[(5, '6')]]
+
+TRACE_ID: 2086, I: [[(2, '1')]]
+
+TRACE_ID: 2087, I: [[(3, '8'), (4, '9')]]
+
+TRACE_ID: 2088, I: [[(4, '2')]]
+
+TRACE_ID: 2089, I: [[(3, '1')]]
+
+TRACE_ID: 2090, I: []
+
+TRACE_ID: 2091, I: []
+
+TRACE_ID: 2094, I: []
+
+TRACE_ID: 2095, I: []
+
+TRACE_ID: 2096, I: []
+
+TRACE_ID: 2097, I: []
+
+TRACE_ID: 2098, I: [[(5, '9'), (6, '9'), (7, '9')]]
+
+TRACE_ID: 2099, I: []
+
+TRACE_ID: 2100, I: []
+
+TRACE_ID: 2101, I: []
+
+TRACE_ID: 2102, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 2106, I: []
+
+TRACE_ID: 2107, I: [[(2, '1')]]
+
+TRACE_ID: 2109, I: [[(3, '6')]]
+
+TRACE_ID: 2110, I: [[(2, '1')]]
+
+TRACE_ID: 2111, I: [[(4, '8')]]
+
+TRACE_ID: 2113, I: [[(4, '6')]]
+
+TRACE_ID: 2114, I: [[(4, '2')]]
+
+TRACE_ID: 2115, I: []
+
+TRACE_ID: 2116, I: []
+
+TRACE_ID: 2118, I: []
+
+TRACE_ID: 2119, I: [[(3, '8')]]
+
+TRACE_ID: 2120, I: [[(3, '8')]]
+
+TRACE_ID: 2122, I: []
+
+TRACE_ID: 2124, I: []
+
+TRACE_ID: 2127, I: []
+
+TRACE_ID: 2128, I: [[(4, '6')]]
+
+TRACE_ID: 2129, I: []
+
+TRACE_ID: 2130, I: []
+
+TRACE_ID: 2131, I: []
+
+TRACE_ID: 2132, I: [[(5, '8')]]
+
+TRACE_ID: 2133, I: []
+
+TRACE_ID: 2135, I: []
+
+TRACE_ID: 2136, I: [[(3, '1')]]
+
+TRACE_ID: 2137, I: []
+
+TRACE_ID: 2138, I: []
+
+TRACE_ID: 2139, I: [[(3, '8')]]
+
+TRACE_ID: 2140, I: []
+
+TRACE_ID: 2144, I: []
+
+TRACE_ID: 2145, I: [[(3, '8'), (4, '9'), (5, '8')]]
+
+TRACE_ID: 2146, I: []
+
+TRACE_ID: 2147, I: [[(5, '8')]]
+
+TRACE_ID: 2148, I: [[(4, '6')]]
+
+TRACE_ID: 2149, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 2150, I: []
+
+TRACE_ID: 2151, I: []
+
+TRACE_ID: 2153, I: []
+
+TRACE_ID: 2154, I: [[(3, '6')]]
+
+TRACE_ID: 2155, I: []
+
+TRACE_ID: 2158, I: []
+
+TRACE_ID: 2159, I: [[(4, '1'), (5, '1')]]
+
+TRACE_ID: 2160, I: []
+
+TRACE_ID: 2161, I: [[(2, '1')]]
+
+TRACE_ID: 2162, I: [[(3, '9')]]
+
+TRACE_ID: 2164, I: []
+
+TRACE_ID: 2165, I: []
+
+TRACE_ID: 2166, I: []
+
+TRACE_ID: 2167, I: []
+
+TRACE_ID: 2169, I: []
+
+TRACE_ID: 2170, I: []
+
+TRACE_ID: 2171, I: []
+
+TRACE_ID: 2173, I: [[(3, '8')]]
+
+TRACE_ID: 2174, I: []
+
+TRACE_ID: 2175, I: []
+
+TRACE_ID: 2178, I: []
+
+TRACE_ID: 2179, I: []
+
+TRACE_ID: 2180, I: []
+
+TRACE_ID: 2181, I: []
+
+TRACE_ID: 2182, I: []
+
+TRACE_ID: 2184, I: [[(3, '8'), (4, '6')], [(7, '8')]]
+
+TRACE_ID: 2185, I: []
+
+TRACE_ID: 2186, I: []
+
+TRACE_ID: 2187, I: []
+
+TRACE_ID: 2188, I: []
+
+TRACE_ID: 2189, I: []
+
+TRACE_ID: 2190, I: []
+
+TRACE_ID: 2192, I: []
+
+TRACE_ID: 2193, I: []
+
+TRACE_ID: 2194, I: []
+
+TRACE_ID: 2195, I: []
+
+TRACE_ID: 2196, I: []
+
+TRACE_ID: 2198, I: []
+
+TRACE_ID: 2199, I: [[(3, '8')]]
+
+TRACE_ID: 2200, I: []
+
+TRACE_ID: 2202, I: []
+
+TRACE_ID: 2204, I: []
+
+TRACE_ID: 2205, I: []
+
+TRACE_ID: 2206, I: [[(2, '1')], [(4, '1')]]
+
+TRACE_ID: 2207, I: [[(3, '8')]]
+
+TRACE_ID: 2208, I: []
+
+TRACE_ID: 2209, I: [[(3, '8')]]
+
+TRACE_ID: 2212, I: []
+
+TRACE_ID: 2213, I: [[(3, '8')]]
+
+TRACE_ID: 2214, I: []
+
+TRACE_ID: 2216, I: []
+
+TRACE_ID: 2217, I: []
+
+TRACE_ID: 2218, I: []
+
+TRACE_ID: 2220, I: []
+
+TRACE_ID: 2221, I: [[(5, '8'), (6, '6')]]
+
+TRACE_ID: 2222, I: []
+
+TRACE_ID: 2223, I: []
+
+TRACE_ID: 2224, I: []
+
+TRACE_ID: 2225, I: [[(2, '1')]]
+
+TRACE_ID: 2226, I: []
+
+TRACE_ID: 2227, I: [[(3, '6')]]
+
+TRACE_ID: 2230, I: []
+
+TRACE_ID: 2231, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 2233, I: []
+
+TRACE_ID: 2234, I: []
+
+TRACE_ID: 2235, I: []
+
+TRACE_ID: 2237, I: [[(3, '6')]]
+
+TRACE_ID: 2238, I: [[(3, '6')]]
+
+TRACE_ID: 2240, I: []
+
+TRACE_ID: 2241, I: []
+
+TRACE_ID: 2242, I: []
+
+TRACE_ID: 2243, I: []
+
+TRACE_ID: 2244, I: []
+
+TRACE_ID: 2246, I: []
+
+TRACE_ID: 2247, I: []
+
+TRACE_ID: 2248, I: [[(4, '6')]]
+
+TRACE_ID: 2249, I: [[(4, '8'), (5, '6'), (6, '8')]]
+
+TRACE_ID: 2250, I: []
+
+TRACE_ID: 2251, I: []
+
+TRACE_ID: 2252, I: []
+
+TRACE_ID: 2254, I: []
+
+TRACE_ID: 2255, I: []
+
+TRACE_ID: 2256, I: []
+
+TRACE_ID: 2257, I: []
+
+TRACE_ID: 2258, I: []
+
+TRACE_ID: 2259, I: []
+
+TRACE_ID: 2260, I: []
+
+TRACE_ID: 2261, I: []
+
+TRACE_ID: 2262, I: []
+
+TRACE_ID: 2263, I: [[(2, '1')]]
+
+TRACE_ID: 2264, I: []
+
+TRACE_ID: 2265, I: [[(2, '1'), (3, '1')]]
+
+TRACE_ID: 2266, I: []
+
+TRACE_ID: 2269, I: [[(3, '8')]]
+
+TRACE_ID: 2270, I: []
+
+TRACE_ID: 2271, I: [[(5, '8')]]
+
+TRACE_ID: 2272, I: [[(2, '1')]]
+
+TRACE_ID: 2273, I: []
+
+TRACE_ID: 2274, I: []
+
+TRACE_ID: 2275, I: []
+
+TRACE_ID: 2276, I: []
+
+TRACE_ID: 2277, I: []
+
+TRACE_ID: 2278, I: [[(3, '1')]]
+
+TRACE_ID: 2280, I: []
+
+TRACE_ID: 2281, I: [[(3, '1'), (4, '1'), (5, '1'), (6, '8')]]
+
+TRACE_ID: 2282, I: []
+
+TRACE_ID: 2283, I: []
+
+TRACE_ID: 2284, I: [[(2, '1')]]
+
+TRACE_ID: 2286, I: []
+
+TRACE_ID: 2287, I: [[(3, '8'), (4, '9')]]
+
+TRACE_ID: 2288, I: [[(3, '8')]]
+
+TRACE_ID: 2289, I: []
+
+TRACE_ID: 2291, I: []
+
+TRACE_ID: 2292, I: [[(3, '8')]]
+
+TRACE_ID: 2293, I: [[(5, '6')]]
+
+TRACE_ID: 2294, I: []
+
+TRACE_ID: 2295, I: [[(3, '8'), (4, '9'), (5, '8')]]
+
+TRACE_ID: 2296, I: []
+
+TRACE_ID: 2297, I: []
+
+TRACE_ID: 2298, I: []
+
+TRACE_ID: 2299, I: []
+
+TRACE_ID: 2301, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 2303, I: []
+
+TRACE_ID: 2304, I: [[(3, '8')], [(6, '9')]]
+
+TRACE_ID: 2305, I: []
+
+TRACE_ID: 2306, I: []
+
+TRACE_ID: 2307, I: []
+
+TRACE_ID: 2309, I: [[(3, '1')]]
+
+TRACE_ID: 2310, I: [[(3, '8')]]
+
+TRACE_ID: 2311, I: [[(3, '8')]]
+
+TRACE_ID: 2312, I: []
+
+TRACE_ID: 2313, I: []
+
+TRACE_ID: 2314, I: []
+
+TRACE_ID: 2316, I: [[(2, '1')]]
+
+TRACE_ID: 2317, I: []
+
+TRACE_ID: 2318, I: [[(4, '9'), (5, '9')]]
+
+TRACE_ID: 2319, I: [[(3, '8')]]
+
+TRACE_ID: 2320, I: []
+
+TRACE_ID: 2321, I: []
+
+TRACE_ID: 2323, I: []
+
+TRACE_ID: 2324, I: []
+
+TRACE_ID: 2325, I: []
+
+TRACE_ID: 2326, I: []
+
+TRACE_ID: 2327, I: [[(3, '8')]]
+
+TRACE_ID: 2329, I: []
+
+TRACE_ID: 2331, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 2332, I: []
+
+TRACE_ID: 2333, I: [[(3, '8'), (4, '8')]]
+
+TRACE_ID: 2334, I: []
+
+TRACE_ID: 2336, I: [[(4, '2')]]
+
+TRACE_ID: 2337, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 2338, I: [[(3, '8'), (4, '6'), (5, '8')]]
+
+TRACE_ID: 2339, I: []
+
+TRACE_ID: 2340, I: []
+
+TRACE_ID: 2341, I: [[(3, '8'), (4, '9'), (5, '9')]]
+
+TRACE_ID: 2342, I: [[(5, '9')]]
+
+TRACE_ID: 2343, I: []
+
+TRACE_ID: 2344, I: []
+
+TRACE_ID: 2345, I: [[(2, '1'), (3, '1')]]
+
+TRACE_ID: 2347, I: []
+
+TRACE_ID: 2349, I: [[(5, '8'), (6, '6')]]
+
+TRACE_ID: 2350, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 2351, I: []
+
+TRACE_ID: 2352, I: []
+
+TRACE_ID: 2353, I: []
+
+TRACE_ID: 2354, I: [[(2, '1')]]
+
+TRACE_ID: 2355, I: []
+
+TRACE_ID: 2357, I: []
+
+TRACE_ID: 2358, I: []
+
+TRACE_ID: 2359, I: []
+
+TRACE_ID: 2360, I: [[(2, '1')]]
+
+TRACE_ID: 2361, I: [[(5, '8')]]
+
+TRACE_ID: 2363, I: []
+
+TRACE_ID: 2364, I: []
+
+TRACE_ID: 2365, I: []
+
+TRACE_ID: 2366, I: []
+
+TRACE_ID: 2367, I: []
+
+TRACE_ID: 2369, I: []
+
+TRACE_ID: 2370, I: []
+
+TRACE_ID: 2371, I: []
+
+TRACE_ID: 2372, I: []
+
+TRACE_ID: 2373, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 2374, I: []
+
+TRACE_ID: 2376, I: []
+
+TRACE_ID: 2377, I: []
+
+TRACE_ID: 2378, I: []
+
+TRACE_ID: 2379, I: [[(3, '8')]]
+
+TRACE_ID: 2380, I: [[(3, '8')]]
+
+TRACE_ID: 2382, I: [[(4, '2')]]
+
+TRACE_ID: 2383, I: []
+
+TRACE_ID: 2384, I: [[(3, '8'), (4, '6'), (5, '8'), (6, '6'), (7, '8')]]
+
+TRACE_ID: 2385, I: []
+
+TRACE_ID: 2386, I: []
+
+TRACE_ID: 2387, I: [[(4, '6'), (5, '6')]]
+
+TRACE_ID: 2388, I: []
+
+TRACE_ID: 2389, I: []
+
+TRACE_ID: 2390, I: []
+
+TRACE_ID: 2392, I: []
+
+TRACE_ID: 2393, I: []
+
+TRACE_ID: 2394, I: []
+
+TRACE_ID: 2395, I: []
+
+TRACE_ID: 2396, I: []
+
+TRACE_ID: 2397, I: []
+
+TRACE_ID: 2400, I: []
+
+TRACE_ID: 2401, I: []
+
+TRACE_ID: 2402, I: [[(2, '1')]]
+
+TRACE_ID: 2403, I: []
+
+TRACE_ID: 2404, I: []
+
+TRACE_ID: 2405, I: []
+
+TRACE_ID: 2406, I: []
+
+TRACE_ID: 2407, I: [[(3, '8'), (4, '9'), (5, '6')]]
+
+TRACE_ID: 2408, I: []
+
+TRACE_ID: 2409, I: [[(3, '6')]]
+
+TRACE_ID: 2410, I: []
+
+TRACE_ID: 2411, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 2412, I: []
+
+TRACE_ID: 2413, I: []
+
+TRACE_ID: 2414, I: [[(3, '8')]]
+
+TRACE_ID: 2415, I: []
+
+TRACE_ID: 2416, I: []
+
+TRACE_ID: 2418, I: [[(4, '8')]]
+
+TRACE_ID: 2419, I: []
+
+TRACE_ID: 2420, I: []
+
+TRACE_ID: 2421, I: []
+
+TRACE_ID: 2422, I: []
+
+TRACE_ID: 2423, I: []
+
+TRACE_ID: 2424, I: []
+
+TRACE_ID: 2425, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 2426, I: []
+
+TRACE_ID: 2427, I: []
+
+TRACE_ID: 2428, I: []
+
+TRACE_ID: 2429, I: [[(5, '6')]]
+
+TRACE_ID: 2430, I: []
+
+TRACE_ID: 2431, I: []
+
+TRACE_ID: 2433, I: []
+
+TRACE_ID: 2434, I: []
+
+TRACE_ID: 2435, I: [[(3, '8')]]
+
+TRACE_ID: 2437, I: []
+
+TRACE_ID: 2438, I: []
+
+TRACE_ID: 2439, I: [[(3, '8')]]
+
+TRACE_ID: 2440, I: []
+
+TRACE_ID: 2441, I: [[(2, '1')]]
+
+TRACE_ID: 2442, I: [[(3, '8')]]
+
+TRACE_ID: 2443, I: [[(3, '8')]]
+
+TRACE_ID: 2444, I: []
+
+TRACE_ID: 2445, I: []
+
+TRACE_ID: 2446, I: []
+
+TRACE_ID: 2449, I: []
+
+TRACE_ID: 2450, I: []
+
+TRACE_ID: 2453, I: []
+
+TRACE_ID: 2454, I: []
+
+TRACE_ID: 2455, I: []
+
+TRACE_ID: 2456, I: []
+
+TRACE_ID: 2457, I: []
+
+TRACE_ID: 2459, I: []
+
+TRACE_ID: 2460, I: []
+
+TRACE_ID: 2461, I: []
+
+TRACE_ID: 2462, I: [[(4, '6')]]
+
+TRACE_ID: 2463, I: [[(4, '6')]]
+
+TRACE_ID: 2464, I: []
+
+TRACE_ID: 2467, I: [[(5, '8')]]
+
+TRACE_ID: 2468, I: [[(3, '8')]]
+
+TRACE_ID: 2469, I: []
+
+TRACE_ID: 2470, I: [[(3, '8')]]
+
+TRACE_ID: 2471, I: [[(3, '8')]]
+
+TRACE_ID: 2472, I: []
+
+TRACE_ID: 2474, I: []
+
+TRACE_ID: 2475, I: [[(4, '2')]]
+
+TRACE_ID: 2477, I: []
+
+TRACE_ID: 2478, I: []
+
+TRACE_ID: 2479, I: []
+
+TRACE_ID: 2480, I: []
+
+TRACE_ID: 2482, I: []
+
+TRACE_ID: 2483, I: [[(4, '6'), (5, '8')]]
+
+TRACE_ID: 2484, I: []
+
+TRACE_ID: 2485, I: []
+
+TRACE_ID: 2486, I: [[(3, '8'), (4, '6'), (5, '8')]]
+
+TRACE_ID: 2487, I: []
+
+TRACE_ID: 2488, I: [[(3, '8')]]
+
+TRACE_ID: 2489, I: []
+
+TRACE_ID: 2491, I: []
+
+TRACE_ID: 2493, I: []
+
+TRACE_ID: 2494, I: []
+
+TRACE_ID: 2495, I: []
+
+TRACE_ID: 2496, I: []
+
+TRACE_ID: 2497, I: []
+
+TRACE_ID: 2500, I: [[(5, '8')]]
+
+TRACE_ID: 2501, I: [[(2, '1')]]
+
+TRACE_ID: 2502, I: []
+
+TRACE_ID: 2503, I: []
+
+TRACE_ID: 2504, I: []
+
+TRACE_ID: 2505, I: [[(3, '1')], [(5, '9'), (6, '8')], [(8, '8')]]
+
+TRACE_ID: 2506, I: [[(2, '1')]]
+
+TRACE_ID: 2507, I: []
+
+TRACE_ID: 2509, I: []
+
+TRACE_ID: 2510, I: []
+
+TRACE_ID: 2511, I: []
+
+TRACE_ID: 2513, I: []
+
+TRACE_ID: 2515, I: []
+
+TRACE_ID: 2516, I: []
+
+TRACE_ID: 2517, I: [[(4, '6')]]
+
+TRACE_ID: 2518, I: []
+
+TRACE_ID: 2519, I: [[(3, '8')]]
+
+TRACE_ID: 2520, I: [[(3, '8')]]
+
+TRACE_ID: 2521, I: []
+
+TRACE_ID: 2523, I: [[(2, '1')]]
+
+TRACE_ID: 2524, I: [[(3, '1')]]
+
+TRACE_ID: 2525, I: [[(3, '1'), (4, '1')]]
+
+TRACE_ID: 2526, I: [[(4, '9')]]
+
+TRACE_ID: 2527, I: [[(3, '1')]]
+
+TRACE_ID: 2528, I: []
+
+TRACE_ID: 2529, I: []
+
+TRACE_ID: 2531, I: []
+
+TRACE_ID: 2532, I: []
+
+TRACE_ID: 2533, I: []
+
+TRACE_ID: 2534, I: []
+
+TRACE_ID: 2535, I: []
+
+TRACE_ID: 2536, I: []
+
+TRACE_ID: 2537, I: []
+
+TRACE_ID: 2538, I: [[(3, '8')]]
+
+TRACE_ID: 2539, I: []
+
+TRACE_ID: 2540, I: []
+
+TRACE_ID: 2542, I: []
+
+TRACE_ID: 2543, I: []
+
+TRACE_ID: 2544, I: [[(4, '1')]]
+
+TRACE_ID: 2545, I: []
+
+TRACE_ID: 2546, I: []
+
+TRACE_ID: 2547, I: []
+
+TRACE_ID: 2548, I: []
+
+TRACE_ID: 2549, I: []
+
+TRACE_ID: 2551, I: []
+
+TRACE_ID: 2552, I: []
+
+TRACE_ID: 2553, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 2554, I: []
+
+TRACE_ID: 2556, I: []
+
+TRACE_ID: 2557, I: []
+
+TRACE_ID: 2559, I: [[(2, '1')]]
+
+TRACE_ID: 2560, I: [[(3, '8')], [(6, '6')]]
+
+TRACE_ID: 2561, I: []
+
+TRACE_ID: 2562, I: [[(4, '1')]]
+
+TRACE_ID: 2563, I: []
+
+TRACE_ID: 2564, I: []
+
+TRACE_ID: 2565, I: []
+
+TRACE_ID: 2566, I: []
+
+TRACE_ID: 2567, I: [[(3, '8')], [(5, '8'), (6, '6')]]
+
+TRACE_ID: 2568, I: []
+
+TRACE_ID: 2570, I: []
+
+TRACE_ID: 2572, I: [[(3, '8')]]
+
+TRACE_ID: 2573, I: []
+
+TRACE_ID: 2574, I: [[(2, '1')]]
+
+TRACE_ID: 2575, I: []
+
+TRACE_ID: 2576, I: []
+
+TRACE_ID: 2578, I: [[(2, '1')]]
+
+TRACE_ID: 2579, I: []
+
+TRACE_ID: 2580, I: []
+
+TRACE_ID: 2582, I: []
+
+TRACE_ID: 2583, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 2584, I: [[(3, '8')]]
+
+TRACE_ID: 2586, I: []
+
+TRACE_ID: 2587, I: []
+
+TRACE_ID: 2588, I: []
+
+TRACE_ID: 2589, I: [[(3, '8')]]
+
+TRACE_ID: 2590, I: []
+
+TRACE_ID: 2592, I: []
+
+TRACE_ID: 2594, I: [[(3, '1')]]
+
+TRACE_ID: 2595, I: []
+
+TRACE_ID: 2597, I: [[(5, '6')]]
+
+TRACE_ID: 2600, I: []
+
+TRACE_ID: 2601, I: []
+
+TRACE_ID: 2602, I: []
+
+TRACE_ID: 2603, I: []
+
+TRACE_ID: 2604, I: []
+
+TRACE_ID: 2605, I: []
+
+TRACE_ID: 2606, I: []
+
+TRACE_ID: 2607, I: []
+
+TRACE_ID: 2608, I: []
+
+TRACE_ID: 2609, I: []
+
+TRACE_ID: 2610, I: [[(3, '8'), (4, '8')]]
+
+TRACE_ID: 2612, I: []
+
+TRACE_ID: 2615, I: []
+
+TRACE_ID: 2617, I: []
+
+TRACE_ID: 2618, I: []
+
+TRACE_ID: 2619, I: [[(3, '8')]]
+
+TRACE_ID: 2621, I: []
+
+TRACE_ID: 2623, I: [[(3, '8'), (4, '9')]]
+
+TRACE_ID: 2624, I: [[(2, '1')]]
+
+TRACE_ID: 2626, I: []
+
+TRACE_ID: 2627, I: []
+
+TRACE_ID: 2628, I: []
+
+TRACE_ID: 2629, I: []
+
+TRACE_ID: 2630, I: []
+
+TRACE_ID: 2632, I: []
+
+TRACE_ID: 2633, I: [[(3, '8')], [(6, '6')]]
+
+TRACE_ID: 2634, I: []
+
+TRACE_ID: 2635, I: []
+
+TRACE_ID: 2636, I: [[(2, '1')]]
+
+TRACE_ID: 2637, I: []
+
+TRACE_ID: 2638, I: [[(4, '2')]]
+
+TRACE_ID: 2639, I: []
+
+TRACE_ID: 2640, I: []
+
+TRACE_ID: 2641, I: []
+
+TRACE_ID: 2642, I: []
+
+TRACE_ID: 2644, I: []
+
+TRACE_ID: 2645, I: [[(2, '1')]]
+
+TRACE_ID: 2646, I: []
+
+TRACE_ID: 2647, I: []
+
+TRACE_ID: 2648, I: []
+
+TRACE_ID: 2649, I: [[(2, '1')], [(4, '1')]]
+
+TRACE_ID: 2650, I: []
+
+TRACE_ID: 2651, I: []
+
+TRACE_ID: 2652, I: []
+
+TRACE_ID: 2653, I: []
+
+TRACE_ID: 2654, I: []
+
+TRACE_ID: 2655, I: [[(3, '8')]]
+
+TRACE_ID: 2656, I: []
+
+TRACE_ID: 2657, I: []
+
+TRACE_ID: 2658, I: [[(5, '8'), (6, '6')]]
+
+TRACE_ID: 2660, I: []
+
+TRACE_ID: 2661, I: [[(3, '6'), (4, '6')]]
+
+TRACE_ID: 2662, I: []
+
+TRACE_ID: 2663, I: []
+
+TRACE_ID: 2664, I: []
+
+TRACE_ID: 2669, I: [[(3, '8'), (4, '6')], [(6, '6')]]
+
+TRACE_ID: 2670, I: []
+
+TRACE_ID: 2671, I: []
+
+TRACE_ID: 2672, I: []
+
+TRACE_ID: 2673, I: []
+
+TRACE_ID: 2675, I: []
+
+TRACE_ID: 2677, I: []
+
+TRACE_ID: 2678, I: [[(3, '8')]]
+
+TRACE_ID: 2679, I: []
+
+TRACE_ID: 2680, I: []
+
+TRACE_ID: 2682, I: []
+
+TRACE_ID: 2683, I: []
+
+TRACE_ID: 2684, I: [[(2, '1')], [(4, '1')]]
+
+TRACE_ID: 2685, I: []
+
+TRACE_ID: 2687, I: []
+
+TRACE_ID: 2688, I: []
+
+TRACE_ID: 2689, I: []
+
+TRACE_ID: 2690, I: []
+
+TRACE_ID: 2691, I: []
+
+TRACE_ID: 2692, I: []
+
+TRACE_ID: 2693, I: []
+
+TRACE_ID: 2694, I: []
+
+TRACE_ID: 2695, I: []
+
+TRACE_ID: 2696, I: []
+
+TRACE_ID: 2697, I: []
+
+TRACE_ID: 2698, I: []
+
+TRACE_ID: 2699, I: [[(4, '6')]]
+
+TRACE_ID: 2701, I: []
+
+TRACE_ID: 2702, I: []
+
+TRACE_ID: 2703, I: []
+
+TRACE_ID: 2704, I: []
+
+TRACE_ID: 2705, I: []
+
+TRACE_ID: 2706, I: []
+
+TRACE_ID: 2707, I: [[(2, '1')]]
+
+TRACE_ID: 2708, I: []
+
+TRACE_ID: 2709, I: [[(3, '8')]]
+
+TRACE_ID: 2710, I: [[(3, '8')], [(5, '9')]]
+
+TRACE_ID: 2711, I: []
+
+TRACE_ID: 2712, I: []
+
+TRACE_ID: 2713, I: []
+
+TRACE_ID: 2714, I: []
+
+TRACE_ID: 2715, I: []
+
+TRACE_ID: 2717, I: []
+
+TRACE_ID: 2718, I: []
+
+TRACE_ID: 2719, I: []
+
+TRACE_ID: 2722, I: [[(4, '9')], [(6, '6')]]
+
+TRACE_ID: 2723, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 2724, I: []
+
+TRACE_ID: 2725, I: [[(5, '8')]]
+
+TRACE_ID: 2726, I: [[(5, '8')]]
+
+TRACE_ID: 2727, I: [[(3, '8')]]
+
+TRACE_ID: 2728, I: []
+
+TRACE_ID: 2729, I: []
+
+TRACE_ID: 2730, I: []
+
+TRACE_ID: 2731, I: []
+
+TRACE_ID: 2732, I: []
+
+TRACE_ID: 2733, I: []
+
+TRACE_ID: 2735, I: []
+
+TRACE_ID: 2736, I: [[(3, '8')]]
+
+TRACE_ID: 2737, I: []
+
+TRACE_ID: 2738, I: [[(4, '6')]]
+
+TRACE_ID: 2739, I: []
+
+TRACE_ID: 2740, I: []
+
+TRACE_ID: 2742, I: [[(3, '8')]]
+
+TRACE_ID: 2743, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 2744, I: [[(5, '8')]]
+
+TRACE_ID: 2745, I: [[(5, '6'), (6, '8'), (7, '6')]]
+
+TRACE_ID: 2746, I: []
+
+TRACE_ID: 2747, I: []
+
+TRACE_ID: 2748, I: []
+
+TRACE_ID: 2749, I: []
+
+TRACE_ID: 2750, I: []
+
+TRACE_ID: 2751, I: [[(3, '8')]]
+
+TRACE_ID: 2752, I: []
+
+TRACE_ID: 2753, I: []
+
+TRACE_ID: 2754, I: []
+
+TRACE_ID: 2755, I: []
+
+TRACE_ID: 2756, I: []
+
+TRACE_ID: 2757, I: []
+
+TRACE_ID: 2758, I: []
+
+TRACE_ID: 2759, I: []
+
+TRACE_ID: 2760, I: []
+
+TRACE_ID: 2761, I: []
+
+TRACE_ID: 2762, I: []
+
+TRACE_ID: 2763, I: [[(3, '6')]]
+
+TRACE_ID: 2764, I: [[(5, '6')]]
+
+TRACE_ID: 2766, I: []
+
+TRACE_ID: 2767, I: [[(3, '1')]]
+
+TRACE_ID: 2768, I: []
+
+TRACE_ID: 2769, I: []
+
+TRACE_ID: 2771, I: []
+
+TRACE_ID: 2772, I: []
+
+TRACE_ID: 2773, I: []
+
+TRACE_ID: 2775, I: [[(2, '1')]]
+
+TRACE_ID: 2778, I: [[(2, '1')]]
+
+TRACE_ID: 2779, I: []
+
+TRACE_ID: 2780, I: []
+
+TRACE_ID: 2781, I: []
+
+TRACE_ID: 2782, I: [[(4, '8')]]
+
+TRACE_ID: 2783, I: [[(3, '1')]]
+
+TRACE_ID: 2784, I: []
+
+TRACE_ID: 2785, I: []
+
+TRACE_ID: 2786, I: [[(4, '6')]]
+
+TRACE_ID: 2787, I: []
+
+TRACE_ID: 2789, I: []
+
+TRACE_ID: 2790, I: []
+
+TRACE_ID: 2791, I: []
+
+TRACE_ID: 2792, I: [[(4, '6')]]
+
+TRACE_ID: 2793, I: []
+
+TRACE_ID: 2794, I: []
+
+TRACE_ID: 2795, I: []
+
+TRACE_ID: 2796, I: []
+
+TRACE_ID: 2798, I: [[(3, '1')]]
+
+TRACE_ID: 2799, I: []
+
+TRACE_ID: 2800, I: []
+
+TRACE_ID: 2801, I: [[(3, '8')]]
+
+TRACE_ID: 2802, I: []
+
+TRACE_ID: 2803, I: []
+
+TRACE_ID: 2804, I: []
+
+TRACE_ID: 2805, I: [[(4, '8'), (5, '1'), (6, '1')]]
+
+TRACE_ID: 2806, I: []
+
+TRACE_ID: 2807, I: []
+
+TRACE_ID: 2808, I: [[(5, '9')]]
+
+TRACE_ID: 2809, I: []
+
+TRACE_ID: 2810, I: [[(2, '1')], [(6, '6')]]
+
+TRACE_ID: 2811, I: []
+
+TRACE_ID: 2812, I: []
+
+TRACE_ID: 2813, I: []
+
+TRACE_ID: 2815, I: []
+
+TRACE_ID: 2816, I: [[(4, '2')]]
+
+TRACE_ID: 2817, I: []
+
+TRACE_ID: 2818, I: []
+
+TRACE_ID: 2819, I: [[(6, '9'), (7, '8')]]
+
+TRACE_ID: 2820, I: []
+
+TRACE_ID: 2821, I: []
+
+TRACE_ID: 2822, I: []
+
+TRACE_ID: 2823, I: []
+
+TRACE_ID: 2824, I: []
+
+TRACE_ID: 2825, I: [[(3, '1')]]
+
+TRACE_ID: 2827, I: []
+
+TRACE_ID: 2828, I: [[(3, '8')], [(6, '8')]]
+
+TRACE_ID: 2829, I: []
+
+TRACE_ID: 2830, I: []
+
+TRACE_ID: 2831, I: []
+
+TRACE_ID: 2832, I: []
+
+TRACE_ID: 2833, I: []
+
+TRACE_ID: 2835, I: [[(3, '8')]]
+
+TRACE_ID: 2836, I: []
+
+TRACE_ID: 2837, I: []
+
+TRACE_ID: 2838, I: [[(3, '8')], [(5, '9')]]
+
+TRACE_ID: 2840, I: []
+
+TRACE_ID: 2841, I: [[(4, '6')]]
+
+TRACE_ID: 2842, I: []
+
+TRACE_ID: 2843, I: []
+
+TRACE_ID: 2844, I: []
+
+TRACE_ID: 2845, I: [[(4, '1'), (5, '8')]]
+
+TRACE_ID: 2846, I: []
+
+TRACE_ID: 2847, I: []
+
+TRACE_ID: 2850, I: []
+
+TRACE_ID: 2852, I: []
+
+TRACE_ID: 2853, I: [[(2, '1'), (3, '1')]]
+
+TRACE_ID: 2854, I: []
+
+TRACE_ID: 2855, I: []
+
+TRACE_ID: 2856, I: []
+
+TRACE_ID: 2857, I: []
+
+TRACE_ID: 2858, I: [[(3, '8')]]
+
+TRACE_ID: 2859, I: []
+
+TRACE_ID: 2861, I: [[(3, '8')]]
+
+TRACE_ID: 2862, I: []
+
+TRACE_ID: 2863, I: [[(3, '1'), (4, '1')]]
+
+TRACE_ID: 2864, I: []
+
+TRACE_ID: 2865, I: []
+
+TRACE_ID: 2867, I: [[(3, '8')], [(5, '9')]]
+
+TRACE_ID: 2868, I: []
+
+TRACE_ID: 2869, I: [[(3, '8')]]
+
+TRACE_ID: 2870, I: []
+
+TRACE_ID: 2871, I: []
+
+TRACE_ID: 2872, I: []
+
+TRACE_ID: 2874, I: []
+
+TRACE_ID: 2875, I: []
+
+TRACE_ID: 2876, I: []
+
+TRACE_ID: 2877, I: [[(3, '8')]]
+
+TRACE_ID: 2878, I: []
+
+TRACE_ID: 2879, I: []
+
+TRACE_ID: 2880, I: []
+
+TRACE_ID: 2882, I: []
+
+TRACE_ID: 2883, I: []
+
+TRACE_ID: 2884, I: []
+
+TRACE_ID: 2885, I: []
+
+TRACE_ID: 2886, I: []
+
+TRACE_ID: 2887, I: [[(5, '9')]]
+
+TRACE_ID: 2888, I: []
+
+TRACE_ID: 2889, I: []
+
+TRACE_ID: 2890, I: []
+
+TRACE_ID: 2892, I: []
+
+TRACE_ID: 2893, I: []
+
+TRACE_ID: 2894, I: [[(5, '8')]]
+
+TRACE_ID: 2895, I: []
+
+TRACE_ID: 2896, I: []
+
+TRACE_ID: 2898, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 2899, I: []
+
+TRACE_ID: 2900, I: []
+
+TRACE_ID: 2901, I: []
+
+TRACE_ID: 2902, I: []
+
+TRACE_ID: 2903, I: []
+
+TRACE_ID: 2904, I: [[(5, '6')]]
+
+TRACE_ID: 2906, I: []
+
+TRACE_ID: 2907, I: []
+
+TRACE_ID: 2908, I: []
+
+TRACE_ID: 2909, I: [[(4, '1')], [(8, '8'), (9, '6')]]
+
+TRACE_ID: 2911, I: []
+
+TRACE_ID: 2912, I: []
+
+TRACE_ID: 2913, I: []
+
+TRACE_ID: 2914, I: []
+
+TRACE_ID: 2915, I: [[(2, '1')]]
+
+TRACE_ID: 2916, I: []
+
+TRACE_ID: 2917, I: [[(4, '6')]]
+
+TRACE_ID: 2919, I: []
+
+TRACE_ID: 2920, I: [[(3, '8')], [(5, '2')]]
+
+TRACE_ID: 2921, I: [[(3, '8')], [(7, '6')]]
+
+TRACE_ID: 2922, I: []
+
+TRACE_ID: 2923, I: []
+
+TRACE_ID: 2924, I: [[(3, '1')]]
+
+TRACE_ID: 2925, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 2926, I: []
+
+TRACE_ID: 2927, I: [[(3, '8'), (4, '6'), (5, '8')]]
+
+TRACE_ID: 2928, I: []
+
+TRACE_ID: 2929, I: []
+
+TRACE_ID: 2930, I: []
+
+TRACE_ID: 2933, I: []
+
+TRACE_ID: 2935, I: []
+
+TRACE_ID: 2936, I: [[(3, '8')], [(7, '8'), (8, '6')]]
+
+TRACE_ID: 2937, I: [[(4, '2'), (5, '2')]]
+
+TRACE_ID: 2938, I: []
+
+TRACE_ID: 2939, I: []
+
+TRACE_ID: 2940, I: []
+
+TRACE_ID: 2941, I: []
+
+TRACE_ID: 2942, I: []
+
+TRACE_ID: 2943, I: [[(3, '1')]]
+
+TRACE_ID: 2944, I: [[(5, '8')]]
+
+TRACE_ID: 2945, I: []
+
+TRACE_ID: 2946, I: []
+
+TRACE_ID: 2947, I: [[(3, '6')]]
+
+TRACE_ID: 2948, I: []
+
+TRACE_ID: 2950, I: []
+
+TRACE_ID: 2951, I: [[(3, '8')]]
+
+TRACE_ID: 2952, I: []
+
+TRACE_ID: 2953, I: []
+
+TRACE_ID: 2954, I: []
+
+TRACE_ID: 2955, I: []
+
+TRACE_ID: 2957, I: []
+
+TRACE_ID: 2958, I: []
+
+TRACE_ID: 2959, I: []
+
+TRACE_ID: 2960, I: []
+
+TRACE_ID: 2961, I: []
+
+TRACE_ID: 2963, I: []
+
+TRACE_ID: 2965, I: [[(4, '6')]]
+
+TRACE_ID: 2967, I: []
+
+TRACE_ID: 2969, I: []
+
+TRACE_ID: 2972, I: [[(3, '1')]]
+
+TRACE_ID: 2973, I: []
+
+TRACE_ID: 2974, I: []
+
+TRACE_ID: 2976, I: []
+
+TRACE_ID: 2977, I: []
+
+TRACE_ID: 2978, I: []
+
+TRACE_ID: 2979, I: []
+
+TRACE_ID: 2980, I: []
+
+TRACE_ID: 2982, I: [[(3, '6')]]
+
+TRACE_ID: 2983, I: []
+
+TRACE_ID: 2985, I: [[(3, '8')], [(5, '4')]]
+
+TRACE_ID: 2986, I: []
+
+TRACE_ID: 2987, I: []
+
+TRACE_ID: 2989, I: []
+
+TRACE_ID: 2990, I: []
+
+TRACE_ID: 2991, I: []
+
+TRACE_ID: 2993, I: [[(3, '8')]]
+
+TRACE_ID: 2994, I: []
+
+TRACE_ID: 2995, I: []
+
+TRACE_ID: 2996, I: []
+
+TRACE_ID: 2997, I: []
+
+TRACE_ID: 2998, I: []
+
+TRACE_ID: 2999, I: []
+
+TRACE_ID: 3000, I: []
+
+TRACE_ID: 3001, I: [[(2, '1')]]
+
+TRACE_ID: 3002, I: []
+
+TRACE_ID: 3003, I: []
+
+TRACE_ID: 3004, I: [[(2, '1')], [(5, '6')]]
+
+TRACE_ID: 3005, I: []
+
+TRACE_ID: 3006, I: []
+
+TRACE_ID: 3007, I: [[(3, '6')]]
+
+TRACE_ID: 3011, I: [[(4, '9')]]
+
+TRACE_ID: 3012, I: [[(3, '8')]]
+
+TRACE_ID: 3014, I: [[(3, '6')]]
+
+TRACE_ID: 3017, I: []
+
+TRACE_ID: 3018, I: []
+
+TRACE_ID: 3019, I: []
+
+TRACE_ID: 3020, I: []
+
+TRACE_ID: 3022, I: []
+
+TRACE_ID: 3023, I: []
+
+TRACE_ID: 3024, I: []
+
+TRACE_ID: 3025, I: []
+
+TRACE_ID: 3026, I: []
+
+TRACE_ID: 3027, I: []
+
+TRACE_ID: 3028, I: [[(4, '8')], [(6, '8')]]
+
+TRACE_ID: 3029, I: []
+
+TRACE_ID: 3030, I: [[(5, '8')]]
+
+TRACE_ID: 3031, I: [[(4, '1'), (5, '1')]]
+
+TRACE_ID: 3032, I: []
+
+TRACE_ID: 3033, I: [[(2, '1')]]
+
+TRACE_ID: 3036, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 3039, I: []
+
+TRACE_ID: 3040, I: [[(4, '6')]]
+
+TRACE_ID: 3041, I: []
+
+TRACE_ID: 3042, I: []
+
+TRACE_ID: 3045, I: []
+
+TRACE_ID: 3047, I: []
+
+TRACE_ID: 3048, I: [[(4, '6')]]
+
+TRACE_ID: 3049, I: [[(3, '8')], [(5, '8'), (6, '6')]]
+
+TRACE_ID: 3050, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 3051, I: [[(3, '8')]]
+
+TRACE_ID: 3052, I: []
+
+TRACE_ID: 3053, I: [[(3, '6')]]
+
+TRACE_ID: 3054, I: [[(3, '8')], [(5, '8')]]
+
+TRACE_ID: 3055, I: [[(3, '8')]]
+
+TRACE_ID: 3057, I: []
+
+TRACE_ID: 3060, I: []
+
+TRACE_ID: 3062, I: [[(5, '6')]]
+
+TRACE_ID: 3063, I: []
+
+TRACE_ID: 3064, I: []
+
+TRACE_ID: 3065, I: []
+
+TRACE_ID: 3066, I: []
+
+TRACE_ID: 3067, I: []
+
+TRACE_ID: 3068, I: []
+
+TRACE_ID: 3069, I: []
+
+TRACE_ID: 3070, I: []
+
+TRACE_ID: 3071, I: []
+
+TRACE_ID: 3072, I: []
+
+TRACE_ID: 3074, I: []
+
+TRACE_ID: 3075, I: []
+
+TRACE_ID: 3076, I: [[(2, '1')], [(5, '2')]]
+
+TRACE_ID: 3079, I: [[(3, '1'), (4, '1')], [(6, '1')]]
+
+TRACE_ID: 3080, I: []
+
+TRACE_ID: 3081, I: [[(2, '6')]]
+
+TRACE_ID: 3083, I: []
+
+TRACE_ID: 3084, I: [[(2, '1')]]
+
+TRACE_ID: 3085, I: []
+
+TRACE_ID: 3086, I: []
+
+TRACE_ID: 3087, I: []
+
+TRACE_ID: 3088, I: [[(3, '1'), (4, '8')]]
+
+TRACE_ID: 3089, I: []
+
+TRACE_ID: 3090, I: []
+
+TRACE_ID: 3091, I: [[(4, '6')]]
+
+TRACE_ID: 3092, I: []
+
+TRACE_ID: 3093, I: []
+
+TRACE_ID: 3094, I: []
+
+TRACE_ID: 3095, I: []
+
+TRACE_ID: 3096, I: []
+
+TRACE_ID: 3097, I: []
+
+TRACE_ID: 3098, I: []
+
+TRACE_ID: 3099, I: []
+
+TRACE_ID: 3100, I: [[(5, '8')]]
+
+TRACE_ID: 3101, I: []
+
+TRACE_ID: 3102, I: []
+
+TRACE_ID: 3104, I: []
+
+TRACE_ID: 3105, I: []
+
+TRACE_ID: 3106, I: [[(4, '6')]]
+
+TRACE_ID: 3107, I: []
+
+TRACE_ID: 3108, I: []
+
+TRACE_ID: 3109, I: []
+
+TRACE_ID: 3110, I: []
+
+TRACE_ID: 3111, I: []
+
+TRACE_ID: 3114, I: [[(3, '8'), (4, '8')]]
+
+TRACE_ID: 3115, I: []
+
+TRACE_ID: 3116, I: []
+
+TRACE_ID: 3117, I: []
+
+TRACE_ID: 3119, I: [[(3, '1'), (4, '1')]]
+
+TRACE_ID: 3120, I: []
+
+TRACE_ID: 3122, I: []
+
+TRACE_ID: 3123, I: []
+
+TRACE_ID: 3124, I: []
+
+TRACE_ID: 3125, I: []
+
+TRACE_ID: 3127, I: []
+
+TRACE_ID: 3129, I: []
+
+TRACE_ID: 3130, I: [[(3, '1')]]
+
+TRACE_ID: 3131, I: [[(3, '8')]]
+
+TRACE_ID: 3132, I: []
+
+TRACE_ID: 3133, I: []
+
+TRACE_ID: 3134, I: []
+
+TRACE_ID: 3135, I: [[(4, '2')]]
+
+TRACE_ID: 3136, I: []
+
+TRACE_ID: 3137, I: [[(3, '1'), (4, '1')]]
+
+TRACE_ID: 3138, I: [[(3, '8')]]
+
+TRACE_ID: 3140, I: []
+
+TRACE_ID: 3141, I: [[(4, '6')]]
+
+TRACE_ID: 3143, I: []
+
+TRACE_ID: 3144, I: []
+
+TRACE_ID: 3146, I: []
+
+TRACE_ID: 3147, I: []
+
+TRACE_ID: 3149, I: []
+
+TRACE_ID: 3150, I: [[(4, '8')]]
+
+TRACE_ID: 3151, I: []
+
+TRACE_ID: 3152, I: [[(3, '8')]]
+
+TRACE_ID: 3153, I: [[(5, '8')]]
+
+TRACE_ID: 3154, I: []
+
+TRACE_ID: 3155, I: [[(4, '6')]]
+
+TRACE_ID: 3156, I: [[(2, '8')], [(5, '6')]]
+
+TRACE_ID: 3157, I: []
+
+TRACE_ID: 3158, I: []
+
+TRACE_ID: 3159, I: [[(2, '8'), (3, '8')]]
+
+TRACE_ID: 3160, I: []
+
+TRACE_ID: 3161, I: []
+
+TRACE_ID: 3162, I: []
+
+TRACE_ID: 3163, I: [[(3, '8'), (4, '6'), (5, '8')]]
+
+TRACE_ID: 3164, I: []
+
+TRACE_ID: 3165, I: []
+
+TRACE_ID: 3166, I: []
+
+TRACE_ID: 3167, I: []
+
+TRACE_ID: 3168, I: []
+
+TRACE_ID: 3169, I: []
+
+TRACE_ID: 3170, I: [[(3, '8')]]
+
+TRACE_ID: 3171, I: []
+
+TRACE_ID: 3173, I: []
+
+TRACE_ID: 3174, I: []
+
+TRACE_ID: 3175, I: []
+
+TRACE_ID: 3177, I: []
+
+TRACE_ID: 3178, I: []
+
+TRACE_ID: 3179, I: []
+
+TRACE_ID: 3180, I: []
+
+TRACE_ID: 3181, I: []
+
+TRACE_ID: 3182, I: []
+
+TRACE_ID: 3183, I: []
+
+TRACE_ID: 3185, I: [[(4, '2')]]
+
+TRACE_ID: 3187, I: [[(2, '1')], [(6, '6')]]
+
+TRACE_ID: 3188, I: []
+
+TRACE_ID: 3189, I: []
+
+TRACE_ID: 3190, I: []
+
+TRACE_ID: 3191, I: [[(3, '1')], [(6, '9')]]
+
+TRACE_ID: 3193, I: []
+
+TRACE_ID: 3194, I: [[(3, '1'), (4, '8')]]
+
+TRACE_ID: 3195, I: []
+
+TRACE_ID: 3196, I: [[(4, '8')]]
+
+TRACE_ID: 3197, I: [[(2, '1')]]
+
+TRACE_ID: 3198, I: []
+
+TRACE_ID: 3199, I: []
+
+TRACE_ID: 3200, I: [[(3, '1')]]
+
+TRACE_ID: 3201, I: []
+
+TRACE_ID: 3202, I: []
+
+TRACE_ID: 3203, I: []
+
+TRACE_ID: 3204, I: []
+
+TRACE_ID: 3205, I: []
+
+TRACE_ID: 3206, I: []
+
+TRACE_ID: 3207, I: [[(3, '6')]]
+
+TRACE_ID: 3208, I: []
+
+TRACE_ID: 3209, I: []
+
+TRACE_ID: 3210, I: []
+
+TRACE_ID: 3211, I: []
+
+TRACE_ID: 3213, I: []
+
+TRACE_ID: 3214, I: [[(4, '2')]]
+
+TRACE_ID: 3215, I: []
+
+TRACE_ID: 3216, I: []
+
+TRACE_ID: 3217, I: [[(2, '1')]]
+
+TRACE_ID: 3218, I: []
+
+TRACE_ID: 3219, I: []
+
+TRACE_ID: 3220, I: []
+
+TRACE_ID: 3221, I: []
+
+TRACE_ID: 3223, I: [[(4, '2')]]
+
+TRACE_ID: 3224, I: [[(2, '1')], [(5, '6')]]
+
+TRACE_ID: 3225, I: []
+
+TRACE_ID: 3227, I: []
+
+TRACE_ID: 3228, I: [[(2, '1')]]
+
+TRACE_ID: 3230, I: []
+
+TRACE_ID: 3232, I: []
+
+TRACE_ID: 3234, I: [[(3, '8')]]
+
+TRACE_ID: 3235, I: [[(3, '1')]]
+
+TRACE_ID: 3236, I: []
+
+TRACE_ID: 3237, I: []
+
+TRACE_ID: 3238, I: [[(3, '8')]]
+
+TRACE_ID: 3240, I: []
+
+TRACE_ID: 3241, I: []
+
+TRACE_ID: 3242, I: []
+
+TRACE_ID: 3243, I: []
+
+TRACE_ID: 3244, I: []
+
+TRACE_ID: 3245, I: []
+
+TRACE_ID: 3246, I: []
+
+TRACE_ID: 3247, I: []
+
+TRACE_ID: 3248, I: [[(4, '6')]]
+
+TRACE_ID: 3249, I: [[(3, '8'), (4, '4'), (5, '4')], [(7, '6')]]
+
+TRACE_ID: 3250, I: [[(3, '8'), (4, '9')]]
+
+TRACE_ID: 3252, I: [[(3, '8')]]
+
+TRACE_ID: 3255, I: []
+
+TRACE_ID: 3256, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 3257, I: []
+
+TRACE_ID: 3258, I: []
+
+TRACE_ID: 3259, I: []
+
+TRACE_ID: 3260, I: []
+
+TRACE_ID: 3261, I: []
+
+TRACE_ID: 3263, I: []
+
+TRACE_ID: 3264, I: []
+
+TRACE_ID: 3265, I: []
+
+TRACE_ID: 3266, I: []
+
+TRACE_ID: 3267, I: []
+
+TRACE_ID: 3268, I: []
+
+TRACE_ID: 3269, I: []
+
+TRACE_ID: 3270, I: [[(3, '8')]]
+
+TRACE_ID: 3271, I: []
+
+TRACE_ID: 3272, I: []
+
+TRACE_ID: 3274, I: [[(3, '1'), (4, '8')]]
+
+TRACE_ID: 3275, I: [[(4, '6')]]
+
+TRACE_ID: 3277, I: []
+
+TRACE_ID: 3278, I: [[(3, '8')]]
+
+TRACE_ID: 3279, I: [[(3, '8')]]
+
+TRACE_ID: 3280, I: []
+
+TRACE_ID: 3281, I: []
+
+TRACE_ID: 3282, I: [[(4, '6')]]
+
+TRACE_ID: 3283, I: []
+
+TRACE_ID: 3284, I: []
+
+TRACE_ID: 3285, I: []
+
+TRACE_ID: 3286, I: []
+
+TRACE_ID: 3287, I: [[(3, '8')], [(5, '8'), (6, '9')]]
+
+TRACE_ID: 3288, I: [[(5, '6')]]
+
+TRACE_ID: 3290, I: []
+
+TRACE_ID: 3291, I: []
+
+TRACE_ID: 3292, I: [[(3, '8')]]
+
+TRACE_ID: 3293, I: [[(3, '6')]]
+
+TRACE_ID: 3295, I: [[(3, '8')]]
+
+TRACE_ID: 3296, I: [[(2, '1')]]
+
+TRACE_ID: 3297, I: [[(3, '1')]]
+
+TRACE_ID: 3298, I: []
+
+TRACE_ID: 3299, I: []
+
+TRACE_ID: 3300, I: []
+
+TRACE_ID: 3301, I: []
+
+TRACE_ID: 3302, I: [[(3, '1')]]
+
+TRACE_ID: 3303, I: []
+
+TRACE_ID: 3304, I: [[(3, '8')]]
+
+TRACE_ID: 3305, I: []
+
+TRACE_ID: 3306, I: []
+
+TRACE_ID: 3307, I: []
+
+TRACE_ID: 3308, I: []
+
+TRACE_ID: 3309, I: [[(5, '6')]]
+
+TRACE_ID: 3310, I: []
+
+TRACE_ID: 3311, I: []
+
+TRACE_ID: 3312, I: []
+
+TRACE_ID: 3313, I: []
+
+TRACE_ID: 3316, I: [[(5, '8'), (6, '6')]]
+
+TRACE_ID: 3317, I: []
+
+TRACE_ID: 3318, I: []
+
+TRACE_ID: 3319, I: []
+
+TRACE_ID: 3320, I: []
+
+TRACE_ID: 3321, I: []
+
+TRACE_ID: 3322, I: [[(3, '8')]]
+
+TRACE_ID: 3325, I: [[(3, '8')]]
+
+TRACE_ID: 3326, I: [[(3, '8'), (4, '6')], [(6, '2')]]
+
+TRACE_ID: 3327, I: []
+
+TRACE_ID: 3328, I: []
+
+TRACE_ID: 3329, I: []
+
+TRACE_ID: 3330, I: []
+
+TRACE_ID: 3332, I: []
+
+TRACE_ID: 3333, I: [[(3, '8')]]
+
+TRACE_ID: 3335, I: []
+
+TRACE_ID: 3337, I: []
+
+TRACE_ID: 3339, I: []
+
+TRACE_ID: 3340, I: []
+
+TRACE_ID: 3341, I: []
+
+TRACE_ID: 3342, I: []
+
+TRACE_ID: 3343, I: []
+
+TRACE_ID: 3345, I: [[(2, '1')]]
+
+TRACE_ID: 3346, I: [[(3, '1'), (4, '8')]]
+
+TRACE_ID: 3347, I: [[(3, '6')]]
+
+TRACE_ID: 3348, I: [[(3, '8')], [(6, '9')]]
+
+TRACE_ID: 3350, I: []
+
+TRACE_ID: 3352, I: []
+
+TRACE_ID: 3353, I: []
+
+TRACE_ID: 3354, I: []
+
+TRACE_ID: 3355, I: []
+
+TRACE_ID: 3356, I: []
+
+TRACE_ID: 3359, I: [[(2, '1')]]
+
+TRACE_ID: 3361, I: []
+
+TRACE_ID: 3363, I: []
+
+TRACE_ID: 3364, I: [[(4, '9')]]
+
+TRACE_ID: 3365, I: []
+
+TRACE_ID: 3366, I: [[(3, '1'), (4, '8')], [(6, '9')]]
+
+TRACE_ID: 3367, I: [[(4, '6')]]
+
+TRACE_ID: 3368, I: []
+
+TRACE_ID: 3369, I: []
+
+TRACE_ID: 3370, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 3371, I: []
+
+TRACE_ID: 3374, I: []
+
+TRACE_ID: 3375, I: []
+
+TRACE_ID: 3377, I: []
+
+TRACE_ID: 3378, I: []
+
+TRACE_ID: 3379, I: []
+
+TRACE_ID: 3380, I: []
+
+TRACE_ID: 3381, I: []
+
+TRACE_ID: 3383, I: []
+
+TRACE_ID: 3384, I: [[(2, '1')]]
+
+TRACE_ID: 3385, I: [[(3, '1'), (4, '8')]]
+
+TRACE_ID: 3386, I: [[(4, '2')]]
+
+TRACE_ID: 3387, I: []
+
+TRACE_ID: 3388, I: [[(3, '8'), (4, '8')]]
+
+TRACE_ID: 3389, I: []
+
+TRACE_ID: 3390, I: []
+
+TRACE_ID: 3391, I: [[(3, '8')]]
+
+TRACE_ID: 3392, I: []
+
+TRACE_ID: 3393, I: []
+
+TRACE_ID: 3394, I: []
+
+TRACE_ID: 3395, I: []
+
+TRACE_ID: 3396, I: []
+
+TRACE_ID: 3397, I: []
+
+TRACE_ID: 3399, I: []
+
+TRACE_ID: 3400, I: [[(2, '1')]]
+
+TRACE_ID: 3401, I: [[(5, '6')]]
+
+TRACE_ID: 3402, I: []
+
+TRACE_ID: 3404, I: []
+
+TRACE_ID: 3405, I: [[(5, '6')]]
+
+TRACE_ID: 3406, I: []
+
+TRACE_ID: 3407, I: []
+
+TRACE_ID: 3408, I: []
+
+TRACE_ID: 3410, I: [[(4, '2')]]
+
+TRACE_ID: 3411, I: []
+
+TRACE_ID: 3412, I: []
+
+TRACE_ID: 3413, I: []
+
+TRACE_ID: 3414, I: []
+
+TRACE_ID: 3415, I: [[(3, '8')]]
+
+TRACE_ID: 3416, I: []
+
+TRACE_ID: 3417, I: []
+
+TRACE_ID: 3420, I: []
+
+TRACE_ID: 3421, I: []
+
+TRACE_ID: 3422, I: []
+
+TRACE_ID: 3423, I: [[(3, '8')], [(5, '9')]]
+
+TRACE_ID: 3424, I: []
+
+TRACE_ID: 3425, I: []
+
+TRACE_ID: 3426, I: []
+
+TRACE_ID: 3427, I: []
+
+TRACE_ID: 3428, I: []
+
+TRACE_ID: 3429, I: []
+
+TRACE_ID: 3430, I: []
+
+TRACE_ID: 3431, I: [[(2, '1')]]
+
+TRACE_ID: 3432, I: []
+
+TRACE_ID: 3433, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 3434, I: [[(3, '8')]]
+
+TRACE_ID: 3435, I: [[(2, '1')]]
+
+TRACE_ID: 3437, I: []
+
+TRACE_ID: 3438, I: []
+
+TRACE_ID: 3441, I: []
+
+TRACE_ID: 3445, I: []
+
+TRACE_ID: 3446, I: []
+
+TRACE_ID: 3447, I: [[(5, '6')]]
+
+TRACE_ID: 3450, I: [[(3, '8')], [(5, '8'), (6, '6')]]
+
+TRACE_ID: 3451, I: []
+
+TRACE_ID: 3452, I: []
+
+TRACE_ID: 3453, I: [[(2, '1')]]
+
+TRACE_ID: 3455, I: []
+
+TRACE_ID: 3456, I: [[(2, '1')], [(4, '1')]]
+
+TRACE_ID: 3457, I: [[(5, '8')]]
+
+TRACE_ID: 3458, I: []
+
+TRACE_ID: 3459, I: []
+
+TRACE_ID: 3460, I: []
+
+TRACE_ID: 3461, I: []
+
+TRACE_ID: 3463, I: []
+
+TRACE_ID: 3464, I: [[(3, '8')]]
+
+TRACE_ID: 3466, I: []
+
+TRACE_ID: 3467, I: [[(5, '8'), (6, '6')]]
+
+TRACE_ID: 3468, I: [[(2, '1')]]
+
+TRACE_ID: 3469, I: []
+
+TRACE_ID: 3470, I: []
+
+TRACE_ID: 3471, I: []
+
+TRACE_ID: 3472, I: []
+
+TRACE_ID: 3473, I: []
+
+TRACE_ID: 3474, I: []
+
+TRACE_ID: 3476, I: [[(3, '1')]]
+
+TRACE_ID: 3477, I: []
+
+TRACE_ID: 3478, I: [[(3, '6')]]
+
+TRACE_ID: 3479, I: [[(3, '8')]]
+
+TRACE_ID: 3480, I: []
+
+TRACE_ID: 3481, I: []
+
+TRACE_ID: 3482, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 3483, I: []
+
+TRACE_ID: 3484, I: []
+
+TRACE_ID: 3485, I: [[(4, '6')]]
+
+TRACE_ID: 3486, I: []
+
+TRACE_ID: 3487, I: []
+
+TRACE_ID: 3488, I: []
+
+TRACE_ID: 3489, I: [[(3, '8')]]
+
+TRACE_ID: 3490, I: [[(3, '8'), (4, '9')], [(7, '8')]]
+
+TRACE_ID: 3491, I: []
+
+TRACE_ID: 3492, I: []
+
+TRACE_ID: 3493, I: []
+
+TRACE_ID: 3494, I: []
+
+TRACE_ID: 3495, I: []
+
+TRACE_ID: 3496, I: []
+
+TRACE_ID: 3497, I: []
+
+TRACE_ID: 3499, I: []
+
+TRACE_ID: 3500, I: [[(3, '8'), (4, '6')], [(7, '8')]]
+
+TRACE_ID: 3501, I: []
+
+TRACE_ID: 3502, I: [[(3, '6')]]
+
+TRACE_ID: 3503, I: []
+
+TRACE_ID: 3504, I: [[(2, '1')], [(4, '8')]]
+
+TRACE_ID: 3505, I: []
+
+TRACE_ID: 3506, I: [[(3, '8')]]
+
+TRACE_ID: 3507, I: [[(4, '6')]]
+
+TRACE_ID: 3508, I: []
+
+TRACE_ID: 3509, I: [[(3, '8'), (4, '8')]]
+
+TRACE_ID: 3510, I: [[(3, '1'), (4, '8')]]
+
+TRACE_ID: 3511, I: []
+
+TRACE_ID: 3512, I: []
+
+TRACE_ID: 3513, I: []
+
+TRACE_ID: 3514, I: [[(4, '2')]]
+
+TRACE_ID: 3515, I: []
+
+TRACE_ID: 3518, I: []
+
+TRACE_ID: 3519, I: []
+
+TRACE_ID: 3520, I: []
+
+TRACE_ID: 3521, I: []
+
+TRACE_ID: 3522, I: []
+
+TRACE_ID: 3523, I: [[(2, '1')]]
+
+TRACE_ID: 3524, I: []
+
+TRACE_ID: 3525, I: []
+
+TRACE_ID: 3526, I: [[(3, '8')]]
+
+TRACE_ID: 3527, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 3528, I: []
+
+TRACE_ID: 3531, I: []
+
+TRACE_ID: 3533, I: [[(2, '1'), (3, '1')]]
+
+TRACE_ID: 3534, I: []
+
+TRACE_ID: 3536, I: []
+
+TRACE_ID: 3538, I: []
+
+TRACE_ID: 3540, I: []
+
+TRACE_ID: 3541, I: []
+
+TRACE_ID: 3544, I: []
+
+TRACE_ID: 3545, I: [[(3, '8')]]
+
+TRACE_ID: 3547, I: []
+
+TRACE_ID: 3548, I: []
+
+TRACE_ID: 3549, I: [[(3, '8')], [(6, '9'), (7, '6')]]
+
+TRACE_ID: 3550, I: []
+
+TRACE_ID: 3553, I: [[(3, '1')], [(5, '8')]]
+
+TRACE_ID: 3554, I: []
+
+TRACE_ID: 3555, I: []
+
+TRACE_ID: 3556, I: []
+
+TRACE_ID: 3557, I: []
+
+TRACE_ID: 3558, I: []
+
+TRACE_ID: 3559, I: []
+
+TRACE_ID: 3560, I: []
+
+TRACE_ID: 3561, I: []
+
+TRACE_ID: 3564, I: []
+
+TRACE_ID: 3566, I: []
+
+TRACE_ID: 3568, I: []
+
+TRACE_ID: 3570, I: []
+
+TRACE_ID: 3571, I: [[(2, '1')]]
+
+TRACE_ID: 3572, I: []
+
+TRACE_ID: 3573, I: []
+
+TRACE_ID: 3574, I: []
+
+TRACE_ID: 3575, I: []
+
+TRACE_ID: 3576, I: []
+
+TRACE_ID: 3577, I: []
+
+TRACE_ID: 3578, I: [[(4, '8'), (5, '9')], [(7, '8')]]
+
+TRACE_ID: 3579, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 3580, I: [[(5, '8'), (6, '6')]]
+
+TRACE_ID: 3581, I: []
+
+TRACE_ID: 3584, I: []
+
+TRACE_ID: 3585, I: []
+
+TRACE_ID: 3586, I: [[(3, '8')]]
+
+TRACE_ID: 3587, I: []
+
+TRACE_ID: 3588, I: []
+
+TRACE_ID: 3589, I: []
+
+TRACE_ID: 3590, I: [[(2, '1')]]
+
+TRACE_ID: 3591, I: []
+
+TRACE_ID: 3593, I: []
+
+TRACE_ID: 3594, I: []
+
+TRACE_ID: 3595, I: [[(3, '9')], [(6, '8')]]
+
+TRACE_ID: 3596, I: []
+
+TRACE_ID: 3597, I: []
+
+TRACE_ID: 3598, I: []
+
+TRACE_ID: 3602, I: []
+
+TRACE_ID: 3603, I: []
+
+TRACE_ID: 3604, I: []
+
+TRACE_ID: 3605, I: [[(3, '1'), (4, '1'), (5, '1'), (6, '6')]]
+
+TRACE_ID: 3606, I: [[(3, '1')]]
+
+TRACE_ID: 3607, I: []
+
+TRACE_ID: 3608, I: []
+
+TRACE_ID: 3609, I: []
+
+TRACE_ID: 3610, I: [[(2, '1')]]
+
+TRACE_ID: 3611, I: []
+
+TRACE_ID: 3612, I: []
+
+TRACE_ID: 3615, I: []
+
+TRACE_ID: 3616, I: [[(4, '2')]]
+
+TRACE_ID: 3617, I: []
+
+TRACE_ID: 3618, I: []
+
+TRACE_ID: 3619, I: []
+
+TRACE_ID: 3620, I: []
+
+TRACE_ID: 3621, I: []
+
+TRACE_ID: 3622, I: []
+
+TRACE_ID: 3623, I: [[(3, '6')]]
+
+TRACE_ID: 3624, I: [[(3, '1')]]
+
+TRACE_ID: 3625, I: [[(2, '1')]]
+
+TRACE_ID: 3626, I: []
+
+TRACE_ID: 3627, I: []
+
+TRACE_ID: 3628, I: []
+
+TRACE_ID: 3629, I: []
+
+TRACE_ID: 3630, I: []
+
+TRACE_ID: 3631, I: []
+
+TRACE_ID: 3632, I: []
+
+TRACE_ID: 3633, I: []
+
+TRACE_ID: 3635, I: []
+
+TRACE_ID: 3636, I: []
+
+TRACE_ID: 3637, I: []
+
+TRACE_ID: 3638, I: []
+
+TRACE_ID: 3639, I: []
+
+TRACE_ID: 3640, I: []
+
+TRACE_ID: 3642, I: [[(5, '8'), (6, '6')]]
+
+TRACE_ID: 3644, I: []
+
+TRACE_ID: 3646, I: [[(3, '8')]]
+
+TRACE_ID: 3647, I: []
+
+TRACE_ID: 3648, I: []
+
+TRACE_ID: 3649, I: []
+
+TRACE_ID: 3650, I: []
+
+TRACE_ID: 3651, I: []
+
+TRACE_ID: 3652, I: []
+
+TRACE_ID: 3654, I: []
+
+TRACE_ID: 3655, I: []
+
+TRACE_ID: 3657, I: []
+
+TRACE_ID: 3658, I: []
+
+TRACE_ID: 3659, I: []
+
+TRACE_ID: 3660, I: []
+
+TRACE_ID: 3661, I: []
+
+TRACE_ID: 3664, I: []
+
+TRACE_ID: 3665, I: []
+
+TRACE_ID: 3667, I: []
+
+TRACE_ID: 3668, I: []
+
+TRACE_ID: 3671, I: []
+
+TRACE_ID: 3672, I: []
+
+TRACE_ID: 3675, I: []
+
+TRACE_ID: 3677, I: []
+
+TRACE_ID: 3679, I: []
+
+TRACE_ID: 3680, I: []
+
+TRACE_ID: 3681, I: []
+
+TRACE_ID: 3682, I: []
+
+TRACE_ID: 3683, I: []
+
+TRACE_ID: 3684, I: []
+
+TRACE_ID: 3685, I: [[(3, '9'), (4, '8')], [(7, '6'), (8, '8'), (9, '9'), (10, '8')]]
+
+TRACE_ID: 3686, I: []
+
+TRACE_ID: 3687, I: [[(3, '8')], [(6, '9')]]
+
+TRACE_ID: 3689, I: []
+
+TRACE_ID: 3690, I: [[(2, '1')], [(6, '8'), (7, '6')]]
+
+TRACE_ID: 3691, I: [[(2, '1')]]
+
+TRACE_ID: 3693, I: []
+
+TRACE_ID: 3694, I: []
+
+TRACE_ID: 3695, I: []
+
+TRACE_ID: 3697, I: [[(3, '8')]]
+
+TRACE_ID: 3698, I: []
+
+TRACE_ID: 3699, I: []
+
+TRACE_ID: 3700, I: []
+
+TRACE_ID: 3701, I: []
+
+TRACE_ID: 3702, I: [[(3, '1')]]
+
+TRACE_ID: 3703, I: [[(4, '6')]]
+
+TRACE_ID: 3704, I: []
+
+TRACE_ID: 3706, I: []
+
+TRACE_ID: 3707, I: []
+
+TRACE_ID: 3709, I: []
+
+TRACE_ID: 3710, I: [[(3, '1')]]
+
+TRACE_ID: 3711, I: []
+
+TRACE_ID: 3712, I: []
+
+TRACE_ID: 3713, I: []
+
+TRACE_ID: 3714, I: []
+
+TRACE_ID: 3715, I: []
+
+TRACE_ID: 3716, I: []
+
+TRACE_ID: 3717, I: [[(3, '8'), (4, '9')]]
+
+TRACE_ID: 3718, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 3719, I: []
+
+TRACE_ID: 3720, I: []
+
+TRACE_ID: 3721, I: []
+
+TRACE_ID: 3722, I: [[(3, '1')]]
+
+TRACE_ID: 3723, I: []
+
+TRACE_ID: 3724, I: []
+
+TRACE_ID: 3725, I: [[(3, '6')]]
+
+TRACE_ID: 3726, I: []
+
+TRACE_ID: 3727, I: []
+
+TRACE_ID: 3728, I: [[(3, '1')]]
+
+TRACE_ID: 3729, I: []
+
+TRACE_ID: 3730, I: []
+
+TRACE_ID: 3731, I: []
+
+TRACE_ID: 3732, I: []
+
+TRACE_ID: 3733, I: [[(3, '6')]]
+
+TRACE_ID: 3734, I: []
+
+TRACE_ID: 3735, I: []
+
+TRACE_ID: 3736, I: []
+
+TRACE_ID: 3737, I: []
+
+TRACE_ID: 3738, I: []
+
+TRACE_ID: 3739, I: []
+
+TRACE_ID: 3740, I: [[(4, '8')], [(6, '9'), (7, '8')]]
+
+TRACE_ID: 3741, I: []
+
+TRACE_ID: 3743, I: []
+
+TRACE_ID: 3744, I: [[(5, '9'), (6, '8')]]
+
+TRACE_ID: 3746, I: []
+
+TRACE_ID: 3747, I: []
+
+TRACE_ID: 3748, I: [[(3, '1')]]
+
+TRACE_ID: 3749, I: []
+
+TRACE_ID: 3750, I: []
+
+TRACE_ID: 3751, I: []
+
+TRACE_ID: 3752, I: []
+
+TRACE_ID: 3753, I: []
+
+TRACE_ID: 3754, I: []
+
+TRACE_ID: 3755, I: []
+
+TRACE_ID: 3756, I: []
+
+TRACE_ID: 3757, I: [[(3, '1')]]
+
+TRACE_ID: 3758, I: []
+
+TRACE_ID: 3759, I: [[(3, '1')]]
+
+TRACE_ID: 3760, I: []
+
+TRACE_ID: 3761, I: []
+
+TRACE_ID: 3762, I: []
+
+TRACE_ID: 3763, I: []
+
+TRACE_ID: 3764, I: []
+
+TRACE_ID: 3765, I: []
+
+TRACE_ID: 3767, I: [[(4, '6')]]
+
+TRACE_ID: 3768, I: [[(5, '8'), (6, '9'), (7, '8')]]
+
+TRACE_ID: 3769, I: []
+
+TRACE_ID: 3771, I: [[(3, '8')]]
+
+TRACE_ID: 3772, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 3773, I: []
+
+TRACE_ID: 3774, I: []
+
+TRACE_ID: 3777, I: []
+
+TRACE_ID: 3778, I: [[(3, '8'), (4, '8')]]
+
+TRACE_ID: 3779, I: [[(4, '4'), (5, '4'), (6, '4')]]
+
+TRACE_ID: 3780, I: [[(2, '1')]]
+
+TRACE_ID: 3781, I: []
+
+TRACE_ID: 3782, I: [[(2, '1')]]
+
+TRACE_ID: 3783, I: []
+
+TRACE_ID: 3784, I: []
+
+TRACE_ID: 3785, I: []
+
+TRACE_ID: 3786, I: []
+
+TRACE_ID: 3788, I: [[(2, '1')]]
+
+TRACE_ID: 3789, I: [[(3, '8')]]
+
+TRACE_ID: 3790, I: []
+
+TRACE_ID: 3791, I: []
+
+TRACE_ID: 3792, I: []
+
+TRACE_ID: 3793, I: []
+
+TRACE_ID: 3794, I: []
+
+TRACE_ID: 3795, I: [[(2, '1')]]
+
+TRACE_ID: 3796, I: []
+
+TRACE_ID: 3797, I: [[(3, '8')]]
+
+TRACE_ID: 3799, I: []
+
+TRACE_ID: 3800, I: []
+
+TRACE_ID: 3801, I: []
+
+TRACE_ID: 3803, I: [[(2, '1')]]
+
+TRACE_ID: 3804, I: [[(3, '8')], [(6, '9')]]
+
+TRACE_ID: 3805, I: [[(5, '6')]]
+
+TRACE_ID: 3806, I: [[(5, '8'), (6, '6')]]
+
+TRACE_ID: 3807, I: []
+
+TRACE_ID: 3808, I: []
+
+TRACE_ID: 3809, I: [[(2, '1')]]
+
+TRACE_ID: 3810, I: []
+
+TRACE_ID: 3811, I: []
+
+TRACE_ID: 3812, I: [[(3, '8')]]
+
+TRACE_ID: 3813, I: [[(3, '8'), (4, '9')]]
+
+TRACE_ID: 3814, I: []
+
+TRACE_ID: 3815, I: []
+
+TRACE_ID: 3816, I: []
+
+TRACE_ID: 3817, I: []
+
+TRACE_ID: 3820, I: [[(4, '6')]]
+
+TRACE_ID: 3821, I: []
+
+TRACE_ID: 3823, I: []
+
+TRACE_ID: 3824, I: [[(2, '1'), (3, '1')], [(7, '8')]]
+
+TRACE_ID: 3825, I: []
+
+TRACE_ID: 3826, I: [[(3, '1')]]
+
+TRACE_ID: 3827, I: []
+
+TRACE_ID: 3828, I: [[(3, '8'), (4, '9')]]
+
+TRACE_ID: 3829, I: []
+
+TRACE_ID: 3830, I: []
+
+TRACE_ID: 3831, I: []
+
+TRACE_ID: 3833, I: [[(3, '1')]]
+
+TRACE_ID: 3834, I: []
+
+TRACE_ID: 3835, I: [[(2, '1')], [(4, '8'), (5, '6'), (6, '8'), (7, '9'), (8, '8'), (9, '6'), (10, '8')]]
+
+TRACE_ID: 3836, I: []
+
+TRACE_ID: 3837, I: []
+
+TRACE_ID: 3838, I: []
+
+TRACE_ID: 3839, I: [[(2, '2')]]
+
+TRACE_ID: 3840, I: []
+
+TRACE_ID: 3841, I: [[(3, '1'), (4, '8')]]
+
+TRACE_ID: 3842, I: []
+
+TRACE_ID: 3843, I: []
+
+TRACE_ID: 3844, I: []
+
+TRACE_ID: 3845, I: [[(4, '6')]]
+
+TRACE_ID: 3846, I: []
+
+TRACE_ID: 3847, I: []
+
+TRACE_ID: 3848, I: [[(3, '8')]]
+
+TRACE_ID: 3849, I: [[(5, '6')]]
+
+TRACE_ID: 3850, I: []
+
+TRACE_ID: 3851, I: []
+
+TRACE_ID: 3852, I: []
+
+TRACE_ID: 3853, I: []
+
+TRACE_ID: 3854, I: []
+
+TRACE_ID: 3855, I: []
+
+TRACE_ID: 3856, I: []
+
+TRACE_ID: 3858, I: []
+
+TRACE_ID: 3859, I: []
+
+TRACE_ID: 3860, I: []
+
+TRACE_ID: 3861, I: []
+
+TRACE_ID: 3862, I: []
+
+TRACE_ID: 3863, I: []
+
+TRACE_ID: 3864, I: []
+
+TRACE_ID: 3866, I: []
+
+TRACE_ID: 3867, I: []
+
+TRACE_ID: 3868, I: []
+
+TRACE_ID: 3869, I: []
+
+TRACE_ID: 3870, I: []
+
+TRACE_ID: 3871, I: []
+
+TRACE_ID: 3872, I: []
+
+TRACE_ID: 3873, I: [[(3, '8')]]
+
+TRACE_ID: 3874, I: [[(3, '1')]]
+
+TRACE_ID: 3875, I: []
+
+TRACE_ID: 3876, I: []
+
+TRACE_ID: 3878, I: []
+
+TRACE_ID: 3879, I: []
+
+TRACE_ID: 3880, I: []
+
+TRACE_ID: 3881, I: [[(3, '8')]]
+
+TRACE_ID: 3882, I: []
+
+TRACE_ID: 3883, I: []
+
+TRACE_ID: 3885, I: []
+
+TRACE_ID: 3886, I: [[(3, '1')], [(5, '1')]]
+
+TRACE_ID: 3887, I: [[(3, '1')]]
+
+TRACE_ID: 3889, I: []
+
+TRACE_ID: 3891, I: []
+
+TRACE_ID: 3892, I: []
+
+TRACE_ID: 3893, I: [[(3, '8')]]
+
+TRACE_ID: 3894, I: []
+
+TRACE_ID: 3895, I: []
+
+TRACE_ID: 3897, I: []
+
+TRACE_ID: 3898, I: []
+
+TRACE_ID: 3900, I: []
+
+TRACE_ID: 3901, I: []
+
+TRACE_ID: 3902, I: []
+
+TRACE_ID: 3903, I: [[(3, '8')]]
+
+TRACE_ID: 3904, I: []
+
+TRACE_ID: 3906, I: []
+
+TRACE_ID: 3907, I: []
+
+TRACE_ID: 3908, I: []
+
+TRACE_ID: 3909, I: []
+
+TRACE_ID: 3910, I: []
+
+TRACE_ID: 3911, I: [[(2, '1')]]
+
+TRACE_ID: 3914, I: []
+
+TRACE_ID: 3915, I: []
+
+TRACE_ID: 3916, I: []
+
+TRACE_ID: 3917, I: [[(2, '1')]]
+
+TRACE_ID: 3918, I: []
+
+TRACE_ID: 3919, I: []
+
+TRACE_ID: 3920, I: []
+
+TRACE_ID: 3921, I: []
+
+TRACE_ID: 3922, I: []
+
+TRACE_ID: 3923, I: []
+
+TRACE_ID: 3924, I: [[(3, '8')]]
+
+TRACE_ID: 3925, I: [[(4, '6')]]
+
+TRACE_ID: 3926, I: []
+
+TRACE_ID: 3927, I: []
+
+TRACE_ID: 3929, I: []
+
+TRACE_ID: 3931, I: []
+
+TRACE_ID: 3932, I: []
+
+TRACE_ID: 3933, I: []
+
+TRACE_ID: 3934, I: []
+
+TRACE_ID: 3935, I: []
+
+TRACE_ID: 3936, I: []
+
+TRACE_ID: 3937, I: []
+
+TRACE_ID: 3938, I: []
+
+TRACE_ID: 3939, I: []
+
+TRACE_ID: 3940, I: []
+
+TRACE_ID: 3941, I: [[(3, '1')]]
+
+TRACE_ID: 3942, I: []
+
+TRACE_ID: 3943, I: []
+
+TRACE_ID: 3944, I: []
+
+TRACE_ID: 3945, I: []
+
+TRACE_ID: 3947, I: [[(3, '1')]]
+
+TRACE_ID: 3948, I: []
+
+TRACE_ID: 3949, I: []
+
+TRACE_ID: 3950, I: [[(4, '6')]]
+
+TRACE_ID: 3951, I: []
+
+TRACE_ID: 3952, I: []
+
+TRACE_ID: 3953, I: []
+
+TRACE_ID: 3954, I: [[(5, '8'), (6, '6')]]
+
+TRACE_ID: 3955, I: []
+
+TRACE_ID: 3956, I: []
+
+TRACE_ID: 3958, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 3959, I: [[(3, '8')]]
+
+TRACE_ID: 3960, I: [[(3, '8'), (4, '8'), (5, '8')]]
+
+TRACE_ID: 3961, I: [[(3, '1')]]
+
+TRACE_ID: 3962, I: [[(2, '1')]]
+
+TRACE_ID: 3964, I: []
+
+TRACE_ID: 3965, I: []
+
+TRACE_ID: 3966, I: [[(5, '8')]]
+
+TRACE_ID: 3967, I: []
+
+TRACE_ID: 3968, I: []
+
+TRACE_ID: 3969, I: []
+
+TRACE_ID: 3970, I: []
+
+TRACE_ID: 3971, I: []
+
+TRACE_ID: 3972, I: []
+
+TRACE_ID: 3973, I: []
+
+TRACE_ID: 3975, I: [[(3, '8')], [(5, '8'), (6, '9')]]
+
+TRACE_ID: 3977, I: []
+
+TRACE_ID: 3978, I: []
+
+TRACE_ID: 3979, I: []
+
+TRACE_ID: 3980, I: []
+
+TRACE_ID: 3981, I: [[(3, '8'), (4, '6'), (5, '8'), (6, '6')], [(8, '2')]]
+
+TRACE_ID: 3982, I: []
+
+TRACE_ID: 3984, I: []
+
+TRACE_ID: 3985, I: []
+
+TRACE_ID: 3986, I: []
+
+TRACE_ID: 3987, I: [[(2, '1')]]
+
+TRACE_ID: 3988, I: [[(3, '1')]]
+
+TRACE_ID: 3989, I: []
+
+TRACE_ID: 3990, I: []
+
+TRACE_ID: 3991, I: []
+
+TRACE_ID: 3993, I: [[(4, '8'), (5, '8')], [(7, '8')]]
+
+TRACE_ID: 3994, I: [[(3, '1'), (4, '8')]]
+
+TRACE_ID: 3995, I: []
+
+TRACE_ID: 3996, I: []
+
+TRACE_ID: 3997, I: []
+
+TRACE_ID: 3998, I: []
+
+TRACE_ID: 3999, I: []
+
+TRACE_ID: 4000, I: []
+
+TRACE_ID: 4001, I: []
+
+TRACE_ID: 4002, I: []
+
+TRACE_ID: 4003, I: [[(2, '1')]]
+
+TRACE_ID: 4005, I: []
+
+TRACE_ID: 4007, I: []
+
+TRACE_ID: 4008, I: [[(3, '8')]]
+
+TRACE_ID: 4010, I: [[(4, '6')]]
+
+TRACE_ID: 4011, I: []
+
+TRACE_ID: 4012, I: [[(2, '1')], [(4, '8')], [(7, '9')]]
+
+TRACE_ID: 4013, I: []
+
+TRACE_ID: 4014, I: []
+
+TRACE_ID: 4015, I: []
+
+TRACE_ID: 4016, I: []
+
+TRACE_ID: 4018, I: []
+
+TRACE_ID: 4019, I: [[(3, '8')], [(5, '9'), (6, '8'), (7, '9'), (8, '9'), (9, '8'), (10, '8')]]
+
+TRACE_ID: 4020, I: []
+
+TRACE_ID: 4021, I: []
+
+TRACE_ID: 4022, I: []
+
+TRACE_ID: 4023, I: []
+
+TRACE_ID: 4024, I: []
+
+TRACE_ID: 4025, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 4027, I: []
+
+TRACE_ID: 4028, I: []
+
+TRACE_ID: 4029, I: []
+
+TRACE_ID: 4030, I: []
+
+TRACE_ID: 4032, I: []
+
+TRACE_ID: 4033, I: []
+
+TRACE_ID: 4034, I: []
+
+TRACE_ID: 4035, I: []
+
+TRACE_ID: 4036, I: []
+
+TRACE_ID: 4037, I: []
+
+TRACE_ID: 4038, I: [[(3, '8')]]
+
+TRACE_ID: 4039, I: []
+
+TRACE_ID: 4040, I: [[(3, '8')]]
+
+TRACE_ID: 4041, I: []
+
+TRACE_ID: 4042, I: []
+
+TRACE_ID: 4043, I: []
+
+TRACE_ID: 4044, I: [[(3, '8')]]
+
+TRACE_ID: 4045, I: []
+
+TRACE_ID: 4046, I: []
+
+TRACE_ID: 4047, I: []
+
+TRACE_ID: 4048, I: []
+
+TRACE_ID: 4049, I: [[(3, '8')]]
+
+TRACE_ID: 4050, I: [[(3, '1')]]
+
+TRACE_ID: 4051, I: []
+
+TRACE_ID: 4052, I: []
+
+TRACE_ID: 4053, I: [[(3, '1')]]
+
+TRACE_ID: 4054, I: []
+
+TRACE_ID: 4055, I: []
+
+TRACE_ID: 4056, I: []
+
+TRACE_ID: 4057, I: []
+
+TRACE_ID: 4058, I: []
+
+TRACE_ID: 4059, I: [[(3, '1'), (4, '8')]]
+
+TRACE_ID: 4060, I: []
+
+TRACE_ID: 4061, I: []
+
+TRACE_ID: 4062, I: []
+
+TRACE_ID: 4063, I: []
+
+TRACE_ID: 4064, I: []
+
+TRACE_ID: 4065, I: [[(3, '1')]]
+
+TRACE_ID: 4066, I: []
+
+TRACE_ID: 4068, I: []
+
+TRACE_ID: 4070, I: []
+
+TRACE_ID: 4071, I: []
+
+TRACE_ID: 4072, I: []
+
+TRACE_ID: 4075, I: []
+
+TRACE_ID: 4076, I: []
+
+TRACE_ID: 4077, I: []
+
+TRACE_ID: 4078, I: []
+
+TRACE_ID: 4079, I: []
+
+TRACE_ID: 4080, I: [[(3, '6')]]
+
+TRACE_ID: 4081, I: [[(3, '1')]]
+
+TRACE_ID: 4082, I: [[(4, '4')]]
+
+TRACE_ID: 4083, I: []
+
+TRACE_ID: 4085, I: [[(2, '1')]]
+
+TRACE_ID: 4086, I: []
+
+TRACE_ID: 4087, I: []
+
+TRACE_ID: 4088, I: []
+
+TRACE_ID: 4089, I: []
+
+TRACE_ID: 4090, I: []
+
+TRACE_ID: 4091, I: []
+
+TRACE_ID: 4092, I: []
+
+TRACE_ID: 4093, I: []
+
+TRACE_ID: 4094, I: []
+
+TRACE_ID: 4095, I: []
+
+TRACE_ID: 4096, I: []
+
+TRACE_ID: 4097, I: []
+
+TRACE_ID: 4098, I: []
+
+TRACE_ID: 4099, I: []
+
+TRACE_ID: 4100, I: [[(5, '8')]]
+
+TRACE_ID: 4101, I: [[(3, '8'), (4, '6'), (5, '8')]]
+
+TRACE_ID: 4102, I: []
+
+TRACE_ID: 4103, I: []
+
+TRACE_ID: 4104, I: []
+
+TRACE_ID: 4105, I: []
+
+TRACE_ID: 4106, I: []
+
+TRACE_ID: 4108, I: []
+
+TRACE_ID: 4109, I: []
+
+TRACE_ID: 4110, I: []
+
+TRACE_ID: 4111, I: []
+
+TRACE_ID: 4112, I: [[(3, '6')]]
+
+TRACE_ID: 4113, I: [[(2, '1')]]
+
+TRACE_ID: 4114, I: [[(5, '6')]]
+
+TRACE_ID: 4115, I: []
+
+TRACE_ID: 4116, I: []
+
+TRACE_ID: 4117, I: []
+
+TRACE_ID: 4118, I: []
+
+TRACE_ID: 4119, I: []
+
+TRACE_ID: 4120, I: []
+
+TRACE_ID: 4121, I: []
+
+TRACE_ID: 4122, I: []
+
+TRACE_ID: 4123, I: []
+
+TRACE_ID: 4124, I: []
+
+TRACE_ID: 4125, I: []
+
+TRACE_ID: 4126, I: []
+
+TRACE_ID: 4128, I: [[(6, '8'), (7, '9'), (8, '8')]]
+
+TRACE_ID: 4129, I: []
+
+TRACE_ID: 4130, I: []
+
+TRACE_ID: 4131, I: []
+
+TRACE_ID: 4132, I: [[(5, '6')]]
+
+TRACE_ID: 4133, I: []
+
+TRACE_ID: 4134, I: [[(3, '1')]]
+
+TRACE_ID: 4135, I: []
+
+TRACE_ID: 4136, I: []
+
+TRACE_ID: 4137, I: [[(2, '1')]]
+
+TRACE_ID: 4138, I: []
+
+TRACE_ID: 4139, I: []
+
+TRACE_ID: 4140, I: []
+
+TRACE_ID: 4141, I: []
+
+TRACE_ID: 4142, I: []
+
+TRACE_ID: 4143, I: []
+
+TRACE_ID: 4144, I: []
+
+TRACE_ID: 4146, I: []
+
+TRACE_ID: 4148, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 4150, I: []
+
+TRACE_ID: 4151, I: []
+
+TRACE_ID: 4152, I: [[(2, '1')]]
+
+TRACE_ID: 4153, I: [[(3, '8')]]
+
+TRACE_ID: 4155, I: []
+
+TRACE_ID: 4157, I: [[(3, '8')]]
+
+TRACE_ID: 4158, I: []
+
+TRACE_ID: 4159, I: []
+
+TRACE_ID: 4162, I: []
+
+TRACE_ID: 4163, I: []
+
+TRACE_ID: 4164, I: [[(3, '8')]]
+
+TRACE_ID: 4166, I: []
+
+TRACE_ID: 4167, I: []
+
+TRACE_ID: 4168, I: []
+
+TRACE_ID: 4169, I: []
+
+TRACE_ID: 4170, I: []
+
+TRACE_ID: 4171, I: [[(4, '6'), (5, '8')], [(7, '8')]]
+
+TRACE_ID: 4173, I: []
+
+TRACE_ID: 4174, I: []
+
+TRACE_ID: 4175, I: []
+
+TRACE_ID: 4176, I: []
+
+TRACE_ID: 4177, I: [[(5, '8')]]
+
+TRACE_ID: 4178, I: []
+
+TRACE_ID: 4179, I: [[(2, '1')]]
+
+TRACE_ID: 4180, I: []
+
+TRACE_ID: 4181, I: [[(3, '8')]]
+
+TRACE_ID: 4182, I: []
+
+TRACE_ID: 4184, I: [[(3, '8')]]
+
+TRACE_ID: 4186, I: []
+
+TRACE_ID: 4188, I: []
+
+TRACE_ID: 4189, I: []
+
+TRACE_ID: 4190, I: []
+
+TRACE_ID: 4191, I: [[(3, '6')]]
+
+TRACE_ID: 4192, I: []
+
+TRACE_ID: 4193, I: []
+
+TRACE_ID: 4195, I: [[(3, '8')]]
+
+TRACE_ID: 4196, I: []
+
+TRACE_ID: 4198, I: []
+
+TRACE_ID: 4199, I: []
+
+TRACE_ID: 4200, I: []
+
+TRACE_ID: 4201, I: []
+
+TRACE_ID: 4202, I: []
+
+TRACE_ID: 4203, I: []
+
+TRACE_ID: 4204, I: [[(3, '6')]]
+
+TRACE_ID: 4205, I: []
+
+TRACE_ID: 4207, I: [[(4, '1'), (5, '8')]]
+
+TRACE_ID: 4208, I: []
+
+TRACE_ID: 4209, I: []
+
+TRACE_ID: 4210, I: []
+
+TRACE_ID: 4211, I: []
+
+TRACE_ID: 4213, I: [[(2, '1')], [(5, '6')]]
+
+TRACE_ID: 4214, I: []
+
+TRACE_ID: 4215, I: [[(3, '1')]]
+
+TRACE_ID: 4216, I: []
+
+TRACE_ID: 4217, I: []
+
+TRACE_ID: 4218, I: []
+
+TRACE_ID: 4219, I: [[(3, '1')]]
+
+TRACE_ID: 4220, I: []
+
+TRACE_ID: 4221, I: []
+
+TRACE_ID: 4222, I: []
+
+TRACE_ID: 4223, I: [[(2, '1')]]
+
+TRACE_ID: 4224, I: []
+
+TRACE_ID: 4225, I: [[(5, '6'), (6, '6'), (7, '8'), (8, '6')]]
+
+TRACE_ID: 4226, I: []
+
+TRACE_ID: 4227, I: []
+
+TRACE_ID: 4228, I: [[(4, '8')]]
+
+TRACE_ID: 4229, I: []
+
+TRACE_ID: 4230, I: []
+
+TRACE_ID: 4231, I: []
+
+TRACE_ID: 4232, I: []
+
+TRACE_ID: 4233, I: []
+
+TRACE_ID: 4234, I: [[(4, '6')]]
+
+TRACE_ID: 4235, I: []
+
+TRACE_ID: 4236, I: []
+
+TRACE_ID: 4237, I: [[(2, '1')], [(6, '8')]]
+
+TRACE_ID: 4238, I: []
+
+TRACE_ID: 4239, I: []
+
+TRACE_ID: 4240, I: []
+
+TRACE_ID: 4242, I: []
+
+TRACE_ID: 4243, I: []
+
+TRACE_ID: 4244, I: [[(4, '9')]]
+
+TRACE_ID: 4245, I: []
+
+TRACE_ID: 4246, I: []
+
+TRACE_ID: 4247, I: []
+
+TRACE_ID: 4248, I: []
+
+TRACE_ID: 4249, I: []
+
+TRACE_ID: 4250, I: [[(3, '8')], [(5, '8'), (6, '9')]]
+
+TRACE_ID: 4251, I: [[(4, '6')]]
+
+TRACE_ID: 4252, I: []
+
+TRACE_ID: 4253, I: [[(5, '8')]]
+
+TRACE_ID: 4254, I: []
+
+TRACE_ID: 4256, I: []
+
+TRACE_ID: 4258, I: []
+
+TRACE_ID: 4260, I: []
+
+TRACE_ID: 4261, I: []
+
+TRACE_ID: 4262, I: []
+
+TRACE_ID: 4263, I: [[(3, '8')]]
+
+TRACE_ID: 4264, I: []
+
+TRACE_ID: 4265, I: []
+
+TRACE_ID: 4266, I: []
+
+TRACE_ID: 4267, I: [[(4, '6')]]
+
+TRACE_ID: 4269, I: []
+
+TRACE_ID: 4270, I: []
+
+TRACE_ID: 4271, I: []
+
+TRACE_ID: 4272, I: []
+
+TRACE_ID: 4273, I: [[(3, '1'), (4, '8')]]
+
+TRACE_ID: 4274, I: []
+
+TRACE_ID: 4275, I: [[(3, '8')]]
+
+TRACE_ID: 4276, I: []
+
+TRACE_ID: 4277, I: []
+
+TRACE_ID: 4278, I: [[(5, '6')]]
+
+TRACE_ID: 4279, I: [[(3, '1')]]
+
+TRACE_ID: 4280, I: [[(3, '8'), (4, '9'), (5, '8')], [(7, '8'), (8, '9')]]
+
+TRACE_ID: 4281, I: []
+
+TRACE_ID: 4282, I: []
+
+TRACE_ID: 4283, I: []
+
+TRACE_ID: 4284, I: [[(3, '1'), (4, '8'), (5, '6')]]
+
+TRACE_ID: 4285, I: [[(4, '8')]]
+
+TRACE_ID: 4286, I: []
+
+TRACE_ID: 4287, I: [[(2, '1')]]
+
+TRACE_ID: 4288, I: [[(4, '6')]]
+
+TRACE_ID: 4289, I: []
+
+TRACE_ID: 4290, I: []
+
+TRACE_ID: 4291, I: []
+
+TRACE_ID: 4292, I: []
+
+TRACE_ID: 4293, I: []
+
+TRACE_ID: 4294, I: [[(2, '1')]]
+
+TRACE_ID: 4295, I: []
+
+TRACE_ID: 4296, I: []
+
+TRACE_ID: 4297, I: []
+
+TRACE_ID: 4298, I: []
+
+TRACE_ID: 4299, I: [[(4, '6')]]
+
+TRACE_ID: 4302, I: []
+
+TRACE_ID: 4303, I: [[(5, '8'), (6, '6')]]
+
+TRACE_ID: 4304, I: [[(3, '8')]]
+
+TRACE_ID: 4305, I: []
+
+TRACE_ID: 4306, I: []
+
+TRACE_ID: 4307, I: []
+
+TRACE_ID: 4308, I: []
+
+TRACE_ID: 4309, I: []
+
+TRACE_ID: 4310, I: []
+
+TRACE_ID: 4311, I: []
+
+TRACE_ID: 4312, I: []
+
+TRACE_ID: 4313, I: []
+
+TRACE_ID: 4314, I: []
+
+TRACE_ID: 4315, I: []
+
+TRACE_ID: 4316, I: []
+
+TRACE_ID: 4317, I: [[(3, '6')]]
+
+TRACE_ID: 4318, I: []
+
+TRACE_ID: 4319, I: []
+
+TRACE_ID: 4320, I: []
+
+TRACE_ID: 4321, I: []
+
+TRACE_ID: 4322, I: [[(3, '1')]]
+
+TRACE_ID: 4323, I: []
+
+TRACE_ID: 4326, I: []
+
+TRACE_ID: 4327, I: [[(3, '8'), (4, '9'), (5, '8')]]
+
+TRACE_ID: 4328, I: []
+
+TRACE_ID: 4329, I: [[(3, '1')], [(6, '6'), (7, '6')]]
+
+TRACE_ID: 4330, I: []
+
+TRACE_ID: 4331, I: []
+
+TRACE_ID: 4333, I: []
+
+TRACE_ID: 4334, I: []
+
+TRACE_ID: 4335, I: []
+
+TRACE_ID: 4336, I: [[(5, '8')]]
+
+TRACE_ID: 4339, I: [[(2, '1')]]
+
+TRACE_ID: 4340, I: []
+
+TRACE_ID: 4341, I: []
+
+TRACE_ID: 4342, I: []
+
+TRACE_ID: 4343, I: []
+
+TRACE_ID: 4344, I: []
+
+TRACE_ID: 4345, I: []
+
+TRACE_ID: 4346, I: []
+
+TRACE_ID: 4347, I: []
+
+TRACE_ID: 4349, I: []
+
+TRACE_ID: 4350, I: [[(2, '1')]]
+
+TRACE_ID: 4355, I: []
+
+TRACE_ID: 4356, I: [[(3, '8')]]
+
+TRACE_ID: 4357, I: [[(3, '6')]]
+
+TRACE_ID: 4358, I: []
+
+TRACE_ID: 4359, I: []
+
+TRACE_ID: 4360, I: []
+
+TRACE_ID: 4362, I: []
+
+TRACE_ID: 4363, I: [[(2, '1')], [(4, '1')]]
+
+TRACE_ID: 4364, I: []
+
+TRACE_ID: 4365, I: []
+
+TRACE_ID: 4366, I: []
+
+TRACE_ID: 4367, I: []
+
+TRACE_ID: 4368, I: []
+
+TRACE_ID: 4371, I: [[(3, '6')]]
+
+TRACE_ID: 4372, I: []
+
+TRACE_ID: 4373, I: []
+
+TRACE_ID: 4374, I: []
+
+TRACE_ID: 4375, I: [[(4, '8'), (5, '6'), (6, '8')]]
+
+TRACE_ID: 4376, I: []
+
+TRACE_ID: 4377, I: []
+
+TRACE_ID: 4378, I: [[(3, '1'), (4, '8')]]
+
+TRACE_ID: 4379, I: []
+
+TRACE_ID: 4380, I: []
+
+TRACE_ID: 4381, I: [[(3, '8')], [(5, '8'), (6, '9'), (7, '8'), (8, '6'), (9, '8'), (10, '9')]]
+
+TRACE_ID: 4382, I: []
+
+TRACE_ID: 4384, I: [[(3, '8'), (4, '6'), (5, '8')]]
+
+TRACE_ID: 4386, I: [[(4, '6')]]
+
+TRACE_ID: 4387, I: [[(2, '1')], [(4, '1'), (5, '8')]]
+
+TRACE_ID: 4388, I: []
+
+TRACE_ID: 4390, I: []
+
+TRACE_ID: 4391, I: []
+
+TRACE_ID: 4392, I: [[(2, '1')]]
+
+TRACE_ID: 4393, I: []
+
+TRACE_ID: 4394, I: []
+
+TRACE_ID: 4395, I: [[(3, '8'), (4, '9')]]
+
+TRACE_ID: 4396, I: []
+
+TRACE_ID: 4397, I: []
+
+TRACE_ID: 4399, I: [[(3, '8')]]
+
+TRACE_ID: 4400, I: [[(3, '8'), (4, '9')]]
+
+TRACE_ID: 4401, I: []
+
+TRACE_ID: 4402, I: [[(3, '8')], [(5, '9')]]
+
+TRACE_ID: 4403, I: []
+
+TRACE_ID: 4404, I: [[(4, '9')]]
+
+TRACE_ID: 4405, I: []
+
+TRACE_ID: 4406, I: [[(3, '8')]]
+
+TRACE_ID: 4408, I: []
+
+TRACE_ID: 4409, I: []
+
+TRACE_ID: 4411, I: [[(5, '8'), (6, '9')]]
+
+TRACE_ID: 4412, I: []
+
+TRACE_ID: 4413, I: []
+
+TRACE_ID: 4414, I: [[(3, '8'), (4, '8')]]
+
+TRACE_ID: 4416, I: [[(3, '8')]]
+
+TRACE_ID: 4418, I: []
+
+TRACE_ID: 4419, I: []
+
+TRACE_ID: 4420, I: []
+
+TRACE_ID: 4422, I: []
+
+TRACE_ID: 4425, I: []
+
+TRACE_ID: 4427, I: []
+
+TRACE_ID: 4428, I: []
+
+TRACE_ID: 4429, I: []
+
+TRACE_ID: 4430, I: []
+
+TRACE_ID: 4432, I: []
+
+TRACE_ID: 4433, I: []
+
+TRACE_ID: 4434, I: [[(3, '8')], [(5, '8'), (6, '6')]]
+
+TRACE_ID: 4435, I: []
+
+TRACE_ID: 4436, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 4437, I: []
+
+TRACE_ID: 4438, I: [[(3, '8'), (4, '6')]]
+
+TRACE_ID: 4439, I: []
+
+TRACE_ID: 4440, I: []
+
+TRACE_ID: 4441, I: []
+
+TRACE_ID: 4442, I: [[(2, '1'), (3, '1')], [(5, '8')], [(7, '8'), (8, '9')]]
+
+TRACE_ID: 4443, I: []
+
+TRACE_ID: 4444, I: []
+
+TRACE_ID: 4445, I: []
+
+TRACE_ID: 4446, I: []
+
+TRACE_ID: 4447, I: []
+
+TRACE_ID: 4448, I: []
+
+TRACE_ID: 4449, I: []
+
+TRACE_ID: 4450, I: [[(2, '1')]]
+
+TRACE_ID: 4451, I: []
+
+TRACE_ID: 4452, I: []
+
+TRACE_ID: 4453, I: [[(5, '8')]]
+
+TRACE_ID: 4454, I: [[(4, '9')]]
+
+TRACE_ID: 4455, I: []
+
+TRACE_ID: 4457, I: []
+
+TRACE_ID: 4458, I: [[(4, '8')]]
+
+TRACE_ID: 4459, I: []
+
+TRACE_ID: 4460, I: []
+
+TRACE_ID: 4461, I: []
+
+TRACE_ID: 4462, I: []
+
+TRACE_ID: 4464, I: [[(2, '1')]]
+
+TRACE_ID: 4466, I: []
+
+TRACE_ID: 4467, I: [[(3, '1'), (4, '1')], [(7, '8')]]
+
+TRACE_ID: 4468, I: []
+
+TRACE_ID: 4469, I: []
+
+TRACE_ID: 4470, I: []
+
+TRACE_ID: 4471, I: []
+
+TRACE_ID: 4472, I: [[(5, '8'), (6, '6')]]
+
+TRACE_ID: 4473, I: []
+
+TRACE_ID: 4474, I: []
+
+TRACE_ID: 4475, I: []
+
+TRACE_ID: 4476, I: []
+
+TRACE_ID: 4477, I: []
+
+TRACE_ID: 4479, I: []
+
+TRACE_ID: 4480, I: []
+
+TRACE_ID: 4481, I: [[(5, '9')]]
+
+TRACE_ID: 4482, I: [[(3, '8')]]
+
+TRACE_ID: 4483, I: []
+
+TRACE_ID: 4484, I: []
+
+TRACE_ID: 4486, I: []
+
+TRACE_ID: 4488, I: []
+
+TRACE_ID: 4489, I: []
+
+TRACE_ID: 4490, I: [[(3, '8')]]
+
+TRACE_ID: 4491, I: []
+
+TRACE_ID: 4492, I: []
+
+TRACE_ID: 4493, I: [[(3, '6')]]
+
+TRACE_ID: 4494, I: []
+
+TRACE_ID: 4495, I: []
+
+TRACE_ID: 4496, I: []
+
+TRACE_ID: 4497, I: [[(3, '1')]]
+
+TRACE_ID: 4498, I: []
+
+TRACE_ID: 4499, I: [[(3, '1')]]
+
+TRACE_ID: 4500, I: []
+
+TRACE_ID: 4502, I: []
+
+TRACE_ID: 4503, I: [[(3, '8')]]
+
+TRACE_ID: 4504, I: []
+
+TRACE_ID: 4505, I: []
+
+TRACE_ID: 4507, I: []
+
+TRACE_ID: 4508, I: []
+
+TRACE_ID: 4509, I: []
+
+TRACE_ID: 4510, I: []
+
+TRACE_ID: 4512, I: []
+
+TRACE_ID: 4513, I: []
+
+TRACE_ID: 4514, I: [[(3, '8')]]
+
+TRACE_ID: 4515, I: []
+
+TRACE_ID: 4516, I: []
+
+TRACE_ID: 4517, I: []
+
+TRACE_ID: 4518, I: []
+
+TRACE_ID: 4519, I: [[(3, '8')], [(5, '9')], [(7, '9'), (8, '8')]]
+
+TRACE_ID: 4520, I: []
+
+TRACE_ID: 4521, I: []
+
+TRACE_ID: 4522, I: []
+
+TRACE_ID: 4523, I: []
+
+TRACE_ID: 4524, I: []
+
+TRACE_ID: 4525, I: [[(4, '6')]]
+
+TRACE_ID: 4526, I: []
+
+TRACE_ID: 4527, I: []
+
+TRACE_ID: 4528, I: [[(3, '6')], [(5, '9')]]
+
+TRACE_ID: 4529, I: []
+
+TRACE_ID: 4531, I: []
+
+TRACE_ID: 4533, I: []
+
+TRACE_ID: 4534, I: []
+
+TRACE_ID: 4536, I: []
+
+TRACE_ID: 4538, I: [[(4, '8'), (5, '8')]]
+
+TRACE_ID: 4539, I: [[(2, '1')]]
+
+TRACE_ID: 4540, I: []
+
+TRACE_ID: 4541, I: []
+
+TRACE_ID: 4542, I: []
+
+TRACE_ID: 4543, I: [[(3, '8')], [(5, '8')]]
+
+TRACE_ID: 4545, I: []
+
+TRACE_ID: 4546, I: [[(3, '1')]]
+
+TRACE_ID: 4547, I: []
+
+TRACE_ID: 4548, I: []
+
+TRACE_ID: 4549, I: []
+
+TRACE_ID: 4550, I: []
+
+TRACE_ID: 4551, I: []
+
+TRACE_ID: 4552, I: []
+
+TRACE_ID: 4553, I: []
+
+TRACE_ID: 4554, I: [[(3, '8'), (4, '9')]]
+
+TRACE_ID: 4555, I: []
+
+TRACE_ID: 4556, I: []
+
+TRACE_ID: 4557, I: []
+
+TRACE_ID: 4559, I: []
+
+TRACE_ID: 4560, I: []
+
+TRACE_ID: 4561, I: [[(3, '8')], [(5, '8'), (6, '9')]]
+
+TRACE_ID: 4562, I: [[(4, '8')]]
+
+TRACE_ID: 4564, I: [[(3, '1'), (4, '8')]]
+
+TRACE_ID: 4565, I: [[(4, '1')]]
+
+TRACE_ID: 4566, I: []
+
+TRACE_ID: 4567, I: [[(3, '8')], [(6, '9')]]
+
+TRACE_ID: 4568, I: [[(4, '6')]]
+
+TRACE_ID: 4569, I: [[(3, '8')]]
+
+TRACE_ID: 4570, I: [[(4, '6')]]
+
+TRACE_ID: 4571, I: []
+
+TRACE_ID: 4572, I: []
+
+TRACE_ID: 4573, I: [[(3, '8')]]
+
+TRACE_ID: 4574, I: []
+
+TRACE_ID: 4576, I: []
+
+TRACE_ID: 4577, I: []
+
+TRACE_ID: 4578, I: []
+
+TRACE_ID: 4579, I: []
+
+TRACE_ID: 4580, I: []
+
